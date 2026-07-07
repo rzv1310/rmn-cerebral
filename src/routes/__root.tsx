@@ -78,11 +78,15 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "RMN Cerebral" },
-      { name: "description", content: "RMN Cerebral" },
+      { name: "description", content: "RMN Cerebral Affidea" },
       { property: "og:title", content: "RMN Cerebral" },
-      { property: "og:description", content: "RMN Cerebral" },
+      { property: "og:description", content: "RMN Cerebral Affidea" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "RMN Cerebral" },
+      { name: "twitter:description", content: "RMN Cerebral Affidea" },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/97ba5c3b-d838-4b8b-9768-8e17b3d2074e/id-preview-53c55f28--af9fe7af-9c14-458f-89e9-35e6f2cfead8.lovable.app-1783401618601.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/97ba5c3b-d838-4b8b-9768-8e17b3d2074e/id-preview-53c55f28--af9fe7af-9c14-458f-89e9-35e6f2cfead8.lovable.app-1783401618601.png" },
     ],
     links: [
       {
