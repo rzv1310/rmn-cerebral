@@ -6,7 +6,7 @@ function Stars({ className }: { className?: string }) {
   return (
     <span className={cx("inline-flex", className)} aria-hidden>
       {Array.from({ length: 5 }).map((_, i) => (
-        <svg key={i} viewBox="0 0 20 20" className="h-4 w-4 fill-primary-light">
+        <svg key={i} viewBox="0 0 20 20" className="h-4 w-4 animate-pulse fill-[#ff6a00]">
           <path d="M10 1.6l2.5 5.1 5.6.8-4 4 .9 5.6L10 14.5 5 17.1l.9-5.6-4-4 5.6-.8z" />
         </svg>
       ))}
