@@ -11,3 +11,8 @@
 [build]
   command = "bun run build"
   publish = "dist"
+
+[build.environment]
+  # Vite 8 requires Node >=20.19 / >=22.12; pin so Netlify's default Node can't
+  # be too old (a common cause of a non-zero build exit).
+  NODE_VERSION = "22"
