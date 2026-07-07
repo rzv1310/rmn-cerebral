@@ -67,13 +67,8 @@ export function Hero() {
                 <span className="text-lg text-muted-2">lei</span>
               </div>
             </div>
-            <p className="text-sm leading-relaxed text-muted-2">
-              de la 1.007 lei cu contrast
-              <br />
-              <span className="font-semibold text-signal-bright">
-                Gratuit cu bilet de trimitere
-              </span>
-            </p>
+          </div>
+
           </div>
 
           <div className="mt-8">
