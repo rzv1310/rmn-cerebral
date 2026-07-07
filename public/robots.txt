@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+
+Host: https://rmn-bucuresti.ro
+Sitemap: https://rmn-bucuresti.ro/sitemap.xml

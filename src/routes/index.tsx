@@ -1,18 +1,49 @@
 import { createFileRoute } from "@tanstack/react-router";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
+import { StickyCta } from "@/components/site-chrome";
+import { SelectGuard } from "@/components/select-guard";
+import { Hero } from "@/components/hero";
+import { PriceSection } from "@/components/pricing";
+import { CeEsteSection } from "@/components/what-is";
+import { ClinicalSection } from "@/components/clinical";
+import { CnasSection } from "@/components/cnas";
+import { ActeSection, PregatireSection, DurataSection, SigurantaSection } from "@/components/patient";
+import { LocationsSection } from "@/components/locations";
+import { DoctorsSection, WhyAffideaSection, ReviewsSection } from "@/components/trust";
+import { FaqSection } from "@/components/faq";
+import { BookingSection } from "@/components/booking";
+import { buildJsonLd } from "@/lib/jsonld";
+
 export const Route = createFileRoute("/")({
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
+  const jsonLd = JSON.stringify(buildJsonLd()).replace(/</g, "\\u003c");
   return (
-    <main className="flex min-h-screen items-center justify-center bg-background">
-      <h1 className="text-5xl font-bold text-foreground">RMN Cerebral</h1>
-    </main>
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd }} />
+      <main>
+        <Hero />
+        <PriceSection />
+        <LocationsSection />
+        <CeEsteSection />
+        <ClinicalSection />
+        <CnasSection />
+        <ActeSection />
+        <PregatireSection />
+        <DurataSection />
+        <SigurantaSection />
+        <DoctorsSection />
+        <WhyAffideaSection />
+        <ReviewsSection />
+        <FaqSection />
+        <BookingSection />
+      </main>
+      <StickyCta />
+      <SelectGuard />
+      {/* spacer so the mobile sticky CTA never covers footer content */}
+      <div className="h-20 lg:hidden" aria-hidden />
+    </>
   );
 }
-

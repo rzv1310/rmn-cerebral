@@ -77,21 +77,44 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "RMN Cerebral" },
-      { name: "description", content: "RMN Cerebral Affidea" },
-      { property: "og:title", content: "RMN Cerebral" },
-      { property: "og:description", content: "RMN Cerebral Affidea" },
+      { title: "RMN cerebral: preț de la 717 lei, gratuit CNAS | Affidea" },
+      {
+        name: "description",
+        content:
+          "RMN cerebral la Affidea, de la 717 lei, gratuit cu bilet de trimitere CNAS. Rezonanță magnetică în centre Affidea din toată România. Programează-te online.",
+      },
+      { name: "theme-color", content: "#2d69b3" },
+      {
+        name: "keywords",
+        content:
+          "rmn cerebral, rmn cerebral preț, rmn cerebral affidea, rezonanță magnetică cerebrală, rmn creier preț, rmn cerebral cu contrast, rmn cerebral gratuit bilet de trimitere, affidea rmn",
+      },
       { property: "og:type", content: "website" },
+      { property: "og:locale", content: "ro_RO" },
+      { property: "og:site_name", content: "Affidea" },
+      { property: "og:title", content: "RMN cerebral la Affidea, preț de la 717 lei" },
+      {
+        property: "og:description",
+        content:
+          "Rezonanță magnetică cerebrală în centre Affidea din România. Preț transparent de la 717 lei, gratuit cu bilet de trimitere CNAS.",
+      },
+      { property: "og:image", content: "/og.png" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "RMN Cerebral" },
-      { name: "twitter:description", content: "RMN Cerebral Affidea" },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/97ba5c3b-d838-4b8b-9768-8e17b3d2074e/id-preview-53c55f28--af9fe7af-9c14-458f-89e9-35e6f2cfead8.lovable.app-1783401618601.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/97ba5c3b-d838-4b8b-9768-8e17b3d2074e/id-preview-53c55f28--af9fe7af-9c14-458f-89e9-35e6f2cfead8.lovable.app-1783401618601.png" },
+      { name: "twitter:title", content: "RMN cerebral la Affidea, preț de la 717 lei" },
+      {
+        name: "twitter:description",
+        content:
+          "Rezonanță magnetică cerebrală în centre Affidea din România. Preț de la 717 lei, gratuit cu bilet de trimitere.",
+      },
+      { name: "twitter:image", content: "/og.png" },
     ],
     links: [
+      { rel: "stylesheet", href: appCss },
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
         rel: "stylesheet",
-        href: appCss,
+        href: "https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap",
       },
       { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
     ],
@@ -104,7 +127,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
 function RootShell({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="ro">
       <head>
         <HeadContent />
       </head>

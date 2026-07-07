@@ -4,20 +4,11 @@
 
 @custom-variant dark (&:is(.dark *));
 
-/*
- * Design system definition.
- *
- * The @theme inline block maps CSS custom properties to Tailwind utility
- * classes (e.g. --color-primary -> bg-primary, text-primary).
- *
- * The :root and .dark blocks define the actual color values using oklch.
- * All colors MUST use oklch format.
- *
- * To add a new semantic color:
- * 1. Add the variable to :root (light value) and .dark (dark value)
- * 2. Register it in @theme inline as --color-<name>: var(--<name>)
- */
-
+/* ---------------------------------------------------------------------------
+   shadcn/ui base tokens (kept so the template's error/404 UI + any future
+   shadcn components resolve). The Affidea design system is layered on top and
+   intentionally wins on the shared names (`primary`, `muted`).
+--------------------------------------------------------------------------- */
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -59,6 +50,35 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+}
+
+/* ---------------------------------------------------------------------------
+   Affidea RMN design system. Brand blue limited to three tokens on slate
+   neutrals + one green signal (three shades). Ported from rmn_base globals.css.
+--------------------------------------------------------------------------- */
+@theme {
+  --color-ink: #0f2137;
+
+  --color-paper: #eef2f7;
+  --color-paper-100: #ffffff;
+
+  --color-primary: #4182d0;
+  --color-primary-dark: #2d69b3;
+  --color-primary-light: #edf0f4;
+
+  --color-signal: #06b64f; /* Affidea green (rgb 6 182 79) */
+  --color-signal-soft: #daf5e3;
+  --color-signal-700: #04833a; /* darker, for green text on white */
+  --color-signal-bright: #3ddc84; /* lighter, for green text on dark bg */
+
+  --color-muted: #52627a;
+  --color-muted-2: #dbe7f6; /* soft white — secondary text on primary-dark bg */
+  --color-line: #dde5ee;
+  --color-line-dark: rgba(255, 255, 255, 0.1);
+
+  --font-display: "Sora", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", monospace;
 }
 
 :root {
@@ -137,8 +157,133 @@
     border-color: var(--color-border);
   }
 
+  html {
+    scroll-padding-top: 5rem;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+  }
+
   body {
-    background-color: var(--color-background);
-    color: var(--color-foreground);
+    min-height: 100vh;
+    background: var(--color-primary-light);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* Page text stays selectable. Interactive chrome (buttons, links, cards) is
+     not selectable/draggable and shows a pointer cursor. */
+  a,
+  button,
+  summary,
+  label,
+  select,
+  [role="button"],
+  [type="checkbox"],
+  [type="radio"] {
+    cursor: pointer;
+  }
+
+  a,
+  button,
+  summary,
+  label,
+  [role="button"],
+  .select-none {
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+  }
+
+  img,
+  svg,
+  video {
+    -webkit-user-drag: none;
+    user-select: none;
+  }
+
+  input,
+  textarea {
+    cursor: text;
+    user-select: text;
+    -webkit-user-select: text;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  ::selection {
+    background: color-mix(in srgb, var(--color-primary) 28%, transparent);
+    color: var(--color-ink);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 3px;
+    border-radius: 3px;
+  }
+
+  /* Native accordions — strip default marker, we render our own chevron */
+  summary {
+    list-style: none;
+    cursor: pointer;
+  }
+  summary::-webkit-details-marker {
+    display: none;
+  }
+}
+
+/* Signature: instrument readout numerals */
+@utility tnum {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.01em;
+}
+
+/* Eyebrow / mono label */
+@utility eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-rise {
+  animation: rise 0.6s ease-out both;
+}
+
+/* Accordion open/close chevron */
+details[open] .chevron {
+  transform: rotate(180deg);
+}
+.chevron {
+  transition: transform 0.2s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-rise {
+    animation: none;
   }
 }
