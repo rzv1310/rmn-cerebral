@@ -41,7 +41,7 @@ export const site = {
     { days: ["Saturday"], opens: "09:00", closes: "18:00" },
   ],
 
-  rating: { value: 4.8, count: 765 }, // DE CONFIRMAT (verify genuine source before publishing)
+  rating: { value: 4.9, count: 1001 }, // DE CONFIRMAT (verify genuine source before publishing)
 
   affideaFootprint: "25 de centre Affidea din România", // DE CONFIRMAT
   equipment: "Aparat RMN de câmp înalt", // schema usesDevice — specificațiile variază pe centru
