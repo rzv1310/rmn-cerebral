@@ -69,8 +69,6 @@ export function Hero() {
             </div>
           </div>
 
-          </div>
-
           <div className="mt-8">
             <Cta href={`tel:${site.phone.tel}`} onDark>
               Sună pentru programare: {site.phone.display}
@@ -79,19 +77,14 @@ export function Hero() {
 
           <div className="mt-8 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-muted-2">
             <span className="inline-flex items-center gap-2">
-              <Stars />
               <span className="tnum font-semibold text-paper-100">
                 {site.rating.value}
               </span>
-              <span className="sr-only">din 5 stele</span>
-              <span>· {site.rating.count} recenzii</span>
+              <Stars />
+              <span>· {site.rating.count} recenzii Google</span>
             </span>
-            <span
-              aria-hidden
-              className="hidden h-4 w-px bg-white/15 sm:block"
-            />
-            <span>Fără radiații ionizante</span>
           </div>
+
         </div>
 
         <HeroForm />
