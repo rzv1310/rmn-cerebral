@@ -50,9 +50,8 @@ export function Hero() {
             RMN cerebral <span className="text-primary-light">la Affidea</span>
           </h1>
           <p className="mt-5 max-w-xl text-lg leading-relaxed text-muted-2">
-            Rezonanță magnetică cerebrală de înaltă performanță, cu rezultat
-            rapid și fără liste de așteptare, în {site.affideaFootprint}. Preț
-            transparent, gratuit cu bilet de trimitere.
+            Rezonanță magnetică cerebrală cu rezultat rapid și fără liste de
+            așteptare, în 25+ centre Affidea din România.
           </p>
 
           {/* price readout */}
