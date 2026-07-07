@@ -163,19 +163,8 @@ export function SiteFooter() {
             consultul unui medic. Recomandarea de investigație și interpretarea
             rezultatului aparțin medicului specialist.
           </p>
-          <div className="mt-6 flex flex-col gap-4 text-xs text-muted-2 sm:flex-row sm:items-center sm:justify-between">
+          <div className="mt-6 text-xs text-muted-2">
             <p>© {"2026"} Affidea. Toate drepturile rezervate.</p>
-            <div className="flex flex-wrap gap-x-5 gap-y-2">
-              <a href="/confidentialitate" className="hover:text-paper-100">
-                Politică de confidențialitate
-              </a>
-              <a href="/termeni" className="hover:text-paper-100">
-                Termeni și condiții
-              </a>
-              <a href="/gdpr" className="hover:text-paper-100">
-                GDPR
-              </a>
-            </div>
           </div>
         </div>
       </div>
