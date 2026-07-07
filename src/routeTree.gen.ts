@@ -9,26 +9,8 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as TermeniRouteImport } from './routes/termeni'
-import { Route as GdprRouteImport } from './routes/gdpr'
-import { Route as ConfidentialitateRouteImport } from './routes/confidentialitate'
 import { Route as IndexRouteImport } from './routes/index'
 
-const TermeniRoute = TermeniRouteImport.update({
-  id: '/termeni',
-  path: '/termeni',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const GdprRoute = GdprRouteImport.update({
-  id: '/gdpr',
-  path: '/gdpr',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ConfidentialitateRoute = ConfidentialitateRouteImport.update({
-  id: '/confidentialitate',
-  path: '/confidentialitate',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -37,61 +19,28 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
-  '/confidentialitate': typeof ConfidentialitateRoute
-  '/gdpr': typeof GdprRoute
-  '/termeni': typeof TermeniRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
-  '/confidentialitate': typeof ConfidentialitateRoute
-  '/gdpr': typeof GdprRoute
-  '/termeni': typeof TermeniRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
-  '/confidentialitate': typeof ConfidentialitateRoute
-  '/gdpr': typeof GdprRoute
-  '/termeni': typeof TermeniRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/confidentialitate' | '/gdpr' | '/termeni'
+  fullPaths: '/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/confidentialitate' | '/gdpr' | '/termeni'
-  id: '__root__' | '/' | '/confidentialitate' | '/gdpr' | '/termeni'
+  to: '/'
+  id: '__root__' | '/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
-  ConfidentialitateRoute: typeof ConfidentialitateRoute
-  GdprRoute: typeof GdprRoute
-  TermeniRoute: typeof TermeniRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/termeni': {
-      id: '/termeni'
-      path: '/termeni'
-      fullPath: '/termeni'
-      preLoaderRoute: typeof TermeniRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/gdpr': {
-      id: '/gdpr'
-      path: '/gdpr'
-      fullPath: '/gdpr'
-      preLoaderRoute: typeof GdprRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/confidentialitate': {
-      id: '/confidentialitate'
-      path: '/confidentialitate'
-      fullPath: '/confidentialitate'
-      preLoaderRoute: typeof ConfidentialitateRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/': {
       id: '/'
       path: '/'
@@ -104,9 +53,6 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
-  ConfidentialitateRoute: ConfidentialitateRoute,
-  GdprRoute: GdprRoute,
-  TermeniRoute: TermeniRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
