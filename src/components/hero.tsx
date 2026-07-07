@@ -6,7 +6,7 @@ function Stars({ className }: { className?: string }) {
   return (
     <span className={cx("inline-flex", className)} aria-hidden>
       {Array.from({ length: 5 }).map((_, i) => (
-        <svg key={i} viewBox="0 0 20 20" className="h-4 w-4 fill-primary-light">
+        <svg key={i} viewBox="0 0 20 20" className="h-4 w-4 animate-pulse fill-[#ff6a00]">
           <path d="M10 1.6l2.5 5.1 5.6.8-4 4 .9 5.6L10 14.5 5 17.1l.9-5.6-4-4 5.6-.8z" />
         </svg>
       ))}
@@ -45,7 +45,7 @@ export function Hero() {
       />
       <div className="relative mx-auto grid w-full max-w-6xl grid-cols-1 items-center gap-12 px-5 pb-20 pt-14 sm:px-8 sm:pb-28 sm:pt-20 lg:grid-cols-[1.1fr_0.9fr]">
         <div className="animate-rise">
-          <Eyebrow onDark>Rezonanță magnetică · Rețeaua Affidea</Eyebrow>
+          <Eyebrow onDark>Imagistică prin rezonanță magnetică</Eyebrow>
           <h1 className="mt-5 text-4xl font-bold leading-[1.05] sm:text-5xl lg:text-[3.4rem]">
             RMN cerebral <span className="text-primary-light">la Affidea</span>
           </h1>
@@ -67,13 +67,6 @@ export function Hero() {
                 <span className="text-lg text-muted-2">lei</span>
               </div>
             </div>
-            <p className="text-sm leading-relaxed text-muted-2">
-              de la 1.007 lei cu contrast
-              <br />
-              <span className="font-semibold text-signal-bright">
-                Gratuit cu bilet de trimitere
-              </span>
-            </p>
           </div>
 
           <div className="mt-8">
@@ -84,19 +77,14 @@ export function Hero() {
 
           <div className="mt-8 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-muted-2">
             <span className="inline-flex items-center gap-2">
-              <Stars />
               <span className="tnum font-semibold text-paper-100">
                 {site.rating.value}
               </span>
-              <span className="sr-only">din 5 stele</span>
-              <span>· {site.rating.count} recenzii</span>
+              <Stars />
+              <span>· {site.rating.count} recenzii Google</span>
             </span>
-            <span
-              aria-hidden
-              className="hidden h-4 w-px bg-white/15 sm:block"
-            />
-            <span>Fără radiații ionizante</span>
           </div>
+
         </div>
 
         <HeroForm />
