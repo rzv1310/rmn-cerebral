@@ -100,7 +100,7 @@ export function ProgramareForm({ idPrefix = "programare" }: { idPrefix?: string 
             </span>
             <span>
               Sunt de acord cu prelucrarea datelor conform{" "}
-              <a href="/confidentialitate" className="font-medium text-primary-dark underline underline-offset-2">
+              <a href="https://affidea.ro/ro-RO/protectia-datelor-personale/" target="_blank" rel="noopener noreferrer" className="font-medium text-primary-dark underline underline-offset-2">
                 politicii de confidențialitate
               </a>
               .
