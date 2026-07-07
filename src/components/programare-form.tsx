@@ -108,7 +108,7 @@ export function ProgramareForm({ idPrefix = "programare" }: { idPrefix?: string 
           </label>
           <button
             type="submit"
-            className="inline-flex h-12 w-full items-center justify-center rounded-full bg-primary-dark text-sm font-semibold text-paper-100 transition-opacity hover:opacity-90"
+            className="mt-[5px] inline-flex h-12 w-full items-center justify-center rounded-full bg-primary-dark text-sm font-semibold text-paper-100 transition-opacity hover:opacity-90 sm:mt-0"
           >
             Trimite solicitarea
           </button>
