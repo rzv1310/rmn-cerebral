@@ -6,7 +6,7 @@ function Stars({ className }: { className?: string }) {
   return (
     <span className={cx("inline-flex", className)} aria-hidden>
       {Array.from({ length: 5 }).map((_, i) => (
-        <svg key={i} viewBox="0 0 20 20" className="h-4 w-4 animate-pulse fill-[#ff6a00]">
+        <svg key={i} viewBox="0 0 20 20" className="h-4 w-4 animate-pulse fill-white">
           <path d="M10 1.6l2.5 5.1 5.6.8-4 4 .9 5.6L10 14.5 5 17.1l.9-5.6-4-4 5.6-.8z" />
         </svg>
       ))}
@@ -50,9 +50,8 @@ export function Hero() {
             RMN cerebral <span className="text-primary-light">la Affidea</span>
           </h1>
           <p className="mt-5 max-w-xl text-lg leading-relaxed text-muted-2">
-            Rezonanță magnetică cerebrală de înaltă performanță, cu rezultat
-            rapid și fără liste de așteptare, în {site.affideaFootprint}. Preț
-            transparent, gratuit cu bilet de trimitere.
+            Rezonanță magnetică cerebrală cu rezultat rapid și fără liste de
+            așteptare, în 25+ centre Affidea din România.
           </p>
 
           {/* price readout */}
