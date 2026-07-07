@@ -1,0 +1,13 @@
+# Netlify deploy configuration for this TanStack Start (Lovable) app.
+#
+# Netlify automatically sets NETLIFY=true during builds, so Nitro auto-detects
+# the Netlify target: static assets are emitted to `dist/` and the SSR handler
+# to `.netlify/functions-internal/server/` (auto-deployed as an internal
+# function whose in-source config declares `path: "/*"` + `preferStatic`, so
+# existing static files are served first and every other path is server-rendered).
+#
+# The default publish dir for this template was "dist/client", which is wrong
+# for the Nitro Netlify build — the static output is `dist/`.
+[build]
+  command = "bun run build"
+  publish = "dist"
