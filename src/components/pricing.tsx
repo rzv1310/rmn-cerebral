@@ -118,7 +118,9 @@ export function PriceSection() {
             {[...partnerLogos, ...partnerLogos].map((p, i) => (
               <div
                 key={`${p.name}-${i}`}
-                className="flex h-6 w-16 items-center justify-center md:h-10 md:w-24"
+                className={`flex h-7 w-17 items-center justify-center md:h-10 md:w-24 ${
+                  p.name === "Asirom" ? "md:h-11 md:w-28" : ""
+                }`}
               >
                 <img
                   src={p.logo}
