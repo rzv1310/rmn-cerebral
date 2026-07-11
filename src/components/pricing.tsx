@@ -15,7 +15,7 @@ export function PriceSection() {
       tone="paper"
       eyebrow="Prețuri"
       title="RMN cerebral preț: tarife transparente"
-      intro="Prețuri clare, de la 717 lei. Tarifele variază în funcție de centru și de aparat, iar CD/DVD și filmul radiologic sunt incluse. Cu bilet de trimitere, examinarea este gratuită, decontată de CNAS."
+      intro="Prețuri clare, de la 770 lei. Tarifele variază în funcție de centru și de aparat, iar CD/DVD și filmul radiologic sunt incluse. Cu bilet de trimitere, examinarea este gratuită, decontată de CNAS."
     >
       <div className="grid gap-6 lg:grid-cols-[1.3fr_1fr]">
         <div className="overflow-x-auto rounded-2xl border border-line bg-paper-100">
@@ -80,7 +80,7 @@ export function PriceSection() {
             <p className="eyebrow text-muted-2">Preț de la</p>
             <p className="mt-2 text-lg leading-relaxed">
               <span className="tnum font-semibold text-primary-light">
-                de la 717 lei
+                de la 770 lei
               </span>{" "}
               pentru un RMN cerebral nativ. Prețul final depinde de centru și de
               aparat.

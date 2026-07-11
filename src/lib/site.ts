@@ -239,7 +239,7 @@ export const techAccordions = [
 export const faqs = [
   {
     q: "Cât costă un RMN cerebral?",
-    a: "Un RMN cerebral nativ pornește de la 717 lei, iar cu substanță de contrast de la aproximativ 1.007 lei. Tarifele variază în funcție de centrul Affidea și de tipul de aparat. Cu bilet de trimitere, examinarea este decontată integral de CNAS, deci gratuită.",
+    a: "Un RMN cerebral nativ pornește de la 770 lei, iar cu substanță de contrast de la aproximativ 1.007 lei. Tarifele variază în funcție de centrul Affidea și de tipul de aparat. Cu bilet de trimitere, examinarea este decontată integral de CNAS, deci gratuită.",
   },
   {
     q: "Este RMN-ul cerebral gratuit cu bilet de trimitere?",
