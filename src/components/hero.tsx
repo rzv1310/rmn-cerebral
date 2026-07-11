@@ -61,7 +61,7 @@ export function Hero() {
               <div className="mt-1.5 flex items-baseline gap-2">
                 <span className="text-lg text-muted-2">de la</span>
                 <span className="tnum text-5xl font-bold leading-none text-paper-100">
-                  717
+                  770
                 </span>
                 <span className="text-lg text-muted-2">lei</span>
               </div>
