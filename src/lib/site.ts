@@ -51,7 +51,7 @@ export const site = {
 // Pricing (Titan flat model) — all amounts in RON (lei)
 // ---------------------------------------------------------------------------
 export const PRICE = {
-  nativ: 717, // orice examinare RMN nativ, o regiune
+  nativ: 770, // orice examinare RMN nativ, o regiune
   contrast: 290, // supliment substanță de contrast
   sedarePrima: 675, // sedare, prima regiune
   sedareSuplim: 503, // sedare, fiecare regiune suplimentară
@@ -335,7 +335,7 @@ export const reviews = [
 export const whyAffidea = [
   {
     title: "Preț transparent",
-    text: "De la 717 lei pentru un RMN nativ, afișat clar. CD/DVD și film incluse, fără costuri ascunse. Tariful variază pe centru.",
+    text: "De la 770 lei pentru un RMN nativ, afișat clar. CD/DVD și film incluse, fără costuri ascunse. Tariful variază pe centru.",
   },
   {
     title: "Aparate performante",
