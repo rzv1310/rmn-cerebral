@@ -551,16 +551,16 @@ export const interpretation = {
   ],
 } as const;
 
-// Parteneri / asigurări — DE CONFIRMAT
-export const partners = [
-  "CNAS",
-  "Signal Iduna",
-  "Allianz-Țiriac",
-  "Groupama",
-  "Generali",
-  "NN",
-  "Asirom",
-  "Uniqa",
+// Parteneri / asigurări — logo-uri oficiale
+export const partnerLogos = [
+  { name: "CNAS", logo: "https://cnas.ro/wp-content/uploads/2021/07/logo_site_300.png" },
+  { name: "Signal Iduna", logo: "https://www.signal-iduna.ro/assets/images/signal_iduna_fill.svg" },
+  { name: "Allianz-Țiriac", logo: "https://www.allianztiriac.ro/content/dam/onemarketing/cee/azro/media/logo_azt/allianz_tiriac_logo.png" },
+  { name: "Groupama", logo: "https://www.groupama.ro/wp-content/uploads/2024/10/Logo.png" },
+  { name: "Generali", logo: "https://www.generali.ro/wp-content/uploads/2022/06/logo.svg" },
+  { name: "NN", logo: "https://www.nn.ro/themes/custom/nn/logo.svg" },
+  { name: "Asirom", logo: "https://www.asirom.ro/images/asirom-logo.png" },
+  { name: "Uniqa", logo: "https://www.uniqa.ro/themes/custom/uniqa/images/logo.svg" },
 ] as const;
 
 // Centrele Affidea de pe hartă sunt derivate direct din datele reale:
