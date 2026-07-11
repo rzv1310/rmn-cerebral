@@ -1,4 +1,4 @@
-import asiromLogoAsset from "@/assets/asirom-logo.png.asset.json";
+import asiromLogo from "@/assets/asirom-logo.png";
 
 // Single source of truth for the RMN București (Affidea) landing page.
 //
@@ -561,7 +561,7 @@ export const partnerLogos = [
   { name: "Groupama", logo: "https://upload.wikimedia.org/wikipedia/commons/b/be/Groupama_logo.svg" },
   { name: "Generali", logo: "https://www.generali.ro/wp-content/uploads/2022/06/logo.svg" },
   { name: "NN", logo: "https://www.nn.ro/themes/custom/nn/logo.svg" },
-  { name: "Asirom", logo: asiromLogoAsset.url },
+  { name: "Asirom", logo: asiromLogo },
   { name: "Uniqa", logo: "https://www.uniqa.ro/themes/custom/uniqa/images/logo.svg" },
 ] as const;
 
