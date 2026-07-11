@@ -1,3 +1,5 @@
+import asiromLogoAsset from "@/assets/asirom-logo.png.asset.json";
+
 // Single source of truth for the RMN București (Affidea) landing page.
 //
 // ⚠️  YMYL / [DE CONFIRMAT]: every value flagged `DE CONFIRMAT` is a plausible
