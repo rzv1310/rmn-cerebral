@@ -114,15 +114,19 @@ export function PriceSection() {
       <div className="mt-10 select-none rounded-2xl border border-line bg-paper-100 px-6 py-5">
         <p className="eyebrow text-muted">Deconturi și asigurări acceptate</p>
         <div className="relative mt-4 overflow-hidden">
-          <div className="flex w-max animate-marquee items-center gap-6 md:gap-8">
+          <div className="flex w-max animate-marquee items-center gap-4 md:gap-6">
             {[...partnerLogos, ...partnerLogos].map((p, i) => (
-              <img
+              <div
                 key={`${p.name}-${i}`}
-                src={p.logo}
-                alt={p.name}
-                className="h-7 w-auto object-contain md:h-8"
-                loading="lazy"
-              />
+                className="flex h-8 w-20 items-center justify-center md:h-10 md:w-24"
+              >
+                <img
+                  src={p.logo}
+                  alt={p.name}
+                  className="max-h-full max-w-full object-contain"
+                  loading="lazy"
+                />
+              </div>
             ))}
           </div>
         </div>
