@@ -452,17 +452,24 @@ export const adverseEffects = [
 ] as const;
 
 // ---------------------------------------------------------------------------
-// RMN cerebral preț — tabel focalizat (model: rmn-cluj.ro/rmn-cerebral)
+// RMN cerebral preț — tabel focalizat (tarife Affidea)
 // ---------------------------------------------------------------------------
 export const cerebralPrices = [
-  { name: "RMN cerebral nativ", price: "717 lei", highlight: true },
-  { name: "RMN cerebral cu substanță de contrast", price: "1.007 lei" },
-  { name: "RMN hipofiză nativ", price: "717 lei" },
-  { name: "RMN orbite nativ", price: "717 lei" },
-  { name: "RMN sinusuri nativ", price: "717 lei" },
-  { name: "RMN ureche internă nativ", price: "717 lei" },
-  { name: "Angio-RMN cerebral", price: "la programare", note: true }, // DE CONFIRMAT
-  { name: "RMN cerebral cu bilet de trimitere", price: "GRATUIT", free: true },
+  { name: "RMN CEREBRAL nativ", plata: 1100, card: 990, promo: 770 },
+  { name: "RMN CEREBRAL cu substanță de contrast", plata: 1480, card: 1332, promo: 1036 },
+  { name: "ANGIO RMN CEREBRAL nativ", plata: 1380, card: 1242, promo: 966 },
+  { name: "ANGIO RMN CEREBRAL cu substanță de contrast", plata: 1745, card: 1570.5, promo: 1225 },
+  { name: "RMN CEREBRAL + PROTOCOL EPILEPSIE nativ", plata: 1380, card: 1242, promo: 966 },
+  { name: "RMN CEREBRAL + PROTOCOL EPILEPSIE cu substanță de contrast", plata: 1750, card: 1575, promo: 1232 },
+  { name: "RMN CEREBRAL + TRUNCHIURI SUPRA-AORTICE cu substanță de contrast", plata: 1750, card: 1575, promo: 1491 },
+  { name: "RMN CEREBRAL + ORBITE nativ", plata: 2000, card: 1800, promo: 1400 },
+  { name: "RMN CEREBRAL + ORBITE cu substanță de contrast", plata: 2375, card: 2137.5, promo: 1663 },
+  { name: "RMN SINUSURI nativ", plata: 1100, card: 990, promo: 770 },
+  { name: "RMN SINUSURI cu substanță de contrast", plata: 1480, card: 1332, promo: 1036 },
+  { name: "RMN CEREBRAL + URECHE nativ", plata: 2000, card: 1800, promo: 1400 },
+  { name: "RMN CEREBRAL + URECHE cu substanță de contrast", plata: 2375, card: 2137.5, promo: 1663 },
+  { name: "RMN HIPOFIZA nativ", plata: 1100, card: 990, promo: 770 },
+  { name: "RMN HIPOFIZA cu substanță de contrast", plata: 1480, card: 1332, promo: 1036 },
 ] as const;
 
 // Prețurile nu sunt fixe — pornesc de la valorile afișate și variază pe centru/aparat.

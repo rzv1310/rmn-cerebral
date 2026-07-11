@@ -1,5 +1,12 @@
 import { cerebralPrices, partners, PRICE, lei, priceNote } from "@/lib/site";
-import { Section, Cta, cx } from "@/components/primitives";
+import { Section, Cta } from "@/components/primitives";
+
+function fmt(n: number): string {
+  return n.toLocaleString("ro-RO", {
+    minimumFractionDigits: 0,
+    maximumFractionDigits: 1,
+  });
+}
 
 export function PriceSection() {
   return (
@@ -11,24 +18,36 @@ export function PriceSection() {
       intro="Prețuri clare, de la 717 lei. Tarifele variază în funcție de centru și de aparat, iar CD/DVD și filmul radiologic sunt incluse. Cu bilet de trimitere, examinarea este gratuită, decontată de CNAS."
     >
       <div className="grid gap-6 lg:grid-cols-[1.3fr_1fr]">
-        <div className="overflow-hidden select-none rounded-2xl border border-line bg-paper-100">
-          <table className="w-full text-left">
+        <div className="overflow-x-auto rounded-2xl border border-line bg-paper-100">
+          <table className="w-full border-collapse">
             <caption className="sr-only">
-              Prețuri RMN cerebral la Affidea
+              Tarife RMN cerebral la Affidea
             </caption>
-            <thead>
-              <tr className="border-b border-line">
+            <thead className="bg-primary-dark text-paper-100">
+              <tr>
                 <th
                   scope="col"
-                  className="eyebrow px-5 py-3 text-[0.65rem] text-muted"
+                  className="px-4 py-2.5 text-left text-sm font-bold"
                 >
-                  Examinare
+                  Investigație
                 </th>
                 <th
                   scope="col"
-                  className="eyebrow px-5 py-3 text-right text-[0.65rem] text-muted"
+                  className="px-4 py-2.5 text-center text-sm font-bold"
                 >
-                  Preț de la
+                  Plată
+                </th>
+                <th
+                  scope="col"
+                  className="px-4 py-2.5 text-center text-sm font-bold"
+                >
+                  Card Fidelitate
+                </th>
+                <th
+                  scope="col"
+                  className="px-4 py-2.5 text-center text-sm font-bold"
+                >
+                  Promo CNAS
                 </th>
               </tr>
             </thead>
@@ -36,30 +55,19 @@ export function PriceSection() {
               {cerebralPrices.map((row) => (
                 <tr
                   key={row.name}
-                  className={cx(
-                    "border-b border-line last:border-0",
-                    "highlight" in row && row.highlight && "bg-primary/[0.06]",
-                  )}
+                  className="border-b border-[#333] last:border-0 even:bg-[#fafafa]"
                 >
-                  <th
-                    scope="row"
-                    className="px-5 py-4 text-sm font-medium text-ink"
-                  >
+                  <td className="border border-[#333] px-4 py-2.5 text-left text-sm font-medium text-ink">
                     {row.name}
-                  </th>
-                  <td className="px-5 py-4 text-right">
-                    <span
-                      className={cx(
-                        "tnum text-sm font-semibold",
-                        "free" in row && row.free
-                          ? "rounded-full bg-signal px-2.5 py-1 text-white"
-                          : "note" in row && row.note
-                            ? "text-muted"
-                            : "text-ink",
-                      )}
-                    >
-                      {row.price}
-                    </span>
+                  </td>
+                  <td className="border border-[#333] px-4 py-2.5 text-right text-sm tabular-nums text-ink">
+                    {fmt(row.plata)}
+                  </td>
+                  <td className="border border-[#333] px-4 py-2.5 text-right text-sm tabular-nums text-ink">
+                    {fmt(row.card)}
+                  </td>
+                  <td className="border border-[#333] px-4 py-2.5 text-right text-sm tabular-nums text-ink">
+                    {fmt(row.promo)}
                   </td>
                 </tr>
               ))}
