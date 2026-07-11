@@ -1,4 +1,4 @@
-import asiromLogoAsset from "@/assets/asirom-logo.png.asset.json";
+import asiromLogo from "@/assets/asirom-logo.png";
 
 // Single source of truth for the RMN București (Affidea) landing page.
 //
