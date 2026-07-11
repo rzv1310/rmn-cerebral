@@ -1,4 +1,4 @@
-import { cerebralPrices, partners, PRICE, lei, priceNote } from "@/lib/site";
+import { cerebralPrices, partnerLogos, PRICE, lei, priceNote } from "@/lib/site";
 import { Section, Cta } from "@/components/primitives";
 
 function fmt(n: number): string {
