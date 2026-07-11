@@ -556,7 +556,7 @@ export const partnerLogos = [
   { name: "CNAS", logo: "https://cnas.ro/wp-content/uploads/2021/07/logo_site_300.png" },
   { name: "Signal Iduna", logo: "https://www.signal-iduna.ro/assets/images/signal_iduna_fill.svg" },
   { name: "Allianz-Țiriac", logo: "https://www.allianztiriac.ro/content/dam/onemarketing/cee/azro/media/logo_azt/allianz_tiriac_logo.png" },
-  { name: "Groupama", logo: "https://www.groupama.ro/wp-content/uploads/2024/10/Logo.png" },
+  { name: "Groupama", logo: "https://upload.wikimedia.org/wikipedia/commons/b/be/Groupama_logo.svg" },
   { name: "Generali", logo: "https://www.generali.ro/wp-content/uploads/2022/06/logo.svg" },
   { name: "NN", logo: "https://www.nn.ro/themes/custom/nn/logo.svg" },
   { name: "Asirom", logo: "https://www.asirom.ro/images/asirom-logo.png" },
