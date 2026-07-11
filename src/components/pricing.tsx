@@ -14,8 +14,7 @@ export function PriceSection() {
       id="pret"
       tone="paper"
       eyebrow="Prețuri"
-      title="RMN cerebral preț: tarife transparente"
-      intro="Prețuri clare, de la 770 lei. Tarifele variază în funcție de centru și de aparat, iar CD/DVD și filmul radiologic sunt incluse. Cu bilet de trimitere, examinarea este gratuită, decontată de CNAS."
+      title="RMN cerebral preț de la 770 lei"
     >
       <div className="grid gap-6 lg:grid-cols-[1.3fr_1fr]">
         <div className="overflow-x-auto rounded-2xl border border-line bg-paper-100">
