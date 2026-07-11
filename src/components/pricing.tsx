@@ -112,24 +112,35 @@ export function PriceSection() {
 
       {/* insurance / partners */}
       <div className="mt-10 select-none rounded-2xl border border-line bg-paper-100 px-6 py-5">
-        <p className="eyebrow text-muted">Deconturi și asigurări acceptate</p>
-          <div className="relative mt-4 overflow-hidden">
+        <p className="eyebrow text-muted">Asigurări Acceptate</p>
+          <div className="relative mt-[19px] overflow-hidden">
           <div className="flex w-max animate-marquee items-center gap-3 md:gap-6">
-            {[...partnerLogos, ...partnerLogos].map((p, i) => (
-              <div
-                key={`${p.name}-${i}`}
-                className={`flex h-7 w-17 items-center justify-center md:h-10 md:w-24 ${
-                  p.name === "Asirom" ? "md:h-11 md:w-28" : ""
-                }`}
-              >
-                <img
-                  src={p.logo}
-                  alt={p.name}
-                  className="max-h-full max-w-full object-contain"
-                  loading="lazy"
-                />
-              </div>
-            ))}
+            {[...partnerLogos, ...partnerLogos].map((p, i) => {
+              const isLargerMobile =
+                p.name === "Asirom" ||
+                p.name === "Signal Iduna" ||
+                p.name === "Groupama" ||
+                p.name === "Allianz-Țiriac";
+              return (
+                <div
+                  key={`${p.name}-${i}`}
+                  className={`flex items-center justify-center md:h-10 md:w-24 ${
+                    p.name === "Asirom" ? "md:h-11 md:w-28" : ""
+                  } ${
+                    isLargerMobile
+                      ? "h-[33px] w-[73px]"
+                      : "h-7 w-17"
+                  }`}
+                >
+                  <img
+                    src={p.logo}
+                    alt={p.name}
+                    className="max-h-full max-w-full object-contain"
+                    loading="lazy"
+                  />
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>

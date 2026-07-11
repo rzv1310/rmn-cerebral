@@ -299,7 +299,7 @@ details[open] .chevron {
 }
 
 .animate-marquee {
-  animation: marquee 18s linear infinite;
+  animation: marquee 15s linear infinite;
 }
 
 @media (min-width: 768px) {
