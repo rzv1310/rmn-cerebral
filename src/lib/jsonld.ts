@@ -78,7 +78,7 @@ export function buildJsonLd() {
         "@type": "MedicalWebPage",
         "@id": PAGE,
         url: base,
-        name: "RMN cerebral la Affidea, preț de la 717 lei",
+        name: "RMN cerebral la Affidea, preț de la 770 lei",
         inLanguage: "ro-RO",
         about: { "@id": TEST },
         mainEntity: { "@id": TEST },
