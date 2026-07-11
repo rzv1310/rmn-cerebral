@@ -27,25 +27,25 @@ export function PriceSection() {
               <tr>
                 <th
                   scope="col"
-                  className="px-4 py-2.5 text-left text-sm font-bold"
+                  className="whitespace-nowrap px-4 py-2.5 text-left text-sm font-bold"
                 >
                   Investigație
                 </th>
                 <th
                   scope="col"
-                  className="px-4 py-2.5 text-center text-sm font-bold"
+                  className="whitespace-nowrap px-4 py-2.5 text-center text-sm font-bold"
                 >
                   Plată
                 </th>
                 <th
                   scope="col"
-                  className="px-4 py-2.5 text-center text-sm font-bold"
+                  className="whitespace-nowrap px-4 py-2.5 text-center text-sm font-bold"
                 >
                   Card Fidelitate
                 </th>
                 <th
                   scope="col"
-                  className="px-4 py-2.5 text-center text-sm font-bold"
+                  className="whitespace-nowrap px-4 py-2.5 text-center text-sm font-bold"
                 >
                   Promo CNAS
                 </th>
