@@ -38,15 +38,19 @@ export function PriceSection() {
                 </th>
                 <th
                   scope="col"
-                  className="whitespace-nowrap border border-white/20 px-4 py-2.5 text-center text-sm font-bold"
+                  className="border border-white/20 px-4 py-2.5 text-center text-sm font-bold"
                 >
-                  Card Fidelitate
+                  Card
+                  <br />
+                  Fidelitate
                 </th>
                 <th
                   scope="col"
-                  className="whitespace-nowrap border border-white/20 px-4 py-2.5 text-center text-sm font-bold"
+                  className="border border-white/20 px-4 py-2.5 text-center text-sm font-bold"
                 >
-                  Promo CNAS
+                  Promo
+                  <br />
+                  CNAS
                 </th>
               </tr>
             </thead>
