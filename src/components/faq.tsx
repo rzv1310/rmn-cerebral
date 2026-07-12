@@ -197,7 +197,7 @@ export function FaqSection() {
           </div>
         )}
 
-        <p className="mt-10 text-center text-xs leading-relaxed text-ink">
+        <p className="mt-10 text-center text-xs leading-relaxed text-ink italic">
           Conținut verificat medical de{" "}
           <a
             href="https://www.linkedin.com/in/ruxandra-negru%C8%99-391295200/"
