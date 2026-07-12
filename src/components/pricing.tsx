@@ -13,7 +13,7 @@ export function PriceSection() {
     <Section
       id="pret"
       tone="paper"
-      eyebrow="Prețuri"
+      eyebrow="Tarife"
       title="RMN cerebral preț de la 770 lei"
     >
       <div className="grid gap-6 lg:grid-cols-[1.3fr_1fr]">
