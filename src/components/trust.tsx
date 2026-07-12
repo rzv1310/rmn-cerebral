@@ -34,7 +34,7 @@ export function WhyAffideaSection() {
                     href={w.link.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-inherit underline hover:text-primary"
+                    className="text-inherit hover:text-primary"
                   >
                     {w.link.text}
                   </a>
