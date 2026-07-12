@@ -476,7 +476,7 @@ export const cerebralPrices = [
 
 // Prețurile nu sunt fixe — pornesc de la valorile afișate și variază pe centru/aparat.
 export const priceNote =
-  "Prețuri de referință. Tarifele pornesc de la valorile afișate și pot varia în funcție de centrul Affidea și de tipul de aparat. Prețul final se confirmă la programare.";
+  "Prețuri de referință. Tariful final se confirmă la programare.";
 
 // Avantajele RMN-ului
 export const rmnAdvantages = [
