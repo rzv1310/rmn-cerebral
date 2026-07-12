@@ -45,7 +45,14 @@ export function Hero() {
       />
       <div className="relative mx-auto grid w-full max-w-6xl grid-cols-1 items-center gap-12 px-5 pb-20 pt-14 sm:px-8 sm:pb-28 sm:pt-20 lg:grid-cols-[1.1fr_0.9fr]">
         <div className="animate-rise">
-          <Eyebrow onDark>Imagistică prin rezonanță magnetică</Eyebrow>
+          <Eyebrow onDark>
+            <a
+              href="https://affidea.ro/ro-RO/servicii/imagistica-medicala/rmn-rezonanta-magnetica-nucleara/"
+              className="text-inherit no-underline hover:text-inherit"
+            >
+              Imagistică prin rezonanță magnetică
+            </a>
+          </Eyebrow>
           <h1 className="mt-5 text-4xl font-bold leading-[1.05] sm:text-5xl lg:text-[3.4rem]">
             RMN cerebral <span className="text-primary-light">la Affidea</span>
           </h1>
