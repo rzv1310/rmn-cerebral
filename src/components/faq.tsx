@@ -198,7 +198,16 @@ export function FaqSection() {
         )}
 
         <p className="mt-10 text-center text-xs leading-relaxed text-muted">
-          Conținut verificat medical de dr. Ruxandra Negruș - medic rezident radiolog din rețeaua Affidea. Ultima actualizare: iulie 2026.
+          Conținut verificat medical de{" "}
+          <a
+            href="https://www.linkedin.com/in/ruxandra-negru%C8%99-391295200/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline decoration-primary/40 underline-offset-2 transition-colors hover:text-primary-dark"
+          >
+            dr. Ruxandra Negruș - medic rezident radiolog
+          </a>{" "}
+          din rețeaua Affidea. Ultima actualizare: iulie 2026.
         </p>
       </div>
     </Section>
