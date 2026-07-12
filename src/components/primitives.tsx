@@ -295,7 +295,7 @@ export function Accordion({
         <h3
           className={cx(
             "text-base font-medium sm:text-lg",
-            onDark ? "text-paper-100" : "text-ink",
+            onDark ? "text-paper-100" : "text-primary-dark",
           )}
         >
           {q}
