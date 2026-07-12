@@ -16,6 +16,21 @@ import { buildJsonLd } from "@/lib/jsonld";
 
 export const Route = createFileRoute("/")({
   component: Index,
+  head: () => ({
+    meta: [
+      {
+        property: "og:url",
+        content:
+          "https://affidea.ro/ro-RO/servicii/imagistica-medicala/rmn-rezonanta-magnetica-nucleara/rmn-cerebral",
+      },
+    ],
+    links: [
+      {
+        rel: "canonical",
+        href: "https://affidea.ro/ro-RO/servicii/imagistica-medicala/rmn-rezonanta-magnetica-nucleara/rmn-cerebral",
+      },
+    ],
+  }),
 });
 
 function Index() {
