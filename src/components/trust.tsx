@@ -54,11 +54,6 @@ export function WhyAffideaSection() {
 export function ReviewsSection() {
   return (
     <Section id="recenzii" tone="white" eyebrow="Recenzii" title="Ce spun pacienții noștri">
-      <div className="mb-8 flex items-center gap-3">
-        <Stars />
-        <span className="tnum text-lg font-bold text-ink">{site.rating.value}</span>
-        <span className="text-sm text-muted">din {site.rating.count} recenzii</span>
-      </div>
       <div className="grid gap-5 md:grid-cols-3">
         {reviews.map((r) => (
           <figure key={r.author} className="flex flex-col select-none rounded-2xl border border-line bg-paper-100 p-6">
