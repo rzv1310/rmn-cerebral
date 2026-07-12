@@ -337,7 +337,7 @@ export const generalRmn = {
     "Multe aparate RMN Affidea au un tunel mai larg, bine luminat și ventilat, deschis la ambele capete, pentru confortul pacienților corpulenți sau cu simptome de claustrofobie.",
 } as const;
 
-// „Ce se vede la un RMN cerebral”
+// "Ce se vede la un RMN cerebral"
 export const cerebralShows = [
   "Structura creierului, trunchiul cerebral și cerebelul",
   "Substanța albă și substanța cenușie",
@@ -347,7 +347,7 @@ export const cerebralShows = [
   "Leziuni de AVC, scleroză multiplă, inflamații sau infecții",
 ] as const;
 
-// „Când este indicat un RMN cerebral” (În ce cazuri este recomandat)
+// "Când este indicat un RMN cerebral" (În ce cazuri este recomandat)
 export const cerebralIndications = [
   "Dureri de cap persistente sau severe",
   "Suspiciune de accident vascular cerebral (AVC)",
@@ -361,7 +361,7 @@ export const cerebralIndications = [
   "Evaluare înainte sau după intervenții neurochirurgicale",
 ] as const;
 
-// „Cum se desfășoară investigația"
+// "Cum se desfășoară investigația"
 export const procedureSteps = [
   "Îndepărtezi obiectele metalice și îmbraci un halat de unică folosință.",
   "Te așezi pe masa aparatului; zona examinată va fi imobilizată pentru imagini clare.",
@@ -370,7 +370,7 @@ export const procedureSteps = [
   "Dacă medicul recomandă contrast, acesta se administrează intravenos, în braț.",
 ] as const;
 
-// „Pregătirea pacientului”
+// "Pregătirea pacientului"
 export const preparation = {
   general: [
     "Nu este necesară o pregătire specială pentru majoritatea examinărilor cerebrale.",
@@ -385,7 +385,7 @@ export const preparation = {
   ],
 } as const;
 
-// „Contraindicații / siguranță” (cerebral-weighted)
+// "Contraindicații / siguranță" (cerebral-weighted)
 export const contraindications = [
   "Stimulator cardiac (pacemaker) incompatibil RMN",
   "Implanturi metalice sau dispozitive medicale incompatibile",
@@ -448,7 +448,7 @@ export const rmnAdvantages = [
   },
 ] as const;
 
-// „Patologii frecvente diagnosticate prin RMN cranio-cerebral”
+// "Patologii frecvente diagnosticate prin RMN cranio-cerebral"
 export const cerebralPathologies = [
   {
     title: "Tumori intracraniene",
