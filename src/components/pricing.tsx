@@ -134,7 +134,7 @@ export function PriceSection() {
                     src={p.logo}
                     alt={p.name}
                     className="max-h-full max-w-full object-contain"
-                    loading="lazy"
+                    loading={p.name === "Asirom" ? "eager" : "lazy"}
                   />
                 </div>
               );
