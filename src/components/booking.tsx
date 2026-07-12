@@ -43,14 +43,6 @@ export function BookingSection() {
             ))}
           </ul>
 
-          <div className="mt-8 flex flex-wrap gap-3">
-            <a
-              href={`mailto:${site.email}`}
-              className="inline-flex h-11 items-center gap-2 rounded-full border border-white/20 px-5 text-sm font-medium text-paper-100 transition-colors hover:bg-white/10"
-            >
-              {site.email}
-            </a>
-          </div>
         </div>
 
         <ProgramareForm idPrefix="book" />
