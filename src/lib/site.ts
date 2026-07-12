@@ -249,7 +249,7 @@ export const faqs = [
   },
   {
     q: "Pot face un RMN la cap dacă sunt claustrofob?",
-    a: "Da. Multe centre Affidea au aparate cu diametru de până la 70 cm, care reduc senzația de închidere. Pentru cazurile severe există opțiunea de sedare și posibilitatea unui însoțitor.",
+    a: "Da. Multe centre Affidea au aparate cu diametru de până la 70 cm, care reduc senzația de spațiu inchis. Pentru cazurile severe există opțiunea de sedare și posibilitatea unui însoțitor.",
   },
   {
     q: "Ce este substanța de contrast și ce înseamnă RMN \"nativ\"?",
