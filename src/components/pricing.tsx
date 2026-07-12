@@ -17,12 +17,12 @@ export function PriceSection() {
       title="RMN cerebral preț de la 770 lei"
     >
       <div className="grid gap-6 lg:grid-cols-[1.3fr_1fr]">
-        <div className="overflow-x-auto rounded-2xl bg-primary-dark">
-          <table className="w-full border-collapse text-paper-100">
+        <div className="overflow-x-auto rounded-2xl bg-white">
+          <table className="w-full border-collapse text-primary-dark">
             <caption className="sr-only">
               Tarife RMN cerebral la Affidea
             </caption>
-            <thead className="bg-primary-dark">
+            <thead className="bg-primary-dark text-paper-100">
               <tr>
                 <th
                   scope="col"
@@ -58,18 +58,18 @@ export function PriceSection() {
               {cerebralPrices.map((row) => (
                 <tr
                   key={row.name}
-                  className="border-b border-white/20 last:border-0"
+                  className="border-b border-primary-dark/15 last:border-0"
                 >
-                  <td className="border border-white/20 px-4 py-2.5 text-left text-sm font-medium">
+                  <td className="border border-primary-dark/15 px-4 py-2.5 text-left text-sm font-medium">
                     {row.name}
                   </td>
-                  <td className="border border-white/20 px-4 py-2.5 text-right text-sm tabular-nums">
+                  <td className="border border-primary-dark/15 px-4 py-2.5 text-right text-sm tabular-nums">
                     {fmt(row.plata)}
                   </td>
-                  <td className="border border-white/20 px-4 py-2.5 text-right text-sm tabular-nums">
+                  <td className="border border-primary-dark/15 px-4 py-2.5 text-right text-sm tabular-nums">
                     {fmt(row.card)}
                   </td>
-                  <td className="border border-white/20 px-4 py-2.5 text-right text-sm tabular-nums">
+                  <td className="border border-primary-dark/15 px-4 py-2.5 text-right text-sm tabular-nums">
                     {fmt(row.promo)}
                   </td>
                 </tr>
