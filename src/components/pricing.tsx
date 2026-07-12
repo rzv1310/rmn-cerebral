@@ -105,7 +105,15 @@ export function PriceSection() {
             ))}
           </ul>
           <Cta href="tel:0219338" onDark className="mt-auto">
-            <span aria-hidden>📱</span> Programează un RMN cerebral
+            <svg
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              aria-hidden
+              className="h-4 w-4"
+            >
+              <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.57 15.57 0 0 1-6.62-6.62l2.2-2.21c.28-.26.36-.65.25-1.01A11.36 11.36 0 0 1 8.59 3.99c0-.55-.45-1-1-1H4.08c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1z" />
+            </svg>
+            Programează un RMN cerebral
           </Cta>
         </aside>
       </div>
