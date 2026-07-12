@@ -3,9 +3,6 @@ import {
   procedureSteps,
   preparation,
   interpretation,
-  contraindications,
-  adverseEffects,
-  generalRmn,
 } from "@/lib/site";
 import { Section, Note } from "@/components/primitives";
 
