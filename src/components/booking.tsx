@@ -3,7 +3,7 @@ import { Section } from "@/components/primitives";
 import { ProgramareForm } from "@/components/programare-form";
 
 const assurances = [
-  "Fără liste de a�'teptare",
+  "Fără liste de așteptare",
   "Rezultat în 2-5 zile lucrătoare",
   "Confirmare rapidă a programării",
   "Gratuit cu bilet de trimitere",
@@ -15,8 +15,8 @@ export function BookingSection() {
       id="contact"
       tone="ink"
       eyebrow="Programare"
-      title="Programează-�'i RMN-ul cerebral"
-      intro="Completează formularul sau sună la Call Center. Î�'i confirmăm rapid data �'i centrul Affidea potrivit pentru tine."
+      title="Programează-ți RMN-ul cerebral"
+      intro="Completează formularul sau sună la Call Center. Îți confirmăm rapid data și centrul Affidea potrivit pentru tine."
     >
       <div className="grid gap-10 lg:grid-cols-2">
         <div>

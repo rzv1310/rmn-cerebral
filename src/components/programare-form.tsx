@@ -16,7 +16,7 @@ export function ProgramareForm({ idPrefix = "programare" }: { idPrefix?: string 
     const telefon = String(data.get("telefon") ?? "");
     const tip = String(data.get("tip") ?? "");
     const mesaj = String(data.get("mesaj") ?? "");
-    const body = `Solicitare programare RMN cerebral\n\nNume: ${nume}\nTelefon: ${telefon}\nInvestiga»'ie: ${tip}\nMesaj: ${mesaj}`;
+    const body = `Solicitare programare RMN cerebral\n\nNume: ${nume}\nTelefon: ${telefon}\nInvestiga»õie: ${tip}\nMesaj: ${mesaj}`;
     window.location.href = `mailto:${site.email}?subject=${encodeURIComponent(
       "Programare RMN: " + tip,
     )}&body=${encodeURIComponent(body)}`;
@@ -38,9 +38,9 @@ export function ProgramareForm({ idPrefix = "programare" }: { idPrefix?: string 
               />
             </svg>
           </span>
-          <p className="font-display text-lg font-semibold text-ink">√é»'i mul»'umim!</p>
+          <p className="font-display text-lg font-semibold text-ink">√é»õi mul»õumim!</p>
           <p className="text-sm leading-relaxed text-muted">
-            Se deschide aplica»'ia de e-mail cu solicitarea completatƒÉ. DacƒÉ preferi, ne po»'i suna
+            Se deschide aplica»õia de e-mail cu solicitarea completatƒÉ. DacƒÉ preferi, ne po»õi suna
             direct la{" "}
             <a href={`tel:${site.phone.tel}`} className="tnum font-medium text-primary-dark">
               {site.phone.display}
@@ -52,7 +52,7 @@ export function ProgramareForm({ idPrefix = "programare" }: { idPrefix?: string 
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
             <label htmlFor={fid("nume")} className="mb-1.5 block text-sm font-medium text-ink">
-              Nume »'i prenume
+              Nume »ôi prenume
             </label>
             <input id={fid("nume")} name="nume" required autoComplete="name" className={fieldClass} placeholder="Ion Popescu" />
           </div>
@@ -72,24 +72,24 @@ export function ProgramareForm({ idPrefix = "programare" }: { idPrefix?: string 
           </div>
           <div>
             <label htmlFor={fid("tip")} className="mb-1.5 block text-sm font-medium text-ink">
-              Tip investiga»'ie
+              Tip investiga»õie
             </label>
             <select id={fid("tip")} name="tip" defaultValue="RMN cerebral nativ" className={fieldClass}>
               <option>RMN cerebral nativ</option>
-              <option>RMN cerebral cu substan»'ƒÉ de contrast</option>
+              <option>RMN cerebral cu substan»õƒÉ de contrast</option>
               <option>AltƒÉ examinare RMN</option>
             </select>
           </div>
           <div>
             <label htmlFor={fid("mesaj")} className="mb-1.5 block text-sm font-medium text-ink">
-              Mesaj (op»'ional)
+              Mesaj (op»õional)
             </label>
             <textarea
               id={fid("mesaj")}
               name="mesaj"
               rows={3}
               className={fieldClass}
-              placeholder="Ai bilet de trimitere? Ora»' preferat?"
+              placeholder="Ai bilet de trimitere? Ora»ô preferat?"
             />
           </div>
           <label className="flex items-start gap-3 text-xs leading-relaxed text-muted">
@@ -101,7 +101,7 @@ export function ProgramareForm({ idPrefix = "programare" }: { idPrefix?: string 
             <span>
               Sunt de acord cu prelucrarea datelor conform{" "}
               <a href="https://affidea.ro/ro-RO/protectia-datelor-personale/" target="_blank" rel="noopener noreferrer" className="font-medium text-primary-dark underline underline-offset-2">
-                politicii de confiden»'ialitate
+                politicii de confiden»õialitate
               </a>
               .
             </span>

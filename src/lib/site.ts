@@ -1,29 +1,29 @@
 import asiromLogo from "@/assets/asirom-logo.png";
 
-// Single source of truth for the RMN Bucure�'ti (Affidea) landing page.
+// Single source of truth for the RMN București (Affidea) landing page.
 //
-// "'�️  YMYL / [DE CONFIRMAT]: every value flagged `DE CONFIRMAT` is a plausible
+// ⚠️  YMYL / [DE CONFIRMAT]: every value flagged `DE CONFIRMAT` is a plausible
 // placeholder from research and MUST be verified with the client before launch.
 // Because the visible page and the JSON-LD schema both read from this file,
 // updating a price/fact here keeps on-page copy and structured data in sync.
 
 export const site = {
   brand: "Affidea",
-  tagline: "Rezonan�'ă Magnetică în Bucure�'ti",
-  operatorNote: "Centru operat de Biomed Scan, parte din re�'eaua Affidea.",
+  tagline: "Rezonanță Magnetică în București",
+  operatorNote: "Centru operat de Biomed Scan, parte din rețeaua Affidea.",
 
   // Domeniu final Affidea unde va fi găzduită pagina
   domain: "https://affidea.ro/ro-RO/servicii/imagistica-medicala/rmn-rezonanta-magnetica-nucleara/rmn-cerebral",
 
-  // Affidea national Call Center ""� DE CONFIRMAT
+  // Affidea national Call Center — DE CONFIRMAT
   phone: { display: "021 9338", tel: "+40219338" },
   whatsapp: { number: "40219338", display: "WhatsApp" }, // DE CONFIRMAT (wa.me needs a mobile number)
   email: "programari@affidea.ro", // DE CONFIRMAT
   address: {
-    // Sediu de referin�'ă pentru schema; pagina este na�'ională (vezi `locations`)
+    // Sediu de referință pentru schema; pagina este națională (vezi `locations`)
     street: "Bulevardul Nicolae Grigorescu 41",
     area: "Sector 3",
-    city: "Bucure�'ti",
+    city: "București",
     postalCode: "030445",
     countryCode: "RO",
   },
@@ -32,7 +32,7 @@ export const site = {
     { days: "Luni - Vineri", value: "07:00 - 21:00" },
     { days: "Sâmbătă", value: "08:00 - 15:00" },
     { days: "Duminică", value: "Închis" },
-  ], // DE CONFIRMAT ""� program orientativ, variază pe centru
+  ], // DE CONFIRMAT — program orientativ, variază pe centru
   // schema.org openingHoursSpecification shorthand
   hoursSpec: [
     {
@@ -46,15 +46,15 @@ export const site = {
   rating: { value: 4.9, count: 1001 }, // DE CONFIRMAT (verify genuine source before publishing)
 
   affideaFootprint: "25 de centre Affidea din România", // DE CONFIRMAT
-  equipment: "Aparat RMN de câmp înalt", // schema usesDevice ""� specifica�'iile variază pe centru
+  equipment: "Aparat RMN de câmp înalt", // schema usesDevice — specificațiile variază pe centru
 } as const;
 
 // ---------------------------------------------------------------------------
-// Pricing (Titan flat model) ""� all amounts in RON (lei)
+// Pricing (Titan flat model) — all amounts in RON (lei)
 // ---------------------------------------------------------------------------
 export const PRICE = {
   nativ: 770, // orice examinare RMN nativ, o regiune
-  contrast: 290, // supliment substan�'ă de contrast
+  contrast: 290, // supliment substanță de contrast
   sedarePrima: 675, // sedare, prima regiune
   sedareSuplim: 503, // sedare, fiecare regiune suplimentară
 } as const;
@@ -65,7 +65,7 @@ export function lei(n: number): string {
   return `${n.toLocaleString("ro-RO")} lei`;
 }
 
-// Representative single-region exams ""� all at the flat native price.
+// Representative single-region exams — all at the flat native price.
 export const priceList: { name: string; anchor?: boolean }[] = [
   { name: "RMN cerebral", anchor: true },
   { name: "RMN coloană cervicală" },
@@ -78,8 +78,8 @@ export const priceList: { name: string; anchor?: boolean }[] = [
   { name: "RMN gleznă" },
   { name: "RMN picior" },
   { name: "RMN coapsă / gambă" },
-  { name: "RMN �'old (coxofemural)" },
-  { name: "RMN articula�'ii sacroiliace" },
+  { name: "RMN șold (coxofemural)" },
+  { name: "RMN articulații sacroiliace" },
   { name: "RMN abdomen superior" },
   { name: "RMN pelvis" },
   { name: "RMN sinusuri" },
@@ -89,11 +89,11 @@ export const priceList: { name: string; anchor?: boolean }[] = [
 ];
 
 // ---------------------------------------------------------------------------
-// Exam catalog (categories "�� internal links, future child pages)
+// Exam catalog (categories → internal links, future child pages)
 // ---------------------------------------------------------------------------
 export const examCatalog = [
   {
-    title: "RMN cerebral �'i neurologic",
+    title: "RMN cerebral și neurologic",
     items: [
       "cerebral",
       "angio-RMN cerebral",
@@ -115,7 +115,7 @@ export const examCatalog = [
     ],
   },
   {
-    title: "RMN articula�'ii �'i extremită�'i",
+    title: "RMN articulații și extremități",
     items: [
       "genunchi",
       "umăr",
@@ -124,12 +124,12 @@ export const examCatalog = [
       "gleznă",
       "picior",
       "coapsă / gambă",
-      "�'old",
+      "șold",
       "sacroiliace",
     ],
   },
   {
-    title: "RMN abdomen �'i pelvis",
+    title: "RMN abdomen și pelvis",
     items: [
       "abdomen superior",
       "pelvis",
@@ -144,11 +144,11 @@ export const examCatalog = [
 ] as const;
 
 // ---------------------------------------------------------------------------
-// CNAS "Monitor" free-referral program ""� 7 patient categories
+// CNAS "Monitor" free-referral program — 7 patient categories
 // ---------------------------------------------------------------------------
 export const monitorCategories = [
-  "Pacien�'i post-COVID",
-  "Pacien�'i oncologici",
+  "Pacienți post-COVID",
+  "Pacienți oncologici",
   "Diabet zaharat",
   "Boli cardiovasculare",
   "Boli rare",
@@ -161,11 +161,11 @@ export const monitorCategories = [
 // ---------------------------------------------------------------------------
 export const documents = {
   required: [
-    "Act de identitate (buletin / pa�'aport)",
+    "Act de identitate (buletin / pașaport)",
     "Bilet de trimitere de la medic specialist",
-    "Card de sănătate / adeverin�'ă de asigurat",
+    "Card de sănătate / adeverință de asigurat",
     "Documente medicale anterioare relevante",
-    "Investiga�'ii imagistice anterioare pe CD (RMN/CT), dacă există",
+    "Investigații imagistice anterioare pe CD (RMN/CT), dacă există",
   ],
   contrast: [
     "Analiză recentă de creatinină serică",
@@ -185,15 +185,15 @@ export const durations = [
   { label: "RMN cerebral nativ", value: "20-30 min", note: "Regiune unică" },
   {
     label: "RMN abdomen / pelvis",
-    value: ""�� 30 min",
+    value: "≈ 30 min",
     note: "Post alimentar recomandat",
   },
   {
-    label: "RMN cu substan�'ă de contrast",
+    label: "RMN cu substanță de contrast",
     value: "+15-20 min",
     note: "Se adaugă la timpul nativ",
   },
-  { label: "RMN cu sedare", value: ""�� 45 min", note: "Necesită înso�'itor" },
+  { label: "RMN cu sedare", value: "≈ 45 min", note: "Necesită însoțitor" },
   {
     label: "Rezultat scris",
     value: "2-5 zile lucrătoare",
@@ -202,80 +202,80 @@ export const durations = [
 ] as const;
 
 // ---------------------------------------------------------------------------
-// Technical accordions ""� "informa�'ii tehnice în acordeoane"
+// Technical accordions — "informații tehnice în acordeoane"
 // ---------------------------------------------------------------------------
 export const techAccordions = [
   {
-    q: "Cum func�'ionează un RMN?",
-    a: "RMN-ul se bazează pe rezonan�'a magnetică nucleară. Protonii de hidrogen din corp se aliniază într-un câmp magnetic puternic; un impuls de unde radio îi excită, iar la revenire emit semnale pe care computerul le transformă în imagini detaliate, sec�'iune cu sec�'iune.",
+    q: "Cum funcționează un RMN?",
+    a: "RMN-ul se bazează pe rezonanța magnetică nucleară. Protonii de hidrogen din corp se aliniază într-un câmp magnetic puternic; un impuls de unde radio îi excită, iar la revenire emit semnale pe care computerul le transformă în imagini detaliate, secțiune cu secțiune.",
   },
   {
     q: "Ce înseamnă 1.5 sau 3 Tesla?",
-    a: "Tesla măsoară puterea câmpului magnetic. 1.5T este standardul clinic de referin�'ă, iar unele centre Affidea dispun �'i de aparate de 3T, cu rezolu�'ie �'i mai mare. Puterea aparatului diferă în func�'ie de centru.",
+    a: "Tesla măsoară puterea câmpului magnetic. 1.5T este standardul clinic de referință, iar unele centre Affidea dispun și de aparate de 3T, cu rezoluție și mai mare. Puterea aparatului diferă în funcție de centru.",
   },
   {
-    q: "Ce sunt secven�'ele RMN (T1, T2, FLAIR, DWI)?",
-    a: "Fiecare secven�'ă eviden�'iază altfel �'esuturile: T1 (anatomie), T2 (lichide �'i edem), FLAIR (leziuni lângă lichidul cefalorahidian) �'i DWI / difuzie (util în AVC-ul acut). Medicul radiolog alege protocolul potrivit indica�'iei.",
+    q: "Ce sunt secvențele RMN (T1, T2, FLAIR, DWI)?",
+    a: "Fiecare secvență evidențiază altfel țesuturile: T1 (anatomie), T2 (lichide și edem), FLAIR (leziuni lângă lichidul cefalorahidian) și DWI / difuzie (util în AVC-ul acut). Medicul radiolog alege protocolul potrivit indicației.",
   },
   {
     q: "Ce este diametrul de 70 cm?",
-    a: "Diametrul este dimensiunea tunelului aparatului. Un diametru de până la 70 cm oferă mai mult spa�'iu �'i confort decât aparatele clasice ("�� 60 cm), reducând senza�'ia de închidere pentru pacien�'ii claustrofobi sau supraponderali.",
+    a: "Diametrul este dimensiunea tunelului aparatului. Un diametru de până la 70 cm oferă mai mult spațiu și confort decât aparatele clasice (≈ 60 cm), reducând senzația de închidere pentru pacienții claustrofobi sau supraponderali.",
   },
   {
     q: "Ce protocoale speciale există?",
-    a: "Pe lângă examinarea standard: angio-RMN (vase de sânge), spectroscopie (compozi�'ie chimică), difuzie �'i perfuzie, tractografie (fibre nervoase), colangio-RMN (căi biliare) �'i RMN multiparametric (prostată).",
+    a: "Pe lângă examinarea standard: angio-RMN (vase de sânge), spectroscopie (compoziție chimică), difuzie și perfuzie, tractografie (fibre nervoase), colangio-RMN (căi biliare) și RMN multiparametric (prostată).",
   },
   {
     q: "Cum primesc imaginile?",
-    a: "Pe loc prime�'ti filmul radiologic �'i CD/DVD-ul cu imaginile în format DICOM. Raportul scris al medicului radiolog este disponibil în 2-5 zile lucrătoare.",
+    a: "Pe loc primești filmul radiologic și CD/DVD-ul cu imaginile în format DICOM. Raportul scris al medicului radiolog este disponibil în 2-5 zile lucrătoare.",
   },
 ] as const;
 
 // ---------------------------------------------------------------------------
-// FAQ ""� mirrored verbatim into FAQPage schema
+// FAQ — mirrored verbatim into FAQPage schema
 // ---------------------------------------------------------------------------
-// FAQ ""� deduplicated and ordered by search intent. The first 6 are shown by
+// FAQ — deduplicated and ordered by search intent. The first 6 are shown by
 // default (the most-searched: cost, ce este, gratuit, durată, rezultat,
-// siguran�'ă, claustrofobie); the rest sit behind a "more" toggle. Mirrored into
+// siguranță, claustrofobie); the rest sit behind a "more" toggle. Mirrored into
 // FAQPage JSON-LD, so keep answers self-contained and factual (YMYL).
 export const faqs = [
   {
     q: "Cât costă un RMN cerebral în clinicile Affidea?",
-    a: "Un RMN cerebral nativ porne�'te de la 770 lei, iar cu substan�'ă de contrast de la aproximativ 1.007 lei. Tarifele variază în func�'ie de centrul Affidea �'i de tipul de aparat. Cu bilet de trimitere, examinarea este decontată integral de CNAS, deci gratuită.",
+    a: "Un RMN cerebral nativ pornește de la 770 lei, iar cu substanță de contrast de la aproximativ 1.007 lei. Tarifele variază în funcție de centrul Affidea și de tipul de aparat. Cu bilet de trimitere, examinarea este decontată integral de CNAS, deci gratuită.",
   },
   {
     q: "Ce este un RMN cerebral?",
-    a: "Rezonan�'a Magnetică Nucleară (RMN) este o procedură de diagnostic imagistic de înaltă performan�'ă, minim invazivă, atraumatică �'i neiradiantă. RMN-ul cranio-cerebral oferă imagini detaliate ale structurilor creierului, sec�'iune cu sec�'iune, fără a expune pacientul la radia�'ii ionizante. Aparatul folose�'te un câmp magnetic de intensitate mare �'i radiofrecven�'a pentru a ob�'ine imagini de înaltă rezolu�'ie. La nevoie, se administrează intravenos o substan�'ă de contrast pe bază de gadoliniu. Principalele avantaje sunt: lipsa radia�'iilor ionizante, contrast excelent al �'esuturilor moi, imagistică multiplanară �'i secven�'e specializate.",
+    a: "Rezonanța Magnetică Nucleară (RMN) este o procedură de diagnostic imagistic de înaltă performanță, minim invazivă, atraumatică și neiradiantă. RMN-ul cranio-cerebral oferă imagini detaliate ale structurilor creierului, secțiune cu secțiune, fără a expune pacientul la radiații ionizante. Aparatul folosește un câmp magnetic de intensitate mare și radiofrecvența pentru a obține imagini de înaltă rezoluție. La nevoie, se administrează intravenos o substanță de contrast pe bază de gadoliniu. Principalele avantaje sunt: lipsa radiațiilor ionizante, contrast excelent al țesuturilor moi, imagistică multiplanară și secvențe specializate.",
   },
   {
     q: "Pot face un RMN la cap dacă sunt claustrofob?",
-    a: "Da. Multe centre Affidea au aparate cu diametru de până la 70 cm, care reduc senza�'ia de spa�'iu inchis. Pentru cazurile severe există op�'iunea de sedare �'i posibilitatea unui înso�'itor.",
+    a: "Da. Multe centre Affidea au aparate cu diametru de până la 70 cm, care reduc senzația de spațiu inchis. Pentru cazurile severe există opțiunea de sedare și posibilitatea unui însoțitor.",
   },
   {
-    q: "Ce este substan�'a de contrast �'i ce înseamnă RMN \"nativ\"?",
-    a: "\"Nativ\" înseamnă fără substan�'ă de contrast. La RMN-ul cu contrast se administrează intravenos o substan�'ă pe bază de gadoliniu, care eviden�'iază tumori, inflama�'ii �'i vasele de sânge. Necesitatea contrastului o stabile�'te medicul radiolog, în func�'ie de investiga�'ie.",
+    q: "Ce este substanța de contrast și ce înseamnă RMN \"nativ\"?",
+    a: "\"Nativ\" înseamnă fără substanță de contrast. La RMN-ul cu contrast se administrează intravenos o substanță pe bază de gadoliniu, care evidențiază tumori, inflamații și vasele de sânge. Necesitatea contrastului o stabilește medicul radiolog, în funcție de investigație.",
   },
   {
     q: "Pot face RMN cerebral dacă sunt însărcinată?",
-    a: "RMN-ul nativ este considerat sigur după primul trimestru, dar orice examinare în sarcină se face doar la recomandarea medicului. Substan�'a de contrast se evită în sarcină.",
+    a: "RMN-ul nativ este considerat sigur după primul trimestru, dar orice examinare în sarcină se face doar la recomandarea medicului. Substanța de contrast se evită în sarcină.",
   },
   {
-    q: "Este RMN-ul cerebral sigur? Contraindica�'ii",
-    a: "Spre deosebire de radiografie sau computer tomograf (CT), RMN-ul nu folose�'te radia�'ii ionizante, ci se bazează pe câmp magnetic �'i unde radio. Anun�'ă personalul medical dacă ai stimulator cardiac (pacemaker) incompatibil RMN, implanturi metalice sau dispozitive medicale incompatibile, implant cohlear sau neurostimulatoare, corpi străini metalici (în special oculari), insuficien�'ă renală severă (pentru examinarea cu contrast) sau sarcină. Efectele adverse sunt rare: reac�'ii alergice u�'oare la contrast (urticarie, prurit), reac�'ii alergice severe foarte rare, fibroză sistemică nefrogenă la pacien�'i cu insuficien�'ă renală severă, disconfort tranzitoriu (ame�'eală, grea�'ă, anxietate) sau claustrofobie. Aparatele cu diametru de până la 70 cm �'i op�'iunea de sedare fac examinarea accesibilă �'i pacien�'ilor anxio�'i.",
+    q: "Este RMN-ul cerebral sigur? Contraindicații",
+    a: "Spre deosebire de radiografie sau computer tomograf (CT), RMN-ul nu folosește radiații ionizante, ci se bazează pe câmp magnetic și unde radio. Anunță personalul medical dacă ai stimulator cardiac (pacemaker) incompatibil RMN, implanturi metalice sau dispozitive medicale incompatibile, implant cohlear sau neurostimulatoare, corpi străini metalici (în special oculari), insuficiență renală severă (pentru examinarea cu contrast) sau sarcină. Efectele adverse sunt rare: reacții alergice ușoare la contrast (urticarie, prurit), reacții alergice severe foarte rare, fibroză sistemică nefrogenă la pacienți cu insuficiență renală severă, disconfort tranzitoriu (amețeală, greață, anxietate) sau claustrofobie. Aparatele cu diametru de până la 70 cm și opțiunea de sedare fac examinarea accesibilă și pacienților anxioși.",
   },
 ];
 
 
-// Reviews (E-E-A-T) ""� DE CONFIRMAT (must be genuine before publishing)
+// Reviews (E-E-A-T) — DE CONFIRMAT (must be genuine before publishing)
 export const reviews = [
   {
     author: "Andreea M.",
-    text: "Programare rapidă �'i pre�'ul afi�'at clar, fără surprize. Rezultatul a venit în 3 zile.",
+    text: "Programare rapidă și prețul afișat clar, fără surprize. Rezultatul a venit în 3 zile.",
     date: "2026-05",
   },
   {
     author: "Mihai P.",
-    text: "Aparatul cu tunel larg m-a ajutat mult, sunt claustrofob �'i totul a decurs bine.",
+    text: "Aparatul cu tunel larg m-a ajutat mult, sunt claustrofob și totul a decurs bine.",
     date: "2026-04",
   },
   {
@@ -293,193 +293,193 @@ type WhyAffideaItem = {
 
 export const whyAffidea: readonly WhyAffideaItem[] = [
   {
-    title: "180+ Medici primari �'i speciali�'ti radiologi",
-    text: "Cazurile complexe pot fi revizuite de mai mul�'i medici radiologi din re�'ea, cu competen�'ă în neuroimagistică.",
+    title: "180+ Medici primari și specialiști radiologi",
+    text: "Cazurile complexe pot fi revizuite de mai mulți medici radiologi din rețea, cu competență în neuroimagistică.",
   },
   {
     title: "Sisteme performante",
-    text: "Echipamente RMN moderne �'i protocoale dedicate afec�'iunilor creierului: AVC, tumori, scleroză multiplă, epilepsie, malforma�'ii vasculare.",
+    text: "Echipamente RMN moderne și protocoale dedicate afecțiunilor creierului: AVC, tumori, scleroză multiplă, epilepsie, malformații vasculare.",
   },
   {
     title: "Rezultat rapid",
-    text: "Film �'i CD pe loc, raport scris în 2-5 zile lucrătoare.",
+    text: "Film și CD pe loc, raport scris în 2-5 zile lucrătoare.",
   },
   {
     title: "Confort pentru claustrofobi",
-    text: "Op�'iune de sedare pentru pacien�'ii anxio�'i.",
-    link: { text: "Op�'iune de sedare", href: "https://rmn-bucuresti.ro/rmn-cu-sedare/" },
+    text: "Opțiune de sedare pentru pacienții anxioși.",
+    link: { text: "Opțiune de sedare", href: "https://rmn-bucuresti.ro/rmn-cu-sedare/" },
   },
 ] as const;
 
 // Anchor navigation
 export const nav = [
-  { href: "#pret", label: "Pre�'" },
+  { href: "#pret", label: "Preț" },
   
-  { href: "#indicatii", label: "Indica�'ii" },
+  { href: "#indicatii", label: "Indicații" },
   { href: "#acte", label: "Acte necesare" },
   { href: "#centre", label: "Centre" },
   { href: "#intrebari", label: "Întrebări" },
 ] as const;
 
 // ---------------------------------------------------------------------------
-// RMN cerebral ""� page focus content
+// RMN cerebral — page focus content
 // ---------------------------------------------------------------------------
 
 // General RMN framing, in Affidea's voice (source: affidea.ro RMN service page)
 export const generalRmn = {
   definition:
-    "Rezonan�'a Magnetică Nucleară (RMN) este o procedură de diagnostic imagistic de înaltă performan�'ă, minim invazivă, atraumatică �'i neiradiantă.",
+    "Rezonanța Magnetică Nucleară (RMN) este o procedură de diagnostic imagistic de înaltă performanță, minim invazivă, atraumatică și neiradiantă.",
   principle:
-    "Aparatul folose�'te un câmp magnetic de intensitate mare �'i radiofrecven�'a pentru a ob�'ine imagini de înaltă rezolu�'ie. Protonii de hidrogen din corp se aliniază în câmpul magnetic, iar semnalele emise la revenire sunt transformate de computer în imagini detaliate, sec�'iune cu sec�'iune.",
+    "Aparatul folosește un câmp magnetic de intensitate mare și radiofrecvența pentru a obține imagini de înaltă rezoluție. Protonii de hidrogen din corp se aliniază în câmpul magnetic, iar semnalele emise la revenire sunt transformate de computer în imagini detaliate, secțiune cu secțiune.",
   noRadiation:
-    "Spre deosebire de radiografie sau computer tomograf (CT), RMN-ul nu folose�'te radia�'ii ionizante, ci se bazează pe câmp magnetic �'i unde radio.",
+    "Spre deosebire de radiografie sau computer tomograf (CT), RMN-ul nu folosește radiații ionizante, ci se bazează pe câmp magnetic și unde radio.",
   comfort:
-    "Multe aparate RMN Affidea au un tunel mai larg, bine luminat �'i ventilat, deschis la ambele capete, pentru confortul pacien�'ilor corpulen�'i sau cu simptome de claustrofobie.",
+    "Multe aparate RMN Affidea au un tunel mai larg, bine luminat și ventilat, deschis la ambele capete, pentru confortul pacienților corpulenți sau cu simptome de claustrofobie.",
 } as const;
 
-// """Ce se vede la un RMN cerebral"""
+// "Ce se vede la un RMN cerebral"
 export const cerebralShows = [
-  "Structura creierului, trunchiul cerebral �'i cerebelul",
-  "Substan�'a albă �'i substan�'a cenu�'ie",
+  "Structura creierului, trunchiul cerebral și cerebelul",
+  "Substanța albă și substanța cenușie",
   "Vasele de sânge cerebrale (prin angio-RMN)",
-  "Hipofiza, orbitele, urechea internă �'i nervii cranieni",
-  "Tumori, chisturi �'i forma�'iuni anormale",
-  "Leziuni de AVC, scleroză multiplă, inflama�'ii sau infec�'ii",
+  "Hipofiza, orbitele, urechea internă și nervii cranieni",
+  "Tumori, chisturi și formațiuni anormale",
+  "Leziuni de AVC, scleroză multiplă, inflamații sau infecții",
 ] as const;
 
-// """Când este indicat un RMN cerebral""" (În ce cazuri este recomandat)
+// "Când este indicat un RMN cerebral" (În ce cazuri este recomandat)
 export const cerebralIndications = [
   "Dureri de cap persistente sau severe",
   "Suspiciune de accident vascular cerebral (AVC)",
   "Tumori cerebrale sau monitorizare oncologică",
-  "Scleroză multiplă �'i boli demielinizante",
-  "Epilepsie �'i crize convulsive",
+  "Scleroză multiplă și boli demielinizante",
+  "Epilepsie și crize convulsive",
   "Traumatisme cranio-cerebrale",
-  "Ame�'eli �'i tulburări de echilibru",
+  "Amețeli și tulburări de echilibru",
   "Tulburări de vedere sau de auz",
-  "Anevrisme �'i malforma�'ii vasculare",
-  "Evaluare înainte sau după interven�'ii neurochirurgicale",
+  "Anevrisme și malformații vasculare",
+  "Evaluare înainte sau după intervenții neurochirurgicale",
 ] as const;
 
-// """Cum se desfă�'oară investiga�'ia"
+// "Cum se desfășoară investigația"
 export const procedureSteps = [
-  "Îndepărtezi obiectele metalice �'i îmbraci un halat de unică folosin�'ă.",
-  "Te a�'ezi pe masa aparatului; zona examinată va fi imobilizată pentru imagini clare.",
-  "În timpul scanării stai nemi�'cat; vei auzi un zgomot intermitent �'i prime�'ti dopuri de urechi sau că�'ti.",
-  "Comunici oricând cu personalul prin interfon �'i ai la îndemână un buton de alarmă.",
-  "Dacă medicul recomandă contrast, acesta se administrează intravenos, în bra�'.",
+  "Îndepărtezi obiectele metalice și îmbraci un halat de unică folosință.",
+  "Te așezi pe masa aparatului; zona examinată va fi imobilizată pentru imagini clare.",
+  "În timpul scanării stai nemișcat; vei auzi un zgomot intermitent și primești dopuri de urechi sau căști.",
+  "Comunici oricând cu personalul prin interfon și ai la îndemână un buton de alarmă.",
+  "Dacă medicul recomandă contrast, acesta se administrează intravenos, în braț.",
 ] as const;
 
-// """Pregătirea pacientului"""
+// "Pregătirea pacientului"
 export const preparation = {
   general: [
     "Nu este necesară o pregătire specială pentru majoritatea examinărilor cerebrale.",
-    "Îndepărtează bijuteriile, ceasul, ochelarii, agrafele �'i cardurile cu bandă magnetică.",
-    "Anun�'ă personalul dacă ai implanturi, dispozitive medicale sau e�'ti însărcinată.",
-    "Vino cu 15-20 de minute mai devreme pentru completarea chestionarului de siguran�'ă.",
+    "Îndepărtează bijuteriile, ceasul, ochelarii, agrafele și cardurile cu bandă magnetică.",
+    "Anunță personalul dacă ai implanturi, dispozitive medicale sau ești însărcinată.",
+    "Vino cu 15-20 de minute mai devreme pentru completarea chestionarului de siguranță.",
   ],
   contrast: [
-    "Adu analize recente de creatinină serică �'i RFG.",
-    "Men�'ionează alergiile cunoscute �'i afec�'iunile renale.",
+    "Adu analize recente de creatinină serică și RFG.",
+    "Menționează alergiile cunoscute și afecțiunile renale.",
     "Hidratează-te normal înainte de examinare.",
   ],
 } as const;
 
-// """Contraindica�'ii / siguran�'ă""" (cerebral-weighted)
+// "Contraindicații / siguranță" (cerebral-weighted)
 export const contraindications = [
   "Stimulator cardiac (pacemaker) incompatibil RMN",
   "Implanturi metalice sau dispozitive medicale incompatibile",
   "Implant cohlear sau neurostimulatoare",
   "Corpi străini metalici, în special oculari",
-  "Insuficien�'ă renală severă (pentru examinarea cu contrast)",
+  "Insuficiență renală severă (pentru examinarea cu contrast)",
   "Sarcină: doar la recomandarea medicului",
 ] as const;
 
 // Efecte adverse (rare)
 export const adverseEffects = [
-  "Reac�'ii alergice u�'oare la contrast (urticarie, prurit)",
-  "Reac�'ii alergice severe, foarte rare",
-  "Fibroză sistemică nefrogenă la pacien�'i cu insuficien�'ă renală severă",
-  "Disconfort tranzitoriu: ame�'eală, grea�'ă, anxietate",
+  "Reacții alergice ușoare la contrast (urticarie, prurit)",
+  "Reacții alergice severe, foarte rare",
+  "Fibroză sistemică nefrogenă la pacienți cu insuficiență renală severă",
+  "Disconfort tranzitoriu: amețeală, greață, anxietate",
 ] as const;
 
 // ---------------------------------------------------------------------------
-// RMN cerebral pre�' ""� tabel focalizat (tarife Affidea)
+// RMN cerebral preț — tabel focalizat (tarife Affidea)
 // ---------------------------------------------------------------------------
 export const cerebralPrices = [
   { name: "RMN CEREBRAL nativ", plata: 1100, card: 990, promo: 770 },
-  { name: "RMN CEREBRAL cu substan�'ă de contrast", plata: 1480, card: 1332, promo: 1036 },
+  { name: "RMN CEREBRAL cu substanță de contrast", plata: 1480, card: 1332, promo: 1036 },
   { name: "ANGIO RMN CEREBRAL nativ", plata: 1380, card: 1242, promo: 966 },
-  { name: "ANGIO RMN CEREBRAL cu substan�'ă de contrast", plata: 1745, card: 1570.5, promo: 1225 },
+  { name: "ANGIO RMN CEREBRAL cu substanță de contrast", plata: 1745, card: 1570.5, promo: 1225 },
   { name: "RMN CEREBRAL + PROTOCOL EPILEPSIE nativ", plata: 1380, card: 1242, promo: 966 },
-  { name: "RMN CEREBRAL + PROTOCOL EPILEPSIE cu substan�'ă de contrast", plata: 1750, card: 1575, promo: 1232 },
-  { name: "RMN CEREBRAL + TRUNCHIURI SUPRA-AORTICE cu substan�'ă de contrast", plata: 1750, card: 1575, promo: 1491 },
+  { name: "RMN CEREBRAL + PROTOCOL EPILEPSIE cu substanță de contrast", plata: 1750, card: 1575, promo: 1232 },
+  { name: "RMN CEREBRAL + TRUNCHIURI SUPRA-AORTICE cu substanță de contrast", plata: 1750, card: 1575, promo: 1491 },
   { name: "RMN CEREBRAL + ORBITE nativ", plata: 2000, card: 1800, promo: 1400 },
-  { name: "RMN CEREBRAL + ORBITE cu substan�'ă de contrast", plata: 2375, card: 2137.5, promo: 1663 },
+  { name: "RMN CEREBRAL + ORBITE cu substanță de contrast", plata: 2375, card: 2137.5, promo: 1663 },
   { name: "RMN SINUSURI nativ", plata: 1100, card: 990, promo: 770 },
-  { name: "RMN SINUSURI cu substan�'ă de contrast", plata: 1480, card: 1332, promo: 1036 },
+  { name: "RMN SINUSURI cu substanță de contrast", plata: 1480, card: 1332, promo: 1036 },
   { name: "RMN CEREBRAL + URECHE nativ", plata: 2000, card: 1800, promo: 1400 },
-  { name: "RMN CEREBRAL + URECHE cu substan�'ă de contrast", plata: 2375, card: 2137.5, promo: 1663 },
+  { name: "RMN CEREBRAL + URECHE cu substanță de contrast", plata: 2375, card: 2137.5, promo: 1663 },
   { name: "RMN HIPOFIZA nativ", plata: 1100, card: 990, promo: 770 },
-  { name: "RMN HIPOFIZA cu substan�'ă de contrast", plata: 1480, card: 1332, promo: 1036 },
+  { name: "RMN HIPOFIZA cu substanță de contrast", plata: 1480, card: 1332, promo: 1036 },
 ] as const;
 
-// Pre�'urile nu sunt fixe ""� pornesc de la valorile afi�'ate �'i variază pe centru/aparat.
+// Prețurile nu sunt fixe — pornesc de la valorile afișate și variază pe centru/aparat.
 export const priceNote =
-  "Pre�'uri de referin�'ă. Tariful final se confirmă la programare.";
+  "Prețuri de referință. Tariful final se confirmă la programare.";
 
 // Avantajele RMN-ului
 export const rmnAdvantages = [
   {
-    title: "Fără radia�'ii ionizante",
-    text: "Se bazează pe câmp magnetic �'i unde radio, nu pe raze X.",
+    title: "Fără radiații ionizante",
+    text: "Se bazează pe câmp magnetic și unde radio, nu pe raze X.",
   },
   {
-    title: "Contrast excelent al �'esuturilor moi",
-    text: "Detalii superioare ale creierului fa�'ă de computer tomograf.",
+    title: "Contrast excelent al țesuturilor moi",
+    text: "Detalii superioare ale creierului față de computer tomograf.",
   },
   {
     title: "Imagistică multiplanară",
-    text: "Sec�'iuni în orice plan, fără repozi�'ionarea pacientului.",
+    text: "Secțiuni în orice plan, fără repoziționarea pacientului.",
   },
   {
-    title: "Secven�'e specializate",
-    text: "Difuzie, perfuzie, angio-RMN �'i spectroscopie.",
+    title: "Secvențe specializate",
+    text: "Difuzie, perfuzie, angio-RMN și spectroscopie.",
   },
 ] as const;
 
-// """Patologii frecvente diagnosticate prin RMN cranio-cerebral"""
+// "Patologii frecvente diagnosticate prin RMN cranio-cerebral"
 export const cerebralPathologies = [
   {
     title: "Tumori intracraniene",
-    text: "Localizare, extindere, vasculariza�'ie �'i răspuns la tratament.",
+    text: "Localizare, extindere, vascularizație și răspuns la tratament.",
   },
   {
     title: "Accident vascular cerebral (AVC)",
-    text: "Secven�'ele de difuzie (DWI) detectează precoce zona de ischemie.",
+    text: "Secvențele de difuzie (DWI) detectează precoce zona de ischemie.",
   },
   {
     title: "Boli demielinizante",
-    text: "Caracterizarea leziunilor de scleroză multiplă �'i a activită�'ii bolii.",
+    text: "Caracterizarea leziunilor de scleroză multiplă și a activității bolii.",
   },
   {
-    title: "Afec�'iuni inflamatorii �'i infec�'ioase",
+    title: "Afecțiuni inflamatorii și infecțioase",
     text: "Encefalite, meningite, abcese cerebrale, vasculite.",
   },
   {
-    title: "Malforma�'ii congenitale",
-    text: "Anomalii de dezvoltare corticală, malforma�'ii Chiari �'i vasculare.",
+    title: "Malformații congenitale",
+    text: "Anomalii de dezvoltare corticală, malformații Chiari și vasculare.",
   },
   {
     title: "Traumatisme cranio-cerebrale",
-    text: "Contuzii, hematoame �'i leziuni axonale difuze.",
+    text: "Contuzii, hematoame și leziuni axonale difuze.",
   },
 ] as const;
 
 // Rolul RMN-ului în AVC (highlight)
 export const avcRole = {
   title: "Rolul RMN-ului în diagnosticul AVC",
-  text: "În accidentul vascular cerebral, secven�'ele de difuzie (DWI) �'i perfuzie (PWI) diferen�'iază zona de infarct de zona salvabilă (penumbra), ajutând medicul să stabilească fereastra terapeutică �'i eligibilitatea pentru tromboliză.",
+  text: "În accidentul vascular cerebral, secvențele de difuzie (DWI) și perfuzie (PWI) diferențiază zona de infarct de zona salvabilă (penumbra), ajutând medicul să stabilească fereastra terapeutică și eligibilitatea pentru tromboliză.",
 } as const;
 
 // Interpretarea rezultatelor
@@ -493,7 +493,7 @@ export const interpretation = {
     {
       label: "RMN cerebral cu contrast",
       value: "45-60 min",
-      extra: "în func�'ie de protocol",
+      extra: "în funcție de protocol",
     },
     {
       label: "Rezultat",
@@ -503,11 +503,11 @@ export const interpretation = {
   ],
 } as const;
 
-// Parteneri / asigurări ""� logo-uri oficiale
+// Parteneri / asigurări — logo-uri oficiale
 export const partnerLogos = [
   { name: "CNAS", logo: "https://cnas.ro/wp-content/uploads/2021/07/logo_site_300.png" },
   { name: "Signal Iduna", logo: "https://www.signal-iduna.ro/assets/images/signal_iduna_fill.svg" },
-  { name: "Allianz-�'iriac", logo: "https://www.allianztiriac.ro/content/dam/onemarketing/cee/azro/media/logo_azt/allianz_tiriac_logo.png" },
+  { name: "Allianz-Țiriac", logo: "https://www.allianztiriac.ro/content/dam/onemarketing/cee/azro/media/logo_azt/allianz_tiriac_logo.png" },
   { name: "Groupama", logo: "https://upload.wikimedia.org/wikipedia/commons/b/be/Groupama_logo.svg" },
   { name: "Generali", logo: "https://www.generali.ro/wp-content/uploads/2022/06/logo.svg" },
   { name: "NN", logo: "https://www.nn.ro/themes/custom/nn/logo.svg" },
@@ -516,6 +516,6 @@ export const partnerLogos = [
 ] as const;
 
 // Centrele Affidea de pe hartă sunt derivate direct din datele reale:
-// `imagingCityPins` din lib/affidea-clinics.ts (un pin per ora�' cu centru de
-// imagistică, coordonate = media centrelor). Proiec�'ia lon/lat "�� % folose�'te
-// RO_BOUNDS din lib/romania-geo.ts (acela�'i cadru ca public/romania-counties.svg).
+// `imagingCityPins` din lib/affidea-clinics.ts (un pin per oraș cu centru de
+// imagistică, coordonate = media centrelor). Proiecția lon/lat → % folosește
+// RO_BOUNDS din lib/romania-geo.ts (același cadru ca public/romania-counties.svg).

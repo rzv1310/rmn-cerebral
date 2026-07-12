@@ -16,14 +16,14 @@ export function LocationsSection() {
           id="centre-title"
           className="mt-4 text-[1.75rem] font-semibold leading-tight sm:text-4xl"
         >
-          RMN cerebral în toată �'ara
+          RMN cerebral în toată țara
         </h2>
         <p className="mt-4 max-w-2xl text-lg leading-relaxed text-muted">
-          Alege un ora�' de pe hartă pentru a vedea clinicile Affidea.
+          Alege un oraș de pe hartă pentru a vedea clinicile Affidea.
           <br />
-          Pentru Bucure�'ti, deschide harta pe sectoare.
+          Pentru București, deschide harta pe sectoare.
           <br />
-          Un singur număr de contact, acelea�'i standarde de calitate.
+          Un singur număr de contact, aceleași standarde de calitate.
         </p>
       </div>
 

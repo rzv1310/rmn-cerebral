@@ -11,7 +11,7 @@ import { RO_BOUNDS } from "@/lib/romania-geo";
 import { BUC_SECTORS, BUC_ILFOV } from "@/lib/bucuresti-geo";
 import { googleMapsUrl } from "@/lib/maps";
 
-// Ilfov metro centres live in the BucureÈ'ti view, not the national map.
+// Ilfov metro centres live in the BucureÈ™ti view, not the national map.
 const ILFOV_CITIES = new Set(BUC_ILFOV.map((i) => i.city));
 
 const { top, bottom, left, right } = RO_BOUNDS;
@@ -26,7 +26,7 @@ function proj(lon: number, lat: number) {
 
 const DAYS = [
   "Luni",
-  "MarÈ'i",
+  "MarÈ›i",
   "Miercuri",
   "Joi",
   "Vineri",
@@ -67,7 +67,7 @@ export function LocationsMap() {
 
   // The two maps have different heights, so switching can push the map out of
   // view. Only nudge it back if it's actually off-screen ("nearest" = no scroll
-  // when already visible), so clicking BucureÈ'ti doesn't jump the page.
+  // when already visible), so clicking BucureÈ™ti doesn't jump the page.
   useEffect(() => {
     if (!mounted.current) {
       mounted.current = true;
@@ -95,7 +95,7 @@ export function LocationsMap() {
   function openSector(s: (typeof BUC_SECTORS)[number]) {
     setActive({
       city: s.id,
-      title: `BucureÈ'ti Â· ${s.id}`,
+      title: `BucureÈ™ti Â· ${s.id}`,
       clinics: imagingClinicsInCity(s.id),
       x: s.lx,
       y: s.ly,
@@ -118,14 +118,14 @@ export function LocationsMap() {
       className="mx-auto w-full max-w-[1220px] scroll-mt-6 px-4 sm:px-8"
     >
       {/* Both views stay mounted (we toggle `hidden`) so switching never
-          remounts the SVG maps ""” that remount is what flashed the pins
+          remounts the SVG maps â€” that remount is what flashed the pins
           unstyled on the way back to the country map. */}
       <div
         className={`relative mx-auto w-full ${view === "country" ? "" : "hidden"}`}
       >
         <img
           src="/romania-counties.svg?v=5"
-          alt="Harta judeÈ'elor RomÃ¢niei cu centrele Affidea"
+          alt="Harta judeÈ›elor RomÃ¢niei cu centrele Affidea"
           className="block h-auto w-full select-none"
           draggable={false}
           style={{ ...mapShadow, aspectRatio: "1000 / 747.4" }}
@@ -144,7 +144,7 @@ export function LocationsMap() {
                 onClick={() => openCity(p)}
                 aria-label={
                   p.sectors
-                    ? "BucureÈ'ti ""” vezi centrele pe sectoare"
+                    ? "BucureÈ™ti â€” vezi centrele pe sectoare"
                     : `Centre Affidea Ã®n ${prettyCity(p.city)} (${p.count})`
                 }
                 className="group absolute z-10 grid h-6 w-6 -translate-x-1/2 -translate-y-1/2 place-items-center hover:z-30"
@@ -186,13 +186,13 @@ export function LocationsMap() {
           }}
           className="mb-4 inline-flex h-10 items-center gap-2 rounded-full border border-line bg-white px-4 text-sm font-semibold text-primary-dark transition-colors hover:bg-primary-light"
         >
-          <span aria-hidden>"†</span> Ãnapoi la harta È'Äƒrii
+          <span aria-hidden>â†</span> Ãnapoi la harta È›Äƒrii
         </button>
 
         <div className="relative w-full">
           <img
             src="/bucuresti-sectors.svg?v=5"
-            alt="Municipiul BucureÈ'ti Ã®mpÄƒrÈ'it pe cele 6 sectoare"
+            alt="Municipiul BucureÈ™ti Ã®mpÄƒrÈ›it pe cele 6 sectoare"
             className="block h-auto w-full select-none"
             draggable={false}
             style={{ ...mapShadow, aspectRatio: "1000 / 1107.9" }}
@@ -225,7 +225,7 @@ export function LocationsMap() {
             );
           })}
 
-          {/* Ilfov ring ""” hollow dots north of the city, outside the sectors */}
+          {/* Ilfov ring â€” hollow dots north of the city, outside the sectors */}
           {BUC_ILFOV.map((i) => {
             const isActive = active?.city === i.city;
             return (
@@ -262,7 +262,7 @@ export function LocationsMap() {
             aria-hidden
             className="inline-block h-2.5 w-2.5 rounded-full border-2 border-primary-dark bg-white"
           />
-          Otopeni È'i È'tefÄƒneÈ'ti sunt Ã®n judeÈ'ul Ilfov, lÃ¢ngÄƒ BucureÈ'ti
+          Otopeni È™i È˜tefÄƒneÈ™ti sunt Ã®n judeÈ›ul Ilfov, lÃ¢ngÄƒ BucureÈ™ti
         </p>
       </div>
     </div>
@@ -270,7 +270,7 @@ export function LocationsMap() {
 }
 
 // ---------------------------------------------------------------------------
-// Program (hours) helpers ""” normalize the per-day structure for display and
+// Program (hours) helpers â€” normalize the per-day structure for display and
 // compute a live open/closed status in Europe/Bucharest time.
 // ---------------------------------------------------------------------------
 function sameHours(a: DayHours, b: DayHours) {
@@ -481,7 +481,7 @@ function Popover({
                       onClick={onClose}
                       className="text-[0.7rem] font-semibold text-primary-dark hover:underline"
                     >
-                      ProgrameazÄƒ "†’
+                      ProgrameazÄƒ â†’
                     </a>
                   </div>
                 </li>

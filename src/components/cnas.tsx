@@ -3,8 +3,8 @@ import { Section, Cta } from "@/components/primitives";
 
 const steps = [
   "Mergi la medicul de familie pentru o trimitere către medicul specialist.",
-  "Medicul specialist evaluează simptomele �'i emite biletul de trimitere pentru RMN.",
-  "Ne suni sau completezi formularul, iar noi î�'i confirmăm programarea.",
+  "Medicul specialist evaluează simptomele și emite biletul de trimitere pentru RMN.",
+  "Ne suni sau completezi formularul, iar noi îți confirmăm programarea.",
 ];
 
 export function CnasSection() {
@@ -19,12 +19,12 @@ export function CnasSection() {
       <div className="grid gap-10 lg:grid-cols-2">
         <div>
           <h3 className="font-display text-lg font-semibold text-paper-100">
-            Programul Monitor: RMN gratuit �'i prioritar
+            Programul Monitor: RMN gratuit și prioritar
           </h3>
           <p className="mt-3 leading-relaxed text-muted-2">
-            Medicul specialist notează """Monitor 1""�7""" pe biletul de trimitere.
-            Pacien�'ii din aceste categorii beneficiază de RMN gratuit, nelimitat
-            �'i prioritar, chiar �'i după epuizarea plafonului lunar.
+            Medicul specialist notează "Monitor 1…7" pe biletul de trimitere.
+            Pacienții din aceste categorii beneficiază de RMN gratuit, nelimitat
+            și prioritar, chiar și după epuizarea plafonului lunar.
           </p>
           <ul className="mt-6 grid gap-2.5 sm:grid-cols-2">
             {monitorCategories.map((c, i) => (
@@ -43,7 +43,7 @@ export function CnasSection() {
 
         <div>
           <h3 className="font-display text-lg font-semibold text-paper-100">
-            Cum ob�'ii biletul de trimitere
+            Cum obții biletul de trimitere
           </h3>
           <ol className="mt-6 space-y-5">
             {steps.map((s, i) => (

@@ -8,41 +8,41 @@ function FaqRichContent() {
   return (
     <div className="space-y-6">
       <p className="leading-relaxed text-muted">
-        Rezonan�'a Magnetică Nucleară (RMN) este o procedură de diagnostic imagistic de înaltă
-        performan�'ă, minim invazivă, atraumatică �'i neiradiantă.
+        Rezonanța Magnetică Nucleară (RMN) este o procedură de diagnostic imagistic de înaltă
+        performanță, minim invazivă, atraumatică și neiradiantă.
       </p>
       <p className="leading-relaxed text-muted">
-        RMN-ul cranio-cerebral, cunoscut �'i ca iRM cerebral sau RMN cap, este o metodă imagistică
-        avansată care oferă imagini detaliate ale structurilor creierului, sec�'iune cu sec�'iune,
-        fără a expune pacientul la radia�'ii ionizante.
+        RMN-ul cranio-cerebral, cunoscut și ca iRM cerebral sau RMN cap, este o metodă imagistică
+        avansată care oferă imagini detaliate ale structurilor creierului, secțiune cu secțiune,
+        fără a expune pacientul la radiații ionizante.
       </p>
 
       <div className="grid gap-8 md:grid-cols-2">
         <div>
-          <h4 className="font-display text-lg font-semibold text-ink">Cum func�'ionează</h4>
+          <h4 className="font-display text-lg font-semibold text-ink">Cum funcționează</h4>
           <p className="mt-2 leading-relaxed text-muted">
-            Aparatul folose�'te un câmp magnetic de intensitate mare �'i radiofrecven�'a pentru a
-            ob�'ine imagini de înaltă rezolu�'ie. Protonii de hidrogen din corp se aliniază în câmpul
+            Aparatul folosește un câmp magnetic de intensitate mare și radiofrecvența pentru a
+            obține imagini de înaltă rezoluție. Protonii de hidrogen din corp se aliniază în câmpul
             magnetic, iar semnalele emise la revenire sunt transformate de computer în imagini
-            detaliate, sec�'iune cu sec�'iune.
+            detaliate, secțiune cu secțiune.
           </p>
           <div className="mt-4">
-            <Note label="Fără radia�'ii">
-              Spre deosebire de radiografie sau computer tomograf (CT), RMN-ul nu folose�'te radia�'ii
-              ionizante, ci se bazează pe câmp magnetic �'i unde radio.
+            <Note label="Fără radiații">
+              Spre deosebire de radiografie sau computer tomograf (CT), RMN-ul nu folosește radiații
+              ionizante, ci se bazează pe câmp magnetic și unde radio.
             </Note>
           </div>
         </div>
         <div>
-          <h4 className="font-display text-lg font-semibold text-ink">Substan�'a de contrast</h4>
+          <h4 className="font-display text-lg font-semibold text-ink">Substanța de contrast</h4>
           <p className="mt-2 leading-relaxed text-muted">
-            Când medicul radiolog o recomandă, se administrează intravenos o substan�'ă de contrast pe
-            bază de gadoliniu, pentru imagini cu acurate�'e crescută, utilă în tumori, leziuni
+            Când medicul radiolog o recomandă, se administrează intravenos o substanță de contrast pe
+            bază de gadoliniu, pentru imagini cu acuratețe crescută, utilă în tumori, leziuni
             inflamatorii sau anomalii vasculare.
           </p>
           <p className="mt-2 text-sm leading-relaxed text-muted">
-            Administrarea se face doar când beneficiile depă�'esc riscurile, după o evaluare atentă a
-            func�'iei renale.
+            Administrarea se face doar când beneficiile depășesc riscurile, după o evaluare atentă a
+            funcției renale.
           </p>
         </div>
       </div>
@@ -51,27 +51,27 @@ function FaqRichContent() {
         <h4 className="font-display text-lg font-semibold text-ink">Avantajele RMN-ului</h4>
         <div className="mt-4 grid gap-4 sm:grid-cols-2">
           <div className="rounded-2xl border border-line bg-paper-100 p-4">
-            <p className="font-display font-semibold text-ink">Fără radia�'ii ionizante</p>
+            <p className="font-display font-semibold text-ink">Fără radiații ionizante</p>
             <p className="mt-1 text-sm leading-relaxed text-muted">
-              Se bazează pe câmp magnetic �'i unde radio, nu pe raze X.
+              Se bazează pe câmp magnetic și unde radio, nu pe raze X.
             </p>
           </div>
           <div className="rounded-2xl border border-line bg-paper-100 p-4">
-            <p className="font-display font-semibold text-ink">Contrast excelent al �'esuturilor moi</p>
+            <p className="font-display font-semibold text-ink">Contrast excelent al țesuturilor moi</p>
             <p className="mt-1 text-sm leading-relaxed text-muted">
-              Detalii superioare ale creierului fa�'ă de computer tomograf.
+              Detalii superioare ale creierului față de computer tomograf.
             </p>
           </div>
           <div className="rounded-2xl border border-line bg-paper-100 p-4">
             <p className="font-display font-semibold text-ink">Imagistică multiplanară</p>
             <p className="mt-1 text-sm leading-relaxed text-muted">
-              Sec�'iuni în orice plan, fără repozi�'ionarea pacientului.
+              Secțiuni în orice plan, fără repoziționarea pacientului.
             </p>
           </div>
           <div className="rounded-2xl border border-line bg-paper-100 p-4">
-            <p className="font-display font-semibold text-ink">Secven�'e specializate</p>
+            <p className="font-display font-semibold text-ink">Secvențe specializate</p>
             <p className="mt-1 text-sm leading-relaxed text-muted">
-              Difuzie, perfuzie, angio-RMN �'i spectroscopie.
+              Difuzie, perfuzie, angio-RMN și spectroscopie.
             </p>
           </div>
         </div>
@@ -84,16 +84,16 @@ function FaqSafetyContent() {
   return (
     <div className="space-y-6">
       <p className="leading-relaxed text-muted">
-        Spre deosebire de radiografie sau computer tomograf (CT), RMN-ul nu folose�'te radia�'ii
-        ionizante, ci se bazează pe câmp magnetic �'i unde radio.
+        Spre deosebire de radiografie sau computer tomograf (CT), RMN-ul nu folosește radiații
+        ionizante, ci se bazează pe câmp magnetic și unde radio.
       </p>
 
       <div className="grid gap-8 md:grid-cols-2">
         <div>
-          <h4 className="font-display text-lg font-semibold text-ink">Contraindica�'ii</h4>
+          <h4 className="font-display text-lg font-semibold text-ink">Contraindicații</h4>
           <p className="mt-2 text-sm text-muted">
-            Anun�'ă personalul medical dacă te regăse�'ti într-una dintre situa�'iile de mai jos:
-            compatibilitatea se stabile�'te împreună cu medicul.
+            Anunță personalul medical dacă te regăsești într-una dintre situațiile de mai jos:
+            compatibilitatea se stabilește împreună cu medicul.
           </p>
           <ul className="mt-5 space-y-3">
             {[
@@ -101,7 +101,7 @@ function FaqSafetyContent() {
               "Implanturi metalice sau dispozitive medicale incompatibile",
               "Implant cohlear sau neurostimulatoare",
               "Corpi străini metalici, în special oculari",
-              "Insuficien�'ă renală severă (pentru examinarea cu contrast)",
+              "Insuficiență renală severă (pentru examinarea cu contrast)",
               "Sarcină: doar la recomandarea medicului",
             ].map((it) => (
               <li key={it} className="flex items-start gap-3">
@@ -115,10 +115,10 @@ function FaqSafetyContent() {
           <h4 className="font-display text-lg font-semibold text-ink">Efecte adverse (rare)</h4>
           <ul className="mt-5 space-y-3">
             {[
-              "Reac�'ii alergice u�'oare la contrast (urticarie, prurit)",
-              "Reac�'ii alergice severe, foarte rare",
-              "Fibroză sistemică nefrogenă la pacien�'i cu insuficien�'ă renală severă",
-              "Disconfort tranzitoriu: ame�'eală, grea�'ă, anxietate",
+              "Reacții alergice ușoare la contrast (urticarie, prurit)",
+              "Reacții alergice severe, foarte rare",
+              "Fibroză sistemică nefrogenă la pacienți cu insuficiență renală severă",
+              "Disconfort tranzitoriu: amețeală, greață, anxietate",
               "Claustrofobie",
             ].map((it) => (
               <li key={it} className="flex items-start gap-3">
@@ -129,8 +129,8 @@ function FaqSafetyContent() {
           </ul>
           <div className="mt-6 border-t border-line pt-5">
             <Note label="Claustrofobie">
-              Aparatele cu diametru de până la 70 cm �'i op�'iunea de sedare fac examinarea accesibilă
-              �'i pacien�'ilor anxio�'i.
+              Aparatele cu diametru de până la 70 cm și opțiunea de sedare fac examinarea accesibilă
+              și pacienților anxioși.
             </Note>
           </div>
         </div>
@@ -145,7 +145,7 @@ export function FaqSection() {
 
   const renderAnswer = (q: string) => {
     if (q === "Ce este un RMN cerebral?") return <FaqRichContent />;
-    if (q === "Este RMN-ul cerebral sigur? Contraindica�'ii") return <FaqSafetyContent />;
+    if (q === "Este RMN-ul cerebral sigur? Contraindicații") return <FaqSafetyContent />;
     return faqs.find((f) => f.q === q)?.a ?? "";
   };
 
@@ -153,7 +153,7 @@ export function FaqSection() {
     <Section
       id="intrebari"
       tone="paper"
-      eyebrow="Cite�'te �'i ..."
+      eyebrow="Citește și ..."
       title="Întrebări frecvente despre RMN cerebral"
     >
       <div className="mx-auto max-w-3xl">
@@ -198,16 +198,16 @@ export function FaqSection() {
         )}
 
         <p className="mt-10 text-center text-xs leading-relaxed text-ink italic">
-          Con�'inut verificat medical de{" "}
+          Conținut verificat medical de{" "}
           <a
             href="https://www.linkedin.com/in/ruxandra-negru%C8%99-391295200/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-ink transition-colors hover:text-ink"
           >
-            dr. Ruxandra Negru�' - medic rezident radiolog
+            dr. Ruxandra Negruș - medic rezident radiolog
           </a>{" "}
-          din re�'eaua Affidea. Ultima actualizare: iulie 2026.
+          din rețeaua Affidea. Ultima actualizare: iulie 2026.
         </p>
       </div>
     </Section>

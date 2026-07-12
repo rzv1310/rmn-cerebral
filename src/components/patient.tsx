@@ -36,7 +36,7 @@ export function ActeSection() {
       tone="paper"
       eyebrow="Acte necesare"
       title="Ce documente aduci la programare"
-      intro="Pregăte�'te documentele de mai jos înainte de examinare. Vino cu 15-20 de minute mai devreme pentru completarea chestionarului de siguran�'ă RMN."
+      intro="Pregătește documentele de mai jos înainte de examinare. Vino cu 15-20 de minute mai devreme pentru completarea chestionarului de siguranță RMN."
     >
       <div className="grid gap-6 md:grid-cols-2">
         <div className="select-none rounded-2xl border border-line bg-paper-100 p-6">
@@ -53,8 +53,8 @@ export function ActeSection() {
             <IconList items={documents.contrast} />
           </div>
           <div className="mt-6 border-t border-line pt-5">
-            <Note label="Func�'ie renală">
-              Analizele confirmă că func�'ia renală permite administrarea în siguran�'ă a substan�'ei de
+            <Note label="Funcție renală">
+              Analizele confirmă că funcția renală permite administrarea în siguranță a substanței de
               contrast.
             </Note>
           </div>
@@ -70,12 +70,12 @@ export function PregatireSection() {
       id="pregatire"
       tone="white"
       eyebrow="Pregătire"
-      title="Cum te pregăte�'ti �'i cum decurge investiga�'ia"
+      title="Cum te pregătești și cum decurge investigația"
     >
       <div className="grid gap-12 lg:grid-cols-2">
         <div>
           <h3 className="font-display text-lg font-semibold text-ink">
-            Cum se desfă�'oară investiga�'ia
+            Cum se desfășoară investigația
           </h3>
           <ol className="mt-6 space-y-5">
             {procedureSteps.map((s, i) => (
@@ -111,11 +111,11 @@ export function DurataSection() {
       id="durata"
       tone="paper"
       eyebrow="Durată"
-      title="Cât durează un RMN cerebral �'i când prime�'ti rezultatul"
+      title="Cât durează un RMN cerebral și când primești rezultatul"
     >
       <div className="overflow-hidden select-none rounded-2xl border border-white/20 bg-primary-dark">
         <table className="w-full text-left text-sm text-white">
-          <caption className="sr-only">Durata RMN cerebral �'i livrarea rezultatului</caption>
+          <caption className="sr-only">Durata RMN cerebral și livrarea rezultatului</caption>
           <thead>
             <tr className="border-b border-white/20">
               <th scope="col" className="eyebrow px-5 py-3 text-[0.65rem] text-white/80">
