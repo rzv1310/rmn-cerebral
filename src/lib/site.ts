@@ -479,9 +479,9 @@ export const avcRole = {
 export const interpretation = {
   duration: [
     {
-      label: "RMN cerebral nativ",
+      label: "RMN cerebral",
       value: "20–30 min",
-      extra: "interval 20–45 min",
+      extra: "nativ (fără contrast)",
     },
     {
       label: "RMN cerebral cu contrast",
@@ -489,9 +489,9 @@ export const interpretation = {
       extra: "până la 60 min",
     },
     {
-      label: "Rezultat interpretat",
+      label: "Rezultat",
       value: "24–72 ore",
-      extra: "raport scris, film, CD DICOM",
+      extra: "raport scris, CD DICOM",
     },
   ],
 } as const;
