@@ -78,18 +78,18 @@ export function PriceSection() {
           </table>
         </div>
 
-        <aside className="flex select-none flex-col gap-5 rounded-2xl border border-line bg-white p-6 text-primary-dark">
+        <aside className="flex select-none flex-col gap-5 rounded-2xl bg-primary-dark p-6 text-white">
           <div>
-            <p className="eyebrow text-primary-dark/70">Preț de la</p>
-            <p className="mt-2 text-lg leading-relaxed text-primary-dark">
-              <span className="tnum font-semibold text-primary">
+            <p className="eyebrow text-white/70">Preț de la</p>
+            <p className="mt-2 text-lg leading-relaxed text-white">
+              <span className="tnum font-semibold text-white">
                 de la 770 lei
               </span>{" "}
               pentru un RMN cerebral nativ. Tariful final depinde de centrul
               Affidea și de aparat.
             </p>
           </div>
-          <ul className="space-y-3 text-sm text-primary-dark">
+          <ul className="space-y-3 text-sm text-white">
             {[
               `RMN cu sedare: +${lei(PRICE.sedarePrima)}`,
               "CD/DVD și raport medical incluse",
@@ -97,14 +97,14 @@ export function PriceSection() {
             ].map((t) => (
               <li key={t} className="flex items-start gap-2.5">
                 <span
-                  className="mt-1.5 h-2 w-2 shrink-0 rounded-[2px] bg-primary"
+                  className="mt-1.5 h-2 w-2 shrink-0 rounded-[2px] bg-white"
                   aria-hidden
                 />
                 <span>{t}</span>
               </li>
             ))}
           </ul>
-          <Cta href="#programare" className="mt-auto">
+          <Cta href="#programare" onDark className="mt-auto">
             Programează un RMN cerebral
           </Cta>
         </aside>
