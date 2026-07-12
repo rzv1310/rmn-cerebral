@@ -81,16 +81,15 @@ export function PriceSection() {
               <span className="tnum font-semibold text-primary-light">
                 de la 770 lei
               </span>{" "}
-              pentru un RMN cerebral nativ. Prețul final depinde de centru și de
-              aparat.
+              pentru un RMN cerebral nativ. Tariful final depinde de centrul
+              Affidea și de aparat.
             </p>
           </div>
           <ul className="space-y-3 text-sm text-muted-2">
             {[
-              `Substanță de contrast: +${lei(PRICE.contrast)}`,
               `RMN cu sedare: +${lei(PRICE.sedarePrima)}`,
-              "CD/DVD și film radiologic incluse",
-              "Cu bilet de trimitere: gratuit prin CNAS",
+              "CD/DVD și raport medical incluse",
+              "Cu bilet de trimitere: Gratuit prin CNAS",
             ].map((t) => (
               <li key={t} className="flex items-start gap-2.5">
                 <span
@@ -102,7 +101,7 @@ export function PriceSection() {
             ))}
           </ul>
           <Cta href="#programare" onDark className="mt-auto">
-            Programează RMN cerebral
+            Programează un RMN cerebral
           </Cta>
         </aside>
       </div>
