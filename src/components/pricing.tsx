@@ -104,8 +104,8 @@ export function PriceSection() {
               </li>
             ))}
           </ul>
-          <Cta href="#programare" onDark className="mt-auto">
-            Programează un RMN cerebral
+          <Cta href="tel:0219338" onDark className="mt-auto">
+            <span aria-hidden>📱</span> Programează un RMN cerebral
           </Cta>
         </aside>
       </div>
