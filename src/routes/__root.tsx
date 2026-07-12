@@ -98,15 +98,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         content:
           "Rezonanță magnetică cerebrală în centre Affidea din România. Preț transparent de la 770 lei, gratuit cu bilet de trimitere CNAS.",
       },
-      { property: "og:image", content: "/og.png" },
-      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:card", content: "summary" },
       { name: "twitter:title", content: "RMN cerebral la Affidea, preț de la 770 lei" },
       {
         name: "twitter:description",
         content:
           "Rezonanță magnetică cerebrală în centre Affidea din România. Preț de la 770 lei, gratuit cu bilet de trimitere.",
       },
-      { name: "twitter:image", content: "/og.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
