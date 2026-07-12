@@ -123,7 +123,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         media: "print",
         // Swap to all media once loaded so the stylesheet is non-blocking
         onLoad: "this.media='all'",
-      } as unknown as React.LinkHTMLAttributes<HTMLLinkElement>,
+      } as any,
       { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
     ],
 
