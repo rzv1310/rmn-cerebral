@@ -18,7 +18,7 @@ export function buildJsonLd() {
         name: "Affidea",
         alternateName: "Affidea România",
         url: "https://affidea.ro",
-        logo: `https://affidea.ro${affideaLogoAsset.url}`,
+        logo: `https://rmn-cerebral.lovable.app${affideaLogoAsset.url}`, // TODO: mută pe affidea.ro după deploy
         description:
           "Rețea națională de imagistică medicală: RMN, CT, mamografie și radiologie în 25 de centre din România.",
         medicalSpecialty: "Radiography",
