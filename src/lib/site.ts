@@ -252,18 +252,6 @@ export const faqs = [
     a: "Da. Cu un bilet de trimitere valabil de la medicul specialist, RMN-ul cerebral este decontat de CNAS. Prin Programul Monitor, pacienții din 7 categorii (oncologici, diabet, boli neurologice, cardiovasculare, rare, cerebrovasculare, post-COVID) beneficiază de RMN gratuit și prioritar.",
   },
   {
-    q: "Cât durează un RMN cerebral?",
-    a: "Un RMN cerebral nativ durează 20–30 de minute. Cu substanță de contrast se adaugă 15–20 de minute, iar cu sedare examinarea ajunge la aproximativ 45 de minute.",
-  },
-  {
-    q: "Când primesc rezultatul RMN-ului?",
-    a: "Primești filmul radiologic și CD-ul cu imaginile pe loc, iar raportul scris al medicului radiolog în 2–5 zile lucrătoare.",
-  },
-  {
-    q: "RMN-ul are radiații? Este periculos?",
-    a: "Nu. RMN-ul nu folosește radiații ionizante; se bazează pe câmp magnetic și unde radio, fiind sigur, inclusiv la examinări repetate.",
-  },
-  {
     q: "Pot face RMN cerebral dacă am claustrofobie?",
     a: "Da. Multe centre Affidea au aparate cu diametru de până la 70 cm, care reduc senzația de închidere. Pentru cazurile severe există opțiunea de sedare și posibilitatea unui însoțitor.",
   },
