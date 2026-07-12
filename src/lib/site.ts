@@ -312,8 +312,8 @@ export const reviews = [
 
 export const whyAffidea = [
   {
-    title: "Preț transparent",
-    text: "De la 770 lei pentru un RMN nativ, afișat clar. CD/DVD și film incluse, fără costuri ascunse. Tariful variază pe centru.",
+    title: "180+ Medici primari și specialiști radiologi",
+    text: "Cazurile complexe pot fi revizuite de mai mulți medici radiologi din rețea, cu competență în neuroimagistică.",
   },
   {
     title: "Aparate performante",
