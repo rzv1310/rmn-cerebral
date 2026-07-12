@@ -486,7 +486,7 @@ export const interpretation = {
     {
       label: "RMN cerebral cu contrast",
       value: "45–60 min",
-      extra: "până la 60 min",
+      extra: "în funcție de protocol",
     },
     {
       label: "Rezultat",
