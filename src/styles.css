@@ -313,3 +313,43 @@ details[open] .chevron {
     animation: none;
   }
 }
+
+/* On desktop and tablet, all text is selectable/clickable for copy/paste. */
+@media (min-width: 768px) {
+  body,
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  span,
+  a,
+  li,
+  td,
+  th,
+  label,
+  strong,
+  em,
+  small,
+  blockquote,
+  cite,
+  time,
+  address,
+  .eyebrow {
+    user-select: text;
+    -webkit-user-select: text;
+  }
+
+  a,
+  button,
+  summary,
+  label,
+  select,
+  [role="button"],
+  [type="checkbox"],
+  [type="radio"] {
+    cursor: pointer;
+  }
+}
