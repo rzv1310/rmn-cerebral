@@ -265,31 +265,6 @@ export const faqs = [
   },
 ];
 
-// ---------------------------------------------------------------------------
-// Medical authority (E-E-A-T). Presented by competență, NOT by fabricated
-// names — add real named radiologists (per centru) + a named reviewer before
-// launch. DE CONFIRMAT.
-// ---------------------------------------------------------------------------
-export const medicalTeam = [
-  {
-    role: "Medici primari și specialiști",
-    area: "Radiologie–imagistică medicală",
-    detail:
-      "Investigațiile RMN sunt interpretate de medici cu experiență în imagistică prin rezonanță magnetică.",
-  },
-  {
-    role: "Competență în neuroimagistică",
-    area: "RMN cerebral",
-    detail:
-      "Protocoale dedicate creierului: AVC, tumori, scleroză multiplă, epilepsie, malformații vasculare.",
-  },
-  {
-    role: "Evaluare în echipă",
-    area: "A doua opinie la nevoie",
-    detail:
-      "Cazurile complexe pot fi revizuite de mai mulți medici radiologi din rețea.",
-  },
-] as const;
 
 // Reviews (E-E-A-T) — DE CONFIRMAT (must be genuine before publishing)
 export const reviews = [
