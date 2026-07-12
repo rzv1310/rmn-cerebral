@@ -113,20 +113,20 @@ export function DurataSection() {
       eyebrow="Durată"
       title="Cât durează un RMN cerebral și când primești rezultatul"
     >
-      <div className="overflow-hidden select-none rounded-2xl border border-line bg-paper-100">
-        <table className="w-full text-left text-sm">
+      <div className="overflow-hidden select-none rounded-2xl border border-white/20 bg-primary-dark">
+        <table className="w-full text-left text-sm text-white">
           <caption className="sr-only">Durata RMN cerebral și livrarea rezultatului</caption>
           <thead>
-            <tr className="border-b border-line">
-              <th scope="col" className="eyebrow px-5 py-3 text-[0.65rem] text-muted">
+            <tr className="border-b border-white/20">
+              <th scope="col" className="eyebrow px-5 py-3 text-[0.65rem] text-white/80">
                 Examinare
               </th>
-              <th scope="col" className="eyebrow px-5 py-3 text-[0.65rem] text-muted">
+              <th scope="col" className="eyebrow px-5 py-3 text-[0.65rem] text-white/80">
                 Durată
               </th>
               <th
                 scope="col"
-                className="eyebrow hidden px-5 py-3 text-[0.65rem] text-muted sm:table-cell"
+                className="eyebrow hidden px-5 py-3 text-[0.65rem] text-white/80 sm:table-cell"
               >
                 Detalii
               </th>
@@ -134,14 +134,14 @@ export function DurataSection() {
           </thead>
           <tbody>
             {interpretation.duration.map((d) => (
-              <tr key={d.label} className="border-b border-line last:border-0">
-                <th scope="row" className="px-5 py-4 font-medium text-ink">
+              <tr key={d.label} className="border-b border-white/20 last:border-0">
+                <th scope="row" className="px-5 py-4 font-medium text-white">
                   {d.label}
                 </th>
                 <td className="px-5 py-4">
-                  <span className="tnum font-semibold text-primary-dark">{d.value}</span>
+                  <span className="tnum font-semibold text-primary-light">{d.value}</span>
                 </td>
-                <td className="hidden px-5 py-4 text-muted sm:table-cell">{d.extra}</td>
+                <td className="hidden px-5 py-4 text-white/80 sm:table-cell">{d.extra}</td>
               </tr>
             ))}
           </tbody>
