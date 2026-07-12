@@ -152,39 +152,3 @@ export function DurataSection() {
   );
 }
 
-export function SigurantaSection() {
-  return (
-    <Section
-      id="siguranta"
-      tone="white"
-      eyebrow="Siguranță"
-      title="Este RMN-ul cerebral sigur? Contraindicații"
-      intro={generalRmn.noRadiation}
-    >
-      <div className="grid gap-10 lg:grid-cols-2">
-        <div>
-          <h3 className="font-display text-lg font-semibold text-ink">Contraindicații</h3>
-          <p className="mt-2 text-sm text-muted">
-            Anunță personalul medical dacă te regăsești într-una dintre situațiile de mai jos:
-            compatibilitatea se stabilește împreună cu medicul.
-          </p>
-          <div className="mt-5">
-            <IconList items={contraindications} variant="dot" />
-          </div>
-        </div>
-        <div>
-          <h3 className="font-display text-lg font-semibold text-ink">Efecte adverse (rare)</h3>
-          <div className="mt-5">
-            <IconList items={adverseEffects} variant="dot" />
-          </div>
-          <div className="mt-6 border-t border-line pt-5">
-            <Note label="Claustrofobie">
-              Aparatele cu diametru de până la 70 cm și opțiunea de sedare fac examinarea accesibilă
-              și pacienților anxioși.
-            </Note>
-          </div>
-        </div>
-      </div>
-    </Section>
-  );
-}
