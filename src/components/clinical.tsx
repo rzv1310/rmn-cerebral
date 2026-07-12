@@ -1,5 +1,6 @@
 import {
   cerebralShows,
+  cerebralIndications,
   avcRole,
   cerebralPathologies,
 } from "@/lib/site";
@@ -27,6 +28,10 @@ export function ClinicalSection() {
       title="Când este recomandat un RMN cerebral?"
       intro="Medicul specialist recomandă un RMN cerebral pentru a investiga simptome neurologice sau pentru a diagnostica și monitoriza numeroase afecțiuni ale creierului."
     >
+      <div className="mb-12">
+        <CheckList items={cerebralIndications} />
+      </div>
+
       <div>
         <h3 className="font-display text-lg font-semibold text-ink">
           Ce evidențiază RMN-ul cranio-cerebral
