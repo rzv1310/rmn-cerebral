@@ -80,9 +80,74 @@ function FaqRichContent() {
   );
 }
 
+function FaqSafetyContent() {
+  return (
+    <div className="space-y-6">
+      <p className="leading-relaxed text-muted">
+        Spre deosebire de radiografie sau computer tomograf (CT), RMN-ul nu folosește radiații
+        ionizante, ci se bazează pe câmp magnetic și unde radio.
+      </p>
+
+      <div className="grid gap-8 md:grid-cols-2">
+        <div>
+          <h3 className="font-display text-lg font-semibold text-ink">Contraindicații</h3>
+          <p className="mt-2 text-sm text-muted">
+            Anunță personalul medical dacă te regăsești într-una dintre situațiile de mai jos:
+            compatibilitatea se stabilește împreună cu medicul.
+          </p>
+          <ul className="mt-5 space-y-3">
+            {[
+              "Stimulator cardiac (pacemaker) incompatibil RMN",
+              "Implanturi metalice sau dispozitive medicale incompatibile",
+              "Implant cohlear sau neurostimulatoare",
+              "Corpi străini metalici, în special oculari",
+              "Insuficiență renală severă (pentru examinarea cu contrast)",
+              "Sarcină: doar la recomandarea medicului",
+            ].map((it) => (
+              <li key={it} className="flex items-start gap-3">
+                <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-muted" aria-hidden />
+                <span className="text-sm leading-relaxed text-ink/85">{it}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div>
+          <h3 className="font-display text-lg font-semibold text-ink">Efecte adverse (rare)</h3>
+          <ul className="mt-5 space-y-3">
+            {[
+              "Reacții alergice ușoare la contrast (urticarie, prurit)",
+              "Reacții alergice severe, foarte rare",
+              "Fibroză sistemică nefrogenă la pacienți cu insuficiență renală severă",
+              "Disconfort tranzitoriu: amețeală, greață, anxietate",
+              "Claustrofobie",
+            ].map((it) => (
+              <li key={it} className="flex items-start gap-3">
+                <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-muted" aria-hidden />
+                <span className="text-sm leading-relaxed text-ink/85">{it}</span>
+              </li>
+            ))}
+          </ul>
+          <div className="mt-6 border-t border-line pt-5">
+            <Note label="Claustrofobie">
+              Aparatele cu diametru de până la 70 cm și opțiunea de sedare fac examinarea accesibilă
+              și pacienților anxioși.
+            </Note>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export function FaqSection() {
   const [showAll, setShowAll] = useState(false);
   const hidden = faqs.length - INITIAL;
+
+  const renderAnswer = (q: string) => {
+    if (q === "Ce este un RMN cerebral?") return <FaqRichContent />;
+    if (q === "Este RMN-ul cerebral sigur? Contraindicații") return <FaqSafetyContent />;
+    return faqs.find((f) => f.q === q)?.a ?? "";
+  };
 
   return (
     <Section
@@ -100,11 +165,7 @@ export function FaqSection() {
             className={!showAll && i >= INITIAL ? "hidden" : undefined}
           >
             <Accordion q={f.q} defaultOpen={i === 0}>
-              {f.q === "Ce este un RMN cerebral?" ? (
-                <FaqRichContent />
-              ) : (
-                f.a
-              )}
+              {renderAnswer(f.q)}
             </Accordion>
           </div>
         ))}
