@@ -4,7 +4,7 @@ import { ProgramareForm } from "@/components/programare-form";
 
 const assurances = [
   "Fără liste de așteptare",
-  "Rezultat în 2–5 zile lucrătoare",
+  "Rezultat în 2-5 zile lucrătoare",
   "Confirmare rapidă a programării",
   "Gratuit cu bilet de trimitere",
 ];
@@ -27,7 +27,7 @@ export function BookingSection() {
             {site.phone.display}
           </a>
           <p className="mt-2 text-sm text-muted-2">
-            Call Center · Luni – Vineri {site.hours[0].value}, Sâmbătă{" "}
+            Call Center · Luni - Vineri {site.hours[0].value}, Sâmbătă{" "}
             {site.hours[1].value}
           </p>
 

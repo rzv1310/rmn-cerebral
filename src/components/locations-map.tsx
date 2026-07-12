@@ -285,9 +285,9 @@ function scheduleLines(hours: DayHours[]) {
   while (i < 7) {
     let j = i;
     while (j + 1 < 7 && sameHours(hours[j + 1], hours[i])) j++;
-    const label = i === j ? DAYS[i] : `${DAYS[i]}–${DAYS[j]}`;
+    const label = i === j ? DAYS[i] : `${DAYS[i]}-${DAYS[j]}`;
     const h = hours[i];
-    out.push(`${label}: ${h ? `${h[0]}–${h[1]}` : "Închis"}`);
+    out.push(`${label}: ${h ? `${h[0]}-${h[1]}` : "Închis"}`);
     i = j + 1;
   }
   return out;
