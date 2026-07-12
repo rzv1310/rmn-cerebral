@@ -90,7 +90,7 @@ function FaqSafetyContent() {
 
       <div className="grid gap-8 md:grid-cols-2">
         <div>
-          <h3 className="font-display text-lg font-semibold text-ink">Contraindicații</h3>
+          <h4 className="font-display text-lg font-semibold text-ink">Contraindicații</h4>
           <p className="mt-2 text-sm text-muted">
             Anunță personalul medical dacă te regăsești într-una dintre situațiile de mai jos:
             compatibilitatea se stabilește împreună cu medicul.
@@ -112,7 +112,7 @@ function FaqSafetyContent() {
           </ul>
         </div>
         <div>
-          <h3 className="font-display text-lg font-semibold text-ink">Efecte adverse (rare)</h3>
+          <h4 className="font-display text-lg font-semibold text-ink">Efecte adverse (rare)</h4>
           <ul className="mt-5 space-y-3">
             {[
               "Reacții alergice ușoare la contrast (urticarie, prurit)",
