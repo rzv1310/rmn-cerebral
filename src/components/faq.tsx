@@ -196,6 +196,10 @@ export function FaqSection() {
             </button>
           </div>
         )}
+
+        <p className="mt-10 text-center text-xs leading-relaxed text-muted">
+          Conținut verificat medical de dr. Ruxandra Negruș - medic rezident radiolog din rețeaua Affidea. Ultima actualizare: iulie 2026.
+        </p>
       </div>
     </Section>
   );
