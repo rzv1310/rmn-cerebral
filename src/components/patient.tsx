@@ -112,7 +112,6 @@ export function DurataSection() {
       tone="paper"
       eyebrow="Durată"
       title="Cât durează un RMN cerebral și când primești rezultatul"
-      intro="Examinarea propriu-zisă durează, în medie, 20–30 de minute. Primești filmul și CD-ul pe loc, iar raportul scris al medicului radiolog în câteva zile."
     >
       <div className="overflow-hidden select-none rounded-2xl border border-line bg-paper-100">
         <table className="w-full text-left text-sm">
@@ -120,7 +119,7 @@ export function DurataSection() {
           <thead>
             <tr className="border-b border-line">
               <th scope="col" className="eyebrow px-5 py-3 text-[0.65rem] text-muted">
-                Etapă
+                Examinare
               </th>
               <th scope="col" className="eyebrow px-5 py-3 text-[0.65rem] text-muted">
                 Durată
