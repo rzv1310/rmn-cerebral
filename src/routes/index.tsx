@@ -13,6 +13,9 @@ import { WhyAffideaSection, ReviewsSection } from "@/components/trust";
 import { FaqSection } from "@/components/faq";
 import { BookingSection } from "@/components/booking";
 import { buildJsonLd } from "@/lib/jsonld";
+import ogImageAsset from "@/assets/rmn-cerebral-og.png.asset.json";
+
+const OG_IMAGE_URL = `https://rmn-cerebral.lovable.app${ogImageAsset.url}`;
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -29,6 +32,12 @@ export const Route = createFileRoute("/")({
       },
       { name: "author", content: "dr. Ruxandra Negrus" },
       { name: "publisher", content: "Affidea" },
+      { property: "og:image", content: OG_IMAGE_URL },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
+      { property: "og:image:type", content: "image/png" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:image", content: OG_IMAGE_URL },
     ],
     links: [
       {
