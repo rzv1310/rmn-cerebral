@@ -285,7 +285,13 @@ export const reviews = [
   },
 ] as const;
 
-export const whyAffidea = [
+type WhyAffideaItem = {
+  title: string;
+  text: string;
+  link?: { text: string; href: string };
+};
+
+export const whyAffidea: readonly WhyAffideaItem[] = [
   {
     title: "180+ Medici primari și specialiști radiologi",
     text: "Cazurile complexe pot fi revizuite de mai mulți medici radiologi din rețea, cu competență în neuroimagistică.",
@@ -300,7 +306,8 @@ export const whyAffidea = [
   },
   {
     title: "Confort pentru claustrofobi",
-    text: "Tunel larg și opțiune de sedare pentru pacienții anxioși.",
+    text: "Opțiune de sedare pentru pacienții anxioși.",
+    link: { text: "Opțiune de sedare", href: "https://rmn-bucuresti.ro/rmn-cu-sedare/" },
   },
 ] as const;
 
