@@ -248,16 +248,8 @@ export const faqs = [
     a: "Rezonanța Magnetică Nucleară (RMN) este o procedură de diagnostic imagistic de înaltă performanță, minim invazivă, atraumatică și neiradiantă. RMN-ul cranio-cerebral oferă imagini detaliate ale structurilor creierului, secțiune cu secțiune, fără a expune pacientul la radiații ionizante. Aparatul folosește un câmp magnetic de intensitate mare și radiofrecvența pentru a obține imagini de înaltă rezoluție. La nevoie, se administrează intravenos o substanță de contrast pe bază de gadoliniu. Principalele avantaje sunt: lipsa radiațiilor ionizante, contrast excelent al țesuturilor moi, imagistică multiplanară și secvențe specializate.",
   },
   {
-    q: "Este RMN-ul cerebral gratuit cu bilet de trimitere?",
-    a: "Da. Cu un bilet de trimitere valabil de la medicul specialist, RMN-ul cerebral este decontat de CNAS. Prin Programul Monitor, pacienții din 7 categorii (oncologici, diabet, boli neurologice, cardiovasculare, rare, cerebrovasculare, post-COVID) beneficiază de RMN gratuit și prioritar.",
-  },
-  {
     q: "Pot face RMN cerebral dacă am claustrofobie?",
     a: "Da. Multe centre Affidea au aparate cu diametru de până la 70 cm, care reduc senzația de închidere. Pentru cazurile severe există opțiunea de sedare și posibilitatea unui însoțitor.",
-  },
-  {
-    q: "Ce acte îmi trebuie pentru un RMN cerebral?",
-    a: "Act de identitate, bilet de trimitere (pentru decontare), card de sănătate, documente medicale anterioare și investigațiile imagistice pe CD, dacă există. Pentru RMN cu contrast sunt necesare analize recente de creatinină serică și RFG.",
   },
   {
     q: "Ce este substanța de contrast și ce înseamnă RMN \"nativ\"?",
@@ -266,18 +258,6 @@ export const faqs = [
   {
     q: "Pot face RMN cerebral dacă sunt însărcinată?",
     a: "RMN-ul nativ este considerat sigur după primul trimestru, dar orice examinare în sarcină se face doar la recomandarea medicului. Substanța de contrast se evită în sarcină.",
-  },
-  {
-    q: "Cine nu poate face RMN?",
-    a: "Pacienții cu stimulator cardiac incompatibil, anumite implanturi metalice sau dispozitive medicale, implant cohlear ori corpi străini metalici. Pentru contrast, pacienții cu insuficiență renală severă. Compatibilitatea se stabilește împreună cu medicul.",
-  },
-  {
-    q: "Care este diferența dintre RMN și CT?",
-    a: "RMN-ul folosește câmp magnetic (fără radiații) și oferă detalii excelente ale țesuturilor moi: creier, măduvă, articulații. CT-ul folosește raze X și este mai rapid, util pentru os și urgențe. Alegerea aparține medicului.",
-  },
-  {
-    q: "Ce putere are aparatul RMN (în Tesla)?",
-    a: "Puterea aparatului (în Tesla) și producătorul diferă în funcție de centrul Affidea. Multe centre folosesc aparate de câmp înalt, cu diametru larg pentru confort. Îți confirmăm specificațiile centrului ales la momentul programării.",
   },
   {
     q: "Este RMN-ul cerebral sigur? Contraindicații",
