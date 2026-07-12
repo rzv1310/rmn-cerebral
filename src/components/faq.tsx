@@ -203,7 +203,7 @@ export function FaqSection() {
             href="https://www.linkedin.com/in/ruxandra-negru%C8%99-391295200/"
             target="_blank"
             rel="noopener noreferrer"
-            className="underline decoration-primary/40 underline-offset-2 transition-colors hover:text-primary-dark"
+            className="text-ink transition-colors hover:text-ink"
           >
             dr. Ruxandra Negruș - medic rezident radiolog
           </a>{" "}
