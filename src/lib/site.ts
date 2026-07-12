@@ -1,4 +1,11 @@
 import asiromLogo from "@/assets/asirom-logo.png";
+import cnasLogo from "@/assets/insurers/cnas.webp";
+import signalIdunaLogo from "@/assets/insurers/signal-iduna.svg";
+import allianzTiriacLogo from "@/assets/insurers/allianz-tiriac.webp";
+import groupamaLogo from "@/assets/insurers/groupama.svg";
+import generaliLogo from "@/assets/insurers/generali.svg";
+import nnLogo from "@/assets/insurers/nn.svg";
+import uniqaLogo from "@/assets/insurers/uniqa.svg";
 
 // Single source of truth for the RMN București (Affidea) landing page.
 //
