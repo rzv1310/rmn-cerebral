@@ -15,7 +15,7 @@ export const site = {
   // Domeniu final Affidea unde va fi găzduită pagina
   domain: "https://affidea.ro/ro-RO/servicii/imagistica-medicala/rmn-rezonanta-magnetica-nucleara/rmn-cerebral",
 
-  // Affidea national Contact Center — DE CONFIRMAT
+  // Affidea national Call Center — DE CONFIRMAT
   phone: { display: "021 9338", tel: "+40219338" },
   whatsapp: { number: "40219338", display: "WhatsApp" }, // DE CONFIRMAT (wa.me needs a mobile number)
   email: "programari@affidea.ro", // DE CONFIRMAT
