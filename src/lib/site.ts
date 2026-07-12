@@ -248,7 +248,7 @@ export const faqs = [
     a: "Rezonanța Magnetică Nucleară (RMN) este o procedură de diagnostic imagistic de înaltă performanță, minim invazivă, atraumatică și neiradiantă. RMN-ul cranio-cerebral oferă imagini detaliate ale structurilor creierului, secțiune cu secțiune, fără a expune pacientul la radiații ionizante. Aparatul folosește un câmp magnetic de intensitate mare și radiofrecvența pentru a obține imagini de înaltă rezoluție. La nevoie, se administrează intravenos o substanță de contrast pe bază de gadoliniu. Principalele avantaje sunt: lipsa radiațiilor ionizante, contrast excelent al țesuturilor moi, imagistică multiplanară și secvențe specializate.",
   },
   {
-    q: "Pot face RMN cerebral dacă am claustrofobie?",
+    q: "Pot face un RMN la cap dacă sunt claustrofob?",
     a: "Da. Multe centre Affidea au aparate cu diametru de până la 70 cm, care reduc senzația de închidere. Pentru cazurile severe există opțiunea de sedare și posibilitatea unui însoțitor.",
   },
   {
