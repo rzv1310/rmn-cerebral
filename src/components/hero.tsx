@@ -77,7 +77,8 @@ export function Hero() {
 
           <div className="mt-8">
             <Cta href={`tel:${site.phone.tel}`} onDark>
-              Sună pentru programare: {site.phone.display}
+              <span className="text-primary" aria-hidden>📞</span>
+              Vreau RMN
             </Cta>
           </div>
 
