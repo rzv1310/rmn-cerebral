@@ -54,18 +54,18 @@ export function PriceSection() {
               {cerebralPrices.map((row) => (
                 <tr
                   key={row.name}
-                  className="border-b border-[#333] last:border-0 even:bg-[#fafafa]"
+                  className="border-b border-primary-dark last:border-0 even:bg-[#fafafa]"
                 >
-                  <td className="border border-[#333] px-4 py-2.5 text-left text-sm font-medium text-ink">
+                  <td className="border border-primary-dark px-4 py-2.5 text-left text-sm font-medium text-primary-dark">
                     {row.name}
                   </td>
-                  <td className="border border-[#333] px-4 py-2.5 text-right text-sm tabular-nums text-ink">
+                  <td className="border border-primary-dark px-4 py-2.5 text-right text-sm tabular-nums text-primary-dark">
                     {fmt(row.plata)}
                   </td>
-                  <td className="border border-[#333] px-4 py-2.5 text-right text-sm tabular-nums text-ink">
+                  <td className="border border-primary-dark px-4 py-2.5 text-right text-sm tabular-nums text-primary-dark">
                     {fmt(row.card)}
                   </td>
-                  <td className="border border-[#333] px-4 py-2.5 text-right text-sm tabular-nums text-ink">
+                  <td className="border border-primary-dark px-4 py-2.5 text-right text-sm tabular-nums text-primary-dark">
                     {fmt(row.promo)}
                   </td>
                 </tr>
