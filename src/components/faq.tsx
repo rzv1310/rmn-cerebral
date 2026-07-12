@@ -19,7 +19,7 @@ function FaqRichContent() {
 
       <div className="grid gap-8 md:grid-cols-2">
         <div>
-          <h3 className="font-display text-lg font-semibold text-ink">Cum funcționează</h3>
+          <h4 className="font-display text-lg font-semibold text-ink">Cum funcționează</h4>
           <p className="mt-2 leading-relaxed text-muted">
             Aparatul folosește un câmp magnetic de intensitate mare și radiofrecvența pentru a
             obține imagini de înaltă rezoluție. Protonii de hidrogen din corp se aliniază în câmpul
@@ -34,7 +34,7 @@ function FaqRichContent() {
           </div>
         </div>
         <div>
-          <h3 className="font-display text-lg font-semibold text-ink">Substanța de contrast</h3>
+          <h4 className="font-display text-lg font-semibold text-ink">Substanța de contrast</h4>
           <p className="mt-2 leading-relaxed text-muted">
             Când medicul radiolog o recomandă, se administrează intravenos o substanță de contrast pe
             bază de gadoliniu, pentru imagini cu acuratețe crescută, utilă în tumori, leziuni
@@ -48,7 +48,7 @@ function FaqRichContent() {
       </div>
 
       <div>
-        <h3 className="font-display text-lg font-semibold text-ink">Avantajele RMN-ului</h3>
+        <h4 className="font-display text-lg font-semibold text-ink">Avantajele RMN-ului</h4>
         <div className="mt-4 grid gap-4 sm:grid-cols-2">
           <div className="rounded-2xl border border-line bg-paper-100 p-4">
             <p className="font-display font-semibold text-ink">Fără radiații ionizante</p>
