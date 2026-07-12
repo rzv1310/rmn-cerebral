@@ -42,7 +42,6 @@ function Index() {
         <Hero />
         <PriceSection />
         <LocationsSection />
-        
         <ClinicalSection />
         <CnasSection />
         <ActeSection />
