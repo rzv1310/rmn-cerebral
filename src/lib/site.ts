@@ -161,8 +161,8 @@ export const monitorCategories = [
 // ---------------------------------------------------------------------------
 export const documents = {
   required: [
-    "Act de identitate (buletin / carte de identitate)",
-    "Bilet de trimitere, pentru decontarea CNAS",
+    "Act de identitate (buletin / pașaport)",
+    "Bilet de trimitere de la medic specialist",
     "Card de sănătate / adeverință de asigurat",
     "Documente medicale anterioare relevante",
     "Investigații imagistice anterioare pe CD (RMN/CT), dacă există",
@@ -361,10 +361,10 @@ export const cerebralIndications = [
   "Evaluare înainte sau după intervenții neurochirurgicale",
 ] as const;
 
-// „Cum se desfășoară investigația”
+// „Cum se desfășoară investigația"
 export const procedureSteps = [
   "Îndepărtezi obiectele metalice și îmbraci un halat de unică folosință.",
-  "Te așezi pe masa aparatului; uneori zona examinată este imobilizată pentru imagini clare.",
+  "Te așezi pe masa aparatului; zona examinată va fi imobilizată pentru imagini clare.",
   "În timpul scanării stai nemișcat; vei auzi un zgomot intermitent și primești dopuri de urechi sau căști.",
   "Comunici oricând cu personalul prin interfon și ai la îndemână un buton de alarmă.",
   "Dacă medicul recomandă contrast, acesta se administrează intravenos, în braț.",
