@@ -25,7 +25,7 @@ export function FaqSection() {
             className={!showAll && i >= INITIAL ? "hidden" : undefined}
           >
             <Accordion q={f.q} defaultOpen={i === 0}>
-              {f.a}
+              {f.content ?? f.a}
             </Accordion>
           </div>
         ))}

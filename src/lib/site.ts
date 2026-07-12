@@ -1,4 +1,12 @@
+import type { ReactNode } from "react";
 import asiromLogo from "@/assets/asirom-logo.png";
+import { Note } from "@/components/primitives";
+
+type FaqItem = {
+  q: string;
+  a: string;
+  content?: ReactNode;
+};
 
 // Single source of truth for the RMN București (Affidea) landing page.
 //
@@ -364,7 +372,7 @@ export const whyAffidea = [
 // Anchor navigation
 export const nav = [
   { href: "#pret", label: "Preț" },
-  { href: "#ce-este", label: "Ce este" },
+  
   { href: "#indicatii", label: "Indicații" },
   { href: "#acte", label: "Acte necesare" },
   { href: "#centre", label: "Centre" },
