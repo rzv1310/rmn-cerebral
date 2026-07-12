@@ -89,7 +89,7 @@ export function PregatireSection() {
           </ol>
         </div>
         <div>
-          <h3 className="font-display text-lg font-semibold text-ink">Recomandări de pregătire</h3>
+          <h3 className="font-display text-lg font-semibold text-ink">Înainte de examinare</h3>
           <div className="mt-6">
             <IconList items={preparation.general} />
           </div>
