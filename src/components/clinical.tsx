@@ -1,5 +1,4 @@
 import {
-  cerebralIndications,
   cerebralShows,
   avcRole,
   cerebralPathologies,
