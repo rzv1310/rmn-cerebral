@@ -7,7 +7,7 @@ import { PriceSection } from "@/components/pricing";
 
 import { ClinicalSection } from "@/components/clinical";
 import { CnasSection } from "@/components/cnas";
-import { ActeSection, PregatireSection, DurataSection, SigurantaSection } from "@/components/patient";
+import { ActeSection, PregatireSection, DurataSection } from "@/components/patient";
 import { LocationsSection } from "@/components/locations";
 import { DoctorsSection, WhyAffideaSection, ReviewsSection } from "@/components/trust";
 import { FaqSection } from "@/components/faq";
@@ -47,7 +47,6 @@ function Index() {
         <ActeSection />
         <PregatireSection />
         <DurataSection />
-        <SigurantaSection />
         <DoctorsSection />
         <WhyAffideaSection />
         <ReviewsSection />

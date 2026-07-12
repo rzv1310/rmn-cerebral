@@ -279,6 +279,10 @@ export const faqs = [
     q: "Ce putere are aparatul RMN (în Tesla)?",
     a: "Puterea aparatului (în Tesla) și producătorul diferă în funcție de centrul Affidea. Multe centre folosesc aparate de câmp înalt, cu diametru larg pentru confort. Îți confirmăm specificațiile centrului ales la momentul programării.",
   },
+  {
+    q: "Este RMN-ul cerebral sigur? Contraindicații",
+    a: "Spre deosebire de radiografie sau computer tomograf (CT), RMN-ul nu folosește radiații ionizante, ci se bazează pe câmp magnetic și unde radio. Anunță personalul medical dacă ai stimulator cardiac (pacemaker) incompatibil RMN, implanturi metalice sau dispozitive medicale incompatibile, implant cohlear sau neurostimulatoare, corpi străini metalici (în special oculari), insuficiență renală severă (pentru examinarea cu contrast) sau sarcină. Efectele adverse sunt rare: reacții alergice ușoare la contrast (urticarie, prurit), reacții alergice severe foarte rare, fibroză sistemică nefrogenă la pacienți cu insuficiență renală severă, disconfort tranzitoriu (amețeală, greață, anxietate) sau claustrofobie. Aparatele cu diametru de până la 70 cm și opțiunea de sedare fac examinarea accesibilă și pacienților anxioși.",
+  },
 ];
 
 // ---------------------------------------------------------------------------
