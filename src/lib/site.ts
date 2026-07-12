@@ -300,7 +300,8 @@ export const whyAffidea = [
   },
   {
     title: "Confort pentru claustrofobi",
-    text: "Tunel larg și opțiune de sedare pentru pacienții anxioși.",
+    text: "Opțiune de sedare pentru pacienții anxioși.",
+    link: { text: "Opțiune de sedare", href: "https://rmn-bucuresti.ro/rmn-cu-sedare/" },
   },
 ] as const;
 

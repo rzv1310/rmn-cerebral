@@ -27,7 +27,23 @@ export function WhyAffideaSection() {
           <div key={w.title} className="select-none rounded-2xl border border-line bg-paper-100 p-6">
             <span className="block h-0.5 w-6 rounded-full bg-primary" aria-hidden />
             <p className="mt-5 font-display font-semibold text-ink">{w.title}</p>
-            <p className="mt-2 text-sm leading-relaxed text-muted">{w.text}</p>
+            <p className="mt-2 text-sm leading-relaxed text-muted">
+              {w.link ? (
+                <>
+                  <a
+                    href={w.link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-inherit underline hover:text-primary"
+                  >
+                    {w.link.text}
+                  </a>
+                  {w.text.slice(w.link.text.length)}
+                </>
+              ) : (
+                w.text
+              )}
+            </p>
           </div>
         ))}
       </div>
