@@ -248,10 +248,6 @@ export const faqs = [
     a: "Rezonanța Magnetică Nucleară (RMN) este o procedură de diagnostic imagistic de înaltă performanță, minim invazivă, atraumatică și neiradiantă. RMN-ul cranio-cerebral oferă imagini detaliate ale structurilor creierului, secțiune cu secțiune, fără a expune pacientul la radiații ionizante. Aparatul folosește un câmp magnetic de intensitate mare și radiofrecvența pentru a obține imagini de înaltă rezoluție. La nevoie, se administrează intravenos o substanță de contrast pe bază de gadoliniu. Principalele avantaje sunt: lipsa radiațiilor ionizante, contrast excelent al țesuturilor moi, imagistică multiplanară și secvențe specializate.",
   },
   {
-    q: "Este RMN-ul cerebral gratuit cu bilet de trimitere?",
-    a: "Da. Cu un bilet de trimitere valabil de la medicul specialist, RMN-ul cerebral este decontat de CNAS. Prin Programul Monitor, pacienții din 7 categorii (oncologici, diabet, boli neurologice, cardiovasculare, rare, cerebrovasculare, post-COVID) beneficiază de RMN gratuit și prioritar.",
-  },
-  {
     q: "Pot face RMN cerebral dacă am claustrofobie?",
     a: "Da. Multe centre Affidea au aparate cu diametru de până la 70 cm, care reduc senzația de închidere. Pentru cazurile severe există opțiunea de sedare și posibilitatea unui însoțitor.",
   },
