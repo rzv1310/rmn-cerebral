@@ -320,16 +320,8 @@ export const whyAffidea = [
     text: "Echipamente RMN moderne și protocoale dedicate creierului: AVC, tumori, scleroză multiplă, epilepsie, malformații vasculare.",
   },
   {
-    title: "RMN gratuit cu trimitere",
-    text: "Decontare integrală CNAS, inclusiv prioritar prin Programul Monitor.",
-  },
-  {
     title: "Rezultat rapid",
     text: "Film și CD pe loc, raport scris în 2–5 zile lucrătoare.",
-  },
-  {
-    title: "Parte din rețeaua Affidea",
-    text: "Standarde europene de imagistică medicală, prezente în toată România.",
   },
   {
     title: "Confort pentru claustrofobi",
