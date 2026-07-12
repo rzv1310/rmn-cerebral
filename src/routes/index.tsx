@@ -23,6 +23,12 @@ export const Route = createFileRoute("/")({
         content:
           "https://affidea.ro/ro-RO/servicii/imagistica-medicala/rmn-rezonanta-magnetica-nucleara/rmn-cerebral",
       },
+      {
+        name: "robots",
+        content: "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+      },
+      { name: "author", content: "dr. Ruxandra Negrus" },
+      { name: "publisher", content: "Affidea" },
     ],
     links: [
       {
