@@ -36,7 +36,7 @@ export function LocationsSection() {
         <p className="eyebrow text-muted">Programări · Call Center</p>
         <a
           href={`tel:${site.phone.tel}`}
-          className="tnum select-text text-3xl font-bold text-ink hover:text-primary-dark sm:text-4xl"
+          className="tnum select-text text-3xl font-bold text-red-600 transition-colors hover:text-blue-600 sm:text-4xl"
         >
           {site.phone.display}
         </a>
