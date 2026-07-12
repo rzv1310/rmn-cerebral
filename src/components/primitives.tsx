@@ -14,7 +14,7 @@ const toneBg: Record<Tone, string> = {
   ink: "bg-primary-dark text-white",
 };
 
-// Imaging registration mark â€” the page's recurring "you are here" glyph.
+// Imaging registration mark ""” the page's recurring "you are here" glyph.
 // A targeting reticle (center ring + 4 ticks), echoing a scanner's slice locator.
 export function Reticle({ className }: { className?: string }) {
   return (
@@ -58,7 +58,7 @@ export function Eyebrow({
   );
 }
 
-// Clinical annotation â€” replaces tinted callout boxes. No fill, no rounded box:
+// Clinical annotation ""” replaces tinted callout boxes. No fill, no rounded box:
 // a reticle + optional mono micro-label + text, so notes read as instrument
 // margin-notes rather than generic "info boxes".
 export function Note({
