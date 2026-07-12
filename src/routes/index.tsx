@@ -13,6 +13,9 @@ import { WhyAffideaSection, ReviewsSection } from "@/components/trust";
 import { FaqSection } from "@/components/faq";
 import { BookingSection } from "@/components/booking";
 import { buildJsonLd } from "@/lib/jsonld";
+import ogImageAsset from "@/assets/rmn-cerebral-og.png.asset.json";
+
+const OG_IMAGE_URL = `https://rmn-cerebral.lovable.app${ogImageAsset.url}`;
 
 export const Route = createFileRoute("/")({
   component: Index,
