@@ -70,7 +70,7 @@ export function StickyCta() {
 
   return (
     <div
-      inert={!visible ? "true" : undefined}
+      inert={!visible}
       className={cx(
         "fixed inset-x-0 bottom-0 z-50 border-t border-line bg-paper-100/95 backdrop-blur-md transition-transform duration-300 ease-out lg:hidden",
         visible ? "translate-y-0" : "pointer-events-none translate-y-full",
