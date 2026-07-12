@@ -59,7 +59,7 @@ export function ReviewsSection() {
           <figure key={r.author} className="flex flex-col select-none rounded-2xl border border-line bg-paper-100 p-6">
             <Stars className="mb-3" />
             <blockquote className="flex-1 text-sm leading-relaxed text-ink/85">
-              "{r.text}"
+              „{r.text}”
             </blockquote>
             <figcaption className="mt-4 flex items-center justify-between text-sm">
               <span className="font-medium text-ink">{r.author}</span>

@@ -22,7 +22,7 @@ export function CnasSection() {
             Programul Monitor: RMN gratuit și prioritar
           </h3>
           <p className="mt-3 leading-relaxed text-muted-2">
-            Medicul specialist notează "Monitor 1…7" pe biletul de trimitere.
+            Medicul specialist notează „Monitor 1…7” pe biletul de trimitere.
             Pacienții din aceste categorii beneficiază de RMN gratuit, nelimitat
             și prioritar, chiar și după epuizarea plafonului lunar.
           </p>
