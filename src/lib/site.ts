@@ -1,12 +1,4 @@
-import type { ReactNode } from "react";
 import asiromLogo from "@/assets/asirom-logo.png";
-import { Note } from "@/components/primitives";
-
-type FaqItem = {
-  q: string;
-  a: string;
-  content?: ReactNode;
-};
 
 // Single source of truth for the RMN București (Affidea) landing page.
 //
@@ -246,7 +238,7 @@ export const techAccordions = [
 // default (the most-searched: cost, ce este, gratuit, durată, rezultat,
 // siguranță, claustrofobie); the rest sit behind a "more" toggle. Mirrored into
 // FAQPage JSON-LD, so keep answers self-contained and factual (YMYL).
-export const faqs: FaqItem[] = [
+export const faqs = [
   {
     q: "Cât costă un RMN cerebral?",
     a: "Un RMN cerebral nativ pornește de la 770 lei, iar cu substanță de contrast de la aproximativ 1.007 lei. Tarifele variază în funcție de centrul Affidea și de tipul de aparat. Cu bilet de trimitere, examinarea este decontată integral de CNAS, deci gratuită.",
@@ -254,79 +246,6 @@ export const faqs: FaqItem[] = [
   {
     q: "Ce este un RMN cerebral?",
     a: "Rezonanța Magnetică Nucleară (RMN) este o procedură de diagnostic imagistic de înaltă performanță, minim invazivă, atraumatică și neiradiantă. RMN-ul cranio-cerebral oferă imagini detaliate ale structurilor creierului, secțiune cu secțiune, fără a expune pacientul la radiații ionizante. Aparatul folosește un câmp magnetic de intensitate mare și radiofrecvența pentru a obține imagini de înaltă rezoluție. La nevoie, se administrează intravenos o substanță de contrast pe bază de gadoliniu. Principalele avantaje sunt: lipsa radiațiilor ionizante, contrast excelent al țesuturilor moi, imagistică multiplanară și secvențe specializate.",
-    content: (
-      <div className="space-y-6">
-        <p className="leading-relaxed text-muted">
-          Rezonanța Magnetică Nucleară (RMN) este o procedură de diagnostic imagistic de înaltă
-          performanță, minim invazivă, atraumatică și neiradiantă.
-        </p>
-        <p className="leading-relaxed text-muted">
-          RMN-ul cranio-cerebral, cunoscut și ca iRM cerebral sau RMN cap, este o metodă imagistică
-          avansată care oferă imagini detaliate ale structurilor creierului, secțiune cu secțiune,
-          fără a expune pacientul la radiații ionizante.
-        </p>
-
-        <div className="grid gap-8 md:grid-cols-2">
-          <div>
-            <h3 className="font-display text-lg font-semibold text-ink">Cum funcționează</h3>
-            <p className="mt-2 leading-relaxed text-muted">
-              Aparatul folosește un câmp magnetic de intensitate mare și radiofrecvența pentru a
-              obține imagini de înaltă rezoluție. Protonii de hidrogen din corp se aliniază în
-              câmpul magnetic, iar semnalele emise la revenire sunt transformate de computer în
-              imagini detaliate, secțiune cu secțiune.
-            </p>
-            <div className="mt-4">
-              <Note label="Fără radiații">
-                Spre deosebire de radiografie sau computer tomograf (CT), RMN-ul nu folosește
-                radiații ionizante, ci se bazează pe câmp magnetic și unde radio.
-              </Note>
-            </div>
-          </div>
-          <div>
-            <h3 className="font-display text-lg font-semibold text-ink">Substanța de contrast</h3>
-            <p className="mt-2 leading-relaxed text-muted">
-              Când medicul radiolog o recomandă, se administrează intravenos o substanță de contrast
-              pe bază de gadoliniu, pentru imagini cu acuratețe crescută, utilă în tumori, leziuni
-              inflamatorii sau anomalii vasculare.
-            </p>
-            <p className="mt-2 text-sm leading-relaxed text-muted">
-              Administrarea se face doar când beneficiile depășesc riscurile, după o evaluare atentă
-              a funcției renale.
-            </p>
-          </div>
-        </div>
-
-        <div>
-          <h3 className="font-display text-lg font-semibold text-ink">Avantajele RMN-ului</h3>
-          <div className="mt-4 grid gap-4 sm:grid-cols-2">
-            <div className="rounded-2xl border border-line bg-paper-100 p-4">
-              <p className="font-display font-semibold text-ink">Fără radiații ionizante</p>
-              <p className="mt-1 text-sm leading-relaxed text-muted">
-                Se bazează pe câmp magnetic și unde radio, nu pe raze X.
-              </p>
-            </div>
-            <div className="rounded-2xl border border-line bg-paper-100 p-4">
-              <p className="font-display font-semibold text-ink">Contrast excelent al țesuturilor moi</p>
-              <p className="mt-1 text-sm leading-relaxed text-muted">
-                Detalii superioare ale creierului față de computer tomograf.
-              </p>
-            </div>
-            <div className="rounded-2xl border border-line bg-paper-100 p-4">
-              <p className="font-display font-semibold text-ink">Imagistică multiplanară</p>
-              <p className="mt-1 text-sm leading-relaxed text-muted">
-                Secțiuni în orice plan, fără repoziționarea pacientului.
-              </p>
-            </div>
-            <div className="rounded-2xl border border-line bg-paper-100 p-4">
-              <p className="font-display font-semibold text-ink">Secvențe specializate</p>
-              <p className="mt-1 text-sm leading-relaxed text-muted">
-                Difuzie, perfuzie, angio-RMN și spectroscopie.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    ),
   },
   {
     q: "Este RMN-ul cerebral gratuit cu bilet de trimitere?",
