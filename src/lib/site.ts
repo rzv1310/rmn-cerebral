@@ -240,7 +240,7 @@ export const techAccordions = [
 // FAQPage JSON-LD, so keep answers self-contained and factual (YMYL).
 export const faqs = [
   {
-    q: "Cât costă un RMN cerebral?",
+    q: "Cât costă un RMN cerebral în clinicile Affidea?",
     a: "Un RMN cerebral nativ pornește de la 770 lei, iar cu substanță de contrast de la aproximativ 1.007 lei. Tarifele variază în funcție de centrul Affidea și de tipul de aparat. Cu bilet de trimitere, examinarea este decontată integral de CNAS, deci gratuită.",
   },
   {
