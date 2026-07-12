@@ -497,7 +497,7 @@ export const interpretation = {
     },
     {
       label: "Rezultat",
-      value: "24–72 ore",
+      value: "2-5 zile",
       extra: "raport scris, CD DICOM",
     },
   ],
