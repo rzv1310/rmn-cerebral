@@ -298,7 +298,7 @@ export const whyAffidea: readonly WhyAffideaItem[] = [
   },
   {
     title: "Sisteme performante",
-    text: "Echipamente RMN moderne și protocoale dedicate creierului: AVC, tumori, scleroză multiplă, epilepsie, malformații vasculare.",
+    text: "Echipamente RMN moderne și protocoale dedicate afecțiunilor creierului: AVC, tumori, scleroză multiplă, epilepsie, malformații vasculare.",
   },
   {
     title: "Rezultat rapid",
