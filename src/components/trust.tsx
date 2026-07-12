@@ -19,7 +19,7 @@ export function WhyAffideaSection() {
     <Section
       id="de-ce"
       tone="paper"
-      eyebrow="De ce Affidea"
+      eyebrow="Lider european în diagnostic imagistic"
       title="Motive să alegi Affidea pentru RMN cerebral"
     >
       <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
