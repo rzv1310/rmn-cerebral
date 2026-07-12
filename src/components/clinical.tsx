@@ -24,23 +24,15 @@ export function ClinicalSection() {
       id="indicatii"
       tone="paper"
       eyebrow="Indicații"
-      title="Când este indicat un RMN cerebral?"
+      title="Când este recomandat un RMN cerebral?"
       intro="Medicul specialist recomandă un RMN cerebral pentru a investiga simptome neurologice sau pentru a diagnostica și monitoriza numeroase afecțiuni ale creierului."
     >
-      <div className="grid gap-10 lg:grid-cols-2">
-        <div>
-          <h3 className="font-display text-lg font-semibold text-ink">Când este recomandat</h3>
-          <div className="mt-5">
-            <CheckList items={cerebralIndications} />
-          </div>
-        </div>
-        <div>
-          <h3 className="font-display text-lg font-semibold text-ink">
-            Ce evidențiază RMN-ul cranio-cerebral
-          </h3>
-          <div className="mt-5">
-            <CheckList items={cerebralShows} />
-          </div>
+      <div>
+        <h3 className="font-display text-lg font-semibold text-ink">
+          Ce evidențiază RMN-ul cranio-cerebral
+        </h3>
+        <div className="mt-5">
+          <CheckList items={cerebralShows} />
         </div>
       </div>
 
