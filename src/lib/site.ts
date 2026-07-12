@@ -232,16 +232,20 @@ export const techAccordions = [
 ] as const;
 
 // ---------------------------------------------------------------------------
-// FAQ (15) — mirrored verbatim into FAQPage schema
+// FAQ — mirrored verbatim into FAQPage schema
 // ---------------------------------------------------------------------------
 // FAQ — deduplicated and ordered by search intent. The first 6 are shown by
-// default (the most-searched: cost, gratuit, durată, rezultat, siguranță,
-// claustrofobie); the rest sit behind a "more" toggle. Mirrored into FAQPage
-// JSON-LD, so keep answers self-contained and factual (YMYL).
+// default (the most-searched: cost, ce este, gratuit, durată, rezultat,
+// siguranță, claustrofobie); the rest sit behind a "more" toggle. Mirrored into
+// FAQPage JSON-LD, so keep answers self-contained and factual (YMYL).
 export const faqs = [
   {
     q: "Cât costă un RMN cerebral?",
     a: "Un RMN cerebral nativ pornește de la 770 lei, iar cu substanță de contrast de la aproximativ 1.007 lei. Tarifele variază în funcție de centrul Affidea și de tipul de aparat. Cu bilet de trimitere, examinarea este decontată integral de CNAS, deci gratuită.",
+  },
+  {
+    q: "Ce este un RMN cerebral?",
+    a: "Rezonanța Magnetică Nucleară (RMN) este o procedură de diagnostic imagistic de înaltă performanță, minim invazivă, atraumatică și neiradiantă. RMN-ul cranio-cerebral oferă imagini detaliate ale structurilor creierului, secțiune cu secțiune, fără a expune pacientul la radiații ionizante. Aparatul folosește un câmp magnetic de intensitate mare și radiofrecvența pentru a obține imagini de înaltă rezoluție. La nevoie, se administrează intravenos o substanță de contrast pe bază de gadoliniu. Principalele avantaje sunt: lipsa radiațiilor ionizante, contrast excelent al țesuturilor moi, imagistică multiplanară și secvențe specializate.",
   },
   {
     q: "Este RMN-ul cerebral gratuit cu bilet de trimitere?",
@@ -268,8 +272,8 @@ export const faqs = [
     a: "Act de identitate, bilet de trimitere (pentru decontare), card de sănătate, documente medicale anterioare și investigațiile imagistice pe CD, dacă există. Pentru RMN cu contrast sunt necesare analize recente de creatinină serică și RFG.",
   },
   {
-    q: "Ce este substanța de contrast și ce înseamnă RMN „nativ”?",
-    a: "„Nativ” înseamnă fără substanță de contrast. La RMN-ul cu contrast se administrează intravenos o substanță pe bază de gadoliniu, care evidențiază tumori, inflamații și vasele de sânge. Necesitatea contrastului o stabilește medicul radiolog, în funcție de investigație.",
+    q: "Ce este substanța de contrast și ce înseamnă RMN \"nativ\"?",
+    a: "\"Nativ\" înseamnă fără substanță de contrast. La RMN-ul cu contrast se administrează intravenos o substanță pe bază de gadoliniu, care evidențiază tumori, inflamații și vasele de sânge. Necesitatea contrastului o stabilește medicul radiolog, în funcție de investigație.",
   },
   {
     q: "Pot face RMN cerebral dacă sunt însărcinată?",
@@ -287,7 +291,7 @@ export const faqs = [
     q: "Ce putere are aparatul RMN (în Tesla)?",
     a: "Puterea aparatului (în Tesla) și producătorul diferă în funcție de centrul Affidea. Multe centre folosesc aparate de câmp înalt, cu diametru larg pentru confort. Îți confirmăm specificațiile centrului ales la momentul programării.",
   },
-] as const;
+];
 
 // ---------------------------------------------------------------------------
 // Medical authority (E-E-A-T). Presented by competență, NOT by fabricated
@@ -364,7 +368,7 @@ export const whyAffidea = [
 // Anchor navigation
 export const nav = [
   { href: "#pret", label: "Preț" },
-  { href: "#ce-este", label: "Ce este" },
+  
   { href: "#indicatii", label: "Indicații" },
   { href: "#acte", label: "Acte necesare" },
   { href: "#centre", label: "Centre" },

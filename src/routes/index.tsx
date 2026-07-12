@@ -4,7 +4,7 @@ import { StickyCta } from "@/components/site-chrome";
 import { SelectGuard } from "@/components/select-guard";
 import { Hero } from "@/components/hero";
 import { PriceSection } from "@/components/pricing";
-import { CeEsteSection } from "@/components/what-is";
+
 import { ClinicalSection } from "@/components/clinical";
 import { CnasSection } from "@/components/cnas";
 import { ActeSection, PregatireSection, DurataSection, SigurantaSection } from "@/components/patient";
@@ -42,7 +42,6 @@ function Index() {
         <Hero />
         <PriceSection />
         <LocationsSection />
-        <CeEsteSection />
         <ClinicalSection />
         <CnasSection />
         <ActeSection />
