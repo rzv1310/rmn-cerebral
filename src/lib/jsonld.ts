@@ -1,6 +1,7 @@
 // Structured data (@graph) for the national RMN cerebral page.
 // Reads from lib/site.ts so schema prices always match on-page prices.
 import { site, PRICE, cerebralCuContrast, faqs, cerebralIndications } from "./site";
+import affideaLogoAsset from "@/assets/affidea-logo.jpg.asset.json";
 
 const base = site.domain;
 const ORG = `${base}/#affidea`;
@@ -17,7 +18,7 @@ export function buildJsonLd() {
         name: "Affidea",
         alternateName: "Affidea România",
         url: "https://affidea.ro",
-        logo: "https://affidea.ro/logo.png", // DE CONFIRMAT — înlocuiește cu URL-ul real al logo-ului Affidea
+        logo: `https://rmn-cerebral.lovable.app${affideaLogoAsset.url}`, // TODO: mută pe affidea.ro după deploy
         description:
           "Rețea națională de imagistică medicală: RMN, CT, mamografie și radiologie în 25 de centre din România.",
         medicalSpecialty: "Radiography",
