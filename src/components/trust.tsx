@@ -1,4 +1,4 @@
-import { medicalTeam, whyAffidea, reviews, site } from "@/lib/site";
+import { whyAffidea, reviews, site } from "@/lib/site";
 import { Section, cx } from "@/components/primitives";
 
 function Stars({ n = 5, className }: { n?: number; className?: string }) {
@@ -13,33 +13,6 @@ function Stars({ n = 5, className }: { n?: number; className?: string }) {
   );
 }
 
-export function DoctorsSection() {
-  return (
-    <Section
-      id="medici"
-      tone="white"
-      eyebrow="Echipa medicală"
-      title="Medici radiologi cu experiență"
-      intro="Investigațiile sunt interpretate de medici specialiști și primari în radiologie-imagistică medicală, cu competență în RMN."
-    >
-      <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-        {medicalTeam.map((m) => (
-          <div key={m.role} className="select-none rounded-2xl border border-line bg-paper-100 p-6">
-            <span className="eyebrow inline-block rounded-full bg-primary/10 px-3 py-1 text-[0.6rem] text-primary-dark">
-              {m.area}
-            </span>
-            <p className="mt-4 font-display text-lg font-semibold text-ink">{m.role}</p>
-            <p className="mt-3 text-sm leading-relaxed text-ink/70">{m.detail}</p>
-          </div>
-        ))}
-      </div>
-      <p className="mt-6 text-xs text-muted">
-        Conținut verificat medical de un medic primar radiolog din rețeaua Affidea. Ultima
-        actualizare: iulie 2026.
-      </p>
-    </Section>
-  );
-}
 
 export function WhyAffideaSection() {
   return (

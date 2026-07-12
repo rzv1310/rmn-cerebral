@@ -9,7 +9,7 @@ import { ClinicalSection } from "@/components/clinical";
 import { CnasSection } from "@/components/cnas";
 import { ActeSection, PregatireSection, DurataSection } from "@/components/patient";
 import { LocationsSection } from "@/components/locations";
-import { DoctorsSection, WhyAffideaSection, ReviewsSection } from "@/components/trust";
+import { WhyAffideaSection, ReviewsSection } from "@/components/trust";
 import { FaqSection } from "@/components/faq";
 import { BookingSection } from "@/components/booking";
 import { buildJsonLd } from "@/lib/jsonld";
@@ -47,7 +47,7 @@ function Index() {
         <ActeSection />
         <PregatireSection />
         <DurataSection />
-        <DoctorsSection />
+        
         <WhyAffideaSection />
         <ReviewsSection />
         <FaqSection />
