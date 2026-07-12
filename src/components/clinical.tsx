@@ -1,5 +1,6 @@
 import {
   cerebralShows,
+  cerebralIndications,
   avcRole,
   cerebralPathologies,
 } from "@/lib/site";
