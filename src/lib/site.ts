@@ -316,8 +316,8 @@ export const whyAffidea = [
     text: "Cazurile complexe pot fi revizuite de mai mulți medici radiologi din rețea, cu competență în neuroimagistică.",
   },
   {
-    title: "Aparate performante",
-    text: "Echipamente RMN de câmp înalt, cu diametru larg pentru confort. Specificațiile variază pe centru.",
+    title: "Sisteme performante",
+    text: "Echipamente RMN moderne și protocoale dedicate creierului: AVC, tumori, scleroză multiplă, epilepsie, malformații vasculare.",
   },
   {
     title: "RMN gratuit cu trimitere",
