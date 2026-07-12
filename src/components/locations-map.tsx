@@ -491,7 +491,7 @@ function Popover({
         ) : (
           <p className="px-4 py-3 text-xs leading-snug text-muted">
             Momentan fără centru de imagistică Affidea aici. Sună la{" "}
-            <a href="tel:0219338" className="font-semibold text-primary-dark">
+            <a href="tel:0219338" className="font-semibold text-red-600 transition-colors hover:text-blue-600">
               021 9338
             </a>{" "}
             pentru cel mai apropiat centru.
