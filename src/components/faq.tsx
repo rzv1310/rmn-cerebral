@@ -153,7 +153,7 @@ export function FaqSection() {
     <Section
       id="intrebari"
       tone="paper"
-      eyebrow="Întrebări frecvente"
+      eyebrow="Citește și ..."
       title="Întrebări frecvente despre RMN cerebral"
     >
       <div className="mx-auto max-w-3xl">
