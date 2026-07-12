@@ -272,8 +272,8 @@ export const faqs = [
     a: "Act de identitate, bilet de trimitere (pentru decontare), card de sănătate, documente medicale anterioare și investigațiile imagistice pe CD, dacă există. Pentru RMN cu contrast sunt necesare analize recente de creatinină serică și RFG.",
   },
   {
-    q: "Ce este substanța de contrast și ce înseamnă RMN „nativ"?",
-    a: "„Nativ" înseamnă fără substanță de contrast. La RMN-ul cu contrast se administrează intravenos o substanță pe bază de gadoliniu, care evidențiază tumori, inflamații și vasele de sânge. Necesitatea contrastului o stabilește medicul radiolog, în funcție de investigație.",
+    q: "Ce este substanța de contrast și ce înseamnă RMN \"nativ\"?",
+    a: "\"Nativ\" înseamnă fără substanță de contrast. La RMN-ul cu contrast se administrează intravenos o substanță pe bază de gadoliniu, care evidențiază tumori, inflamații și vasele de sânge. Necesitatea contrastului o stabilește medicul radiolog, în funcție de investigație.",
   },
   {
     q: "Pot face RMN cerebral dacă sunt însărcinată?",
