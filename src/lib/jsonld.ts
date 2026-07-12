@@ -1,6 +1,7 @@
 // Structured data (@graph) for the national RMN cerebral page.
 // Reads from lib/site.ts so schema prices always match on-page prices.
 import { site, PRICE, cerebralCuContrast, faqs, cerebralIndications } from "./site";
+import affideaLogoAsset from "@/assets/affidea-logo.jpg.asset.json";
 
 const base = site.domain;
 const ORG = `${base}/#affidea`;
