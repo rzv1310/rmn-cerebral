@@ -102,8 +102,11 @@ export function FaqSection() {
             className={!showAll && i >= INITIAL ? "hidden" : undefined}
           >
             <Accordion q={f.q} defaultOpen={i === 0}>
-              <FaqRichContent question={f.q} />
-              {f.a}
+              {f.q === "Ce este un RMN cerebral?" ? (
+                <FaqRichContent />
+              ) : (
+                f.a
+              )}
             </Accordion>
           </div>
         ))}
