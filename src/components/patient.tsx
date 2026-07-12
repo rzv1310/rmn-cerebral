@@ -36,7 +36,7 @@ export function ActeSection() {
       tone="paper"
       eyebrow="Acte necesare"
       title="Ce documente aduci la programare"
-      intro="Pregătește documentele de mai jos înainte de examinare. Vino cu 15–20 de minute mai devreme pentru completarea chestionarului de siguranță RMN."
+      intro="Pregătește documentele de mai jos înainte de examinare. Vino cu 15-20 de minute mai devreme pentru completarea chestionarului de siguranță RMN."
     >
       <div className="grid gap-6 md:grid-cols-2">
         <div className="select-none rounded-2xl border border-line bg-paper-100 p-6">

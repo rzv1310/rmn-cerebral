@@ -29,8 +29,8 @@ export const site = {
   },
   geo: { lat: 44.4183, lng: 26.1526 }, // DE CONFIRMAT
   hours: [
-    { days: "Luni – Vineri", value: "07:00 – 21:00" },
-    { days: "Sâmbătă", value: "08:00 – 15:00" },
+    { days: "Luni - Vineri", value: "07:00 - 21:00" },
+    { days: "Sâmbătă", value: "08:00 - 15:00" },
     { days: "Duminică", value: "Închis" },
   ], // DE CONFIRMAT — program orientativ, variază pe centru
   // schema.org openingHoursSpecification shorthand
@@ -179,10 +179,10 @@ export const documents = {
 export const durations = [
   {
     label: "RMN nativ (o regiune)",
-    value: "15–30 min",
+    value: "15-30 min",
     note: "Fără pregătire specială",
   },
-  { label: "RMN cerebral nativ", value: "20–30 min", note: "Regiune unică" },
+  { label: "RMN cerebral nativ", value: "20-30 min", note: "Regiune unică" },
   {
     label: "RMN abdomen / pelvis",
     value: "≈ 30 min",
@@ -190,13 +190,13 @@ export const durations = [
   },
   {
     label: "RMN cu substanță de contrast",
-    value: "+15–20 min",
+    value: "+15-20 min",
     note: "Se adaugă la timpul nativ",
   },
   { label: "RMN cu sedare", value: "≈ 45 min", note: "Necesită însoțitor" },
   {
     label: "Rezultat scris",
-    value: "2–5 zile lucrătoare",
+    value: "2-5 zile lucrătoare",
     note: "Film + CD/DVD pe loc",
   },
 ] as const;
@@ -227,7 +227,7 @@ export const techAccordions = [
   },
   {
     q: "Cum primesc imaginile?",
-    a: "Pe loc primești filmul radiologic și CD/DVD-ul cu imaginile în format DICOM. Raportul scris al medicului radiolog este disponibil în 2–5 zile lucrătoare.",
+    a: "Pe loc primești filmul radiologic și CD/DVD-ul cu imaginile în format DICOM. Raportul scris al medicului radiolog este disponibil în 2-5 zile lucrătoare.",
   },
 ] as const;
 
@@ -302,7 +302,7 @@ export const whyAffidea: readonly WhyAffideaItem[] = [
   },
   {
     title: "Rezultat rapid",
-    text: "Film și CD pe loc, raport scris în 2–5 zile lucrătoare.",
+    text: "Film și CD pe loc, raport scris în 2-5 zile lucrătoare.",
   },
   {
     title: "Confort pentru claustrofobi",
@@ -376,7 +376,7 @@ export const preparation = {
     "Nu este necesară o pregătire specială pentru majoritatea examinărilor cerebrale.",
     "Îndepărtează bijuteriile, ceasul, ochelarii, agrafele și cardurile cu bandă magnetică.",
     "Anunță personalul dacă ai implanturi, dispozitive medicale sau ești însărcinată.",
-    "Vino cu 15–20 de minute mai devreme pentru completarea chestionarului de siguranță.",
+    "Vino cu 15-20 de minute mai devreme pentru completarea chestionarului de siguranță.",
   ],
   contrast: [
     "Adu analize recente de creatinină serică și RFG.",
@@ -487,12 +487,12 @@ export const interpretation = {
   duration: [
     {
       label: "RMN cerebral",
-      value: "20–30 min",
+      value: "20-30 min",
       extra: "nativ (fără contrast)",
     },
     {
       label: "RMN cerebral cu contrast",
-      value: "45–60 min",
+      value: "45-60 min",
       extra: "în funcție de protocol",
     },
     {

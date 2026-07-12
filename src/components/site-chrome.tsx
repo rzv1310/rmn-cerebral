@@ -148,7 +148,7 @@ export function SiteFooter() {
                 </a>
               </li>
               <li className="pt-2 text-xs">
-                Program: Luni – Vineri {site.hours[0].value}
+                Program: Luni - Vineri {site.hours[0].value}
               </li>
             </ul>
           </div>
