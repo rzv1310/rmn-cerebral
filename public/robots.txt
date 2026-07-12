@@ -1,5 +1,5 @@
 User-Agent: *
 Allow: /
 
-Host: https://rmn-bucuresti.ro
-Sitemap: https://rmn-bucuresti.ro/sitemap.xml
+Host: https://affidea.ro
+Sitemap: https://affidea.ro/sitemap.xml

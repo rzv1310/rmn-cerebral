@@ -12,8 +12,8 @@ export const site = {
   tagline: "Rezonanță Magnetică în București",
   operatorNote: "Centru operat de Biomed Scan, parte din rețeaua Affidea.",
 
-  // DE CONFIRMAT — deploy domain (drives metadataBase, canonical, sitemap, schema @id)
-  domain: "https://rmn-bucuresti.ro",
+  // Domeniu final Affidea unde va fi găzduită pagina
+  domain: "https://affidea.ro/ro-RO/servicii/imagistica-medicala/rmn-rezonanta-magnetica-nucleara/rmn-cerebral",
 
   // Affidea national Contact Center — DE CONFIRMAT
   phone: { display: "021 9338", tel: "+40219338" },
