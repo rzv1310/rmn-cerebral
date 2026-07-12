@@ -260,10 +260,6 @@ export const faqs = [
     a: "RMN-ul nativ este considerat sigur după primul trimestru, dar orice examinare în sarcină se face doar la recomandarea medicului. Substanța de contrast se evită în sarcină.",
   },
   {
-    q: "Cine nu poate face RMN?",
-    a: "Pacienții cu stimulator cardiac incompatibil, anumite implanturi metalice sau dispozitive medicale, implant cohlear ori corpi străini metalici. Pentru contrast, pacienții cu insuficiență renală severă. Compatibilitatea se stabilește împreună cu medicul.",
-  },
-  {
     q: "Care este diferența dintre RMN și CT?",
     a: "RMN-ul folosește câmp magnetic (fără radiații) și oferă detalii excelente ale țesuturilor moi: creier, măduvă, articulații. CT-ul folosește raze X și este mai rapid, util pentru os și urgențe. Alegerea aparține medicului.",
   },
