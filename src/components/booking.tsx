@@ -16,7 +16,7 @@ export function BookingSection() {
       tone="ink"
       eyebrow="Programare"
       title="Programează-ți RMN-ul cerebral"
-      intro="Completează formularul sau sună la Contact Center. Îți confirmăm rapid data și centrul Affidea potrivit pentru tine."
+      intro="Completează formularul sau sună la Call Center. Îți confirmăm rapid data și centrul Affidea potrivit pentru tine."
     >
       <div className="grid gap-10 lg:grid-cols-2">
         <div>
@@ -27,7 +27,7 @@ export function BookingSection() {
             {site.phone.display}
           </a>
           <p className="mt-2 text-sm text-muted-2">
-            Contact Center · Luni – Vineri {site.hours[0].value}, Sâmbătă{" "}
+            Call Center · Luni – Vineri {site.hours[0].value}, Sâmbătă{" "}
             {site.hours[1].value}
           </p>
 
