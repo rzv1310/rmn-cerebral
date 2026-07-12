@@ -22,7 +22,7 @@ function HeroForm() {
     >
       <div className="mb-3 flex items-baseline justify-between gap-3">
         <p className="eyebrow text-muted-2">Cere o programare</p>
-        <span className="text-xs text-muted-2">Îți confirmăm rapid</span>
+        <span className="text-xs text-muted-2">Î�'i confirmăm rapid</span>
       </div>
       <ProgramareForm idPrefix="hero" />
     </div>
@@ -50,21 +50,21 @@ export function Hero() {
               href="https://affidea.ro/ro-RO/servicii/imagistica-medicala/rmn-rezonanta-magnetica-nucleara/"
               className="text-inherit no-underline hover:text-inherit"
             >
-              Imagistică prin rezonanță magnetică
+              Imagistică prin rezonan�'ă magnetică
             </a>
           </Eyebrow>
           <h1 className="mt-5 text-4xl font-bold leading-[1.05] sm:text-5xl lg:text-[3.4rem]">
             RMN cerebral <span className="text-primary-light">la Affidea</span>
           </h1>
           <p className="mt-5 max-w-xl text-lg leading-relaxed text-muted-2">
-            Rezonanță magnetică cerebrală cu rezultat rapid și fără liste de
-            așteptare, în 25+ centre Affidea din România.
+            Rezonan�'ă magnetică cerebrală cu rezultat rapid �'i fără liste de
+            a�'teptare, în 25+ centre Affidea din România.
           </p>
 
           {/* price readout */}
           <div className="mt-8 flex flex-wrap items-end gap-x-8 gap-y-4">
             <div>
-              <span className="eyebrow text-muted-2">RMN cerebral preț</span>
+              <span className="eyebrow text-muted-2">RMN cerebral pre�'</span>
               <div className="mt-1.5 flex items-baseline gap-2">
                 <span className="text-lg text-muted-2">de la</span>
                 <span className="tnum text-5xl font-bold leading-none text-paper-100">

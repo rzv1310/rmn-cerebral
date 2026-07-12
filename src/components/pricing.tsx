@@ -14,7 +14,7 @@ export function PriceSection() {
       id="pret"
       tone="paper"
       eyebrow="Tarife"
-      title="RMN cerebral pre»õ de la 770 lei"
+      title="RMN cerebral pre»' de la 770 lei"
     >
       <div className="grid gap-6 lg:grid-cols-[1.3fr_1fr]">
         <div className="overflow-x-auto rounded-2xl bg-white">
@@ -28,7 +28,7 @@ export function PriceSection() {
                   scope="col"
                   className="whitespace-nowrap border border-white/20 px-4 py-2.5 text-left text-sm font-bold"
                 >
-                  Investiga»õie
+                  Investiga»'ie
                 </th>
                 <th
                   scope="col"
@@ -80,19 +80,19 @@ export function PriceSection() {
 
         <aside className="flex select-none flex-col gap-5 rounded-2xl bg-primary-dark p-6 text-white">
           <div>
-            <p className="eyebrow text-white/70">Pre»õ de la</p>
+            <p className="eyebrow text-white/70">Pre»' de la</p>
             <p className="mt-2 text-lg leading-relaxed text-white">
               <span className="tnum font-semibold text-white">
                 de la 770 lei
               </span>{" "}
               pentru un RMN cerebral nativ. Tariful final depinde de centrul
-              Affidea »ôi de aparat.
+              Affidea »'i de aparat.
             </p>
           </div>
           <ul className="space-y-3 text-sm text-white">
             {[
               `RMN cu sedare: +${lei(PRICE.sedarePrima)}`,
-              "CD/DVD »ôi raport medical incluse",
+              "CD/DVD »'i raport medical incluse",
               "Cu bilet de trimitere: Gratuit prin CNAS",
             ].map((t) => (
               <li key={t} className="flex items-start gap-2.5">
@@ -130,7 +130,7 @@ export function PriceSection() {
                 p.name === "Asirom" ||
                 p.name === "Signal Iduna" ||
                 p.name === "Groupama" ||
-                p.name === "Allianz-»öiriac";
+                p.name === "Allianz-»'iriac";
               return (
                 <div
                   key={`${p.name}-${i}`}

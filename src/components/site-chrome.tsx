@@ -24,7 +24,7 @@ export function SiteHeader() {
       <div className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between px-5 sm:px-8">
         <Wordmark />
         <nav
-          aria-label="Secțiuni"
+          aria-label="Sec�'iuni"
           className="hidden items-center gap-7 lg:flex"
         >
           {nav.map((n) => (
@@ -106,8 +106,8 @@ export function SiteFooter() {
           <div>
             <Wordmark />
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted-2">
-              Rezonanță magnetică cerebrală în {site.affideaFootprint}. Preț
-              transparent, aparate de câmp înalt și rezultate rapide.
+              Rezonan�'ă magnetică cerebrală în {site.affideaFootprint}. Pre�'
+              transparent, aparate de câmp înalt �'i rezultate rapide.
             </p>
             <p className="mt-4 text-xs text-muted-2">{site.operatorNote}</p>
           </div>
@@ -159,9 +159,9 @@ export function SiteFooter() {
             <strong className="font-semibold text-paper-100">
               Notă medicală:
             </strong>{" "}
-            Informațiile de pe această pagină au scop educativ și nu înlocuiesc
-            consultul unui medic. Recomandarea de investigație și interpretarea
-            rezultatului aparțin medicului specialist.
+            Informa�'iile de pe această pagină au scop educativ �'i nu înlocuiesc
+            consultul unui medic. Recomandarea de investiga�'ie �'i interpretarea
+            rezultatului apar�'in medicului specialist.
           </p>
           <div className="mt-6 text-xs text-muted-2">
             <p>© {"2026"} Affidea. Toate drepturile rezervate.</p>

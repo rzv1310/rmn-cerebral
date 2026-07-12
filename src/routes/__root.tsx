@@ -77,34 +77,34 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "RMN cerebral: preț de la 770 lei, gratuit CNAS | Affidea" },
+      { title: "RMN cerebral: pre�' de la 770 lei, gratuit CNAS | Affidea" },
       {
         name: "description",
         content:
-          "RMN cerebral la Affidea, de la 770 lei, gratuit cu bilet de trimitere CNAS. Rezonanță magnetică în centre Affidea din toată România. Programează-te online.",
+          "RMN cerebral la Affidea, de la 770 lei, gratuit cu bilet de trimitere CNAS. Rezonan�'ă magnetică în centre Affidea din toată România. Programează-te online.",
       },
       { name: "theme-color", content: "#2d69b3" },
       {
         name: "keywords",
         content:
-          "rmn cerebral, rmn cerebral preț, rmn cerebral affidea, rezonanță magnetică cerebrală, rmn creier preț, rmn cerebral cu contrast, rmn cerebral gratuit bilet de trimitere, affidea rmn",
+          "rmn cerebral, rmn cerebral pre�', rmn cerebral affidea, rezonan�'ă magnetică cerebrală, rmn creier pre�', rmn cerebral cu contrast, rmn cerebral gratuit bilet de trimitere, affidea rmn",
       },
       { property: "og:type", content: "website" },
       { property: "og:locale", content: "ro_RO" },
       { property: "og:site_name", content: "Affidea" },
-      { property: "og:title", content: "RMN cerebral la Affidea, preț de la 770 lei" },
+      { property: "og:title", content: "RMN cerebral la Affidea, pre�' de la 770 lei" },
       {
         property: "og:description",
         content:
-          "Rezonanță magnetică cerebrală în centre Affidea din România. Preț transparent de la 770 lei, gratuit cu bilet de trimitere CNAS.",
+          "Rezonan�'ă magnetică cerebrală în centre Affidea din România. Pre�' transparent de la 770 lei, gratuit cu bilet de trimitere CNAS.",
       },
       { property: "og:image", content: "/og.png" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "RMN cerebral la Affidea, preț de la 770 lei" },
+      { name: "twitter:title", content: "RMN cerebral la Affidea, pre�' de la 770 lei" },
       {
         name: "twitter:description",
         content:
-          "Rezonanță magnetică cerebrală în centre Affidea din România. Preț de la 770 lei, gratuit cu bilet de trimitere.",
+          "Rezonan�'ă magnetică cerebrală în centre Affidea din România. Pre�' de la 770 lei, gratuit cu bilet de trimitere.",
       },
       { name: "twitter:image", content: "/og.png" },
     ],
