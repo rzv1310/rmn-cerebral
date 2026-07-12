@@ -4,9 +4,7 @@ import { Section, Accordion, Note } from "@/components/primitives";
 
 const INITIAL = 6;
 
-function FaqRichContent({ question }: { question: string }) {
-  if (question !== "Ce este un RMN cerebral?") return null;
-
+function FaqRichContent() {
   return (
     <div className="space-y-6">
       <p className="leading-relaxed text-muted">
