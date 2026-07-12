@@ -292,14 +292,14 @@ export function Accordion({
       )}
     >
       <summary className="flex items-center justify-between gap-4 py-5 text-left">
-        <span
+        <h3
           className={cx(
             "text-base font-medium sm:text-lg",
             onDark ? "text-paper-100" : "text-ink",
           )}
         >
           {q}
-        </span>
+        </h3>
         <Chevron
           className={cx(
             "h-5 w-5 shrink-0",
