@@ -17,34 +17,34 @@ export function PriceSection() {
       title="RMN cerebral preț de la 770 lei"
     >
       <div className="grid gap-6 lg:grid-cols-[1.3fr_1fr]">
-        <div className="overflow-x-auto rounded-2xl border border-line bg-paper-100">
-          <table className="w-full border-collapse">
+        <div className="overflow-x-auto rounded-2xl bg-primary-dark">
+          <table className="w-full border-collapse text-paper-100">
             <caption className="sr-only">
               Tarife RMN cerebral la Affidea
             </caption>
-            <thead className="bg-primary-dark text-paper-100">
+            <thead className="bg-primary-dark">
               <tr>
                 <th
                   scope="col"
-                  className="whitespace-nowrap px-4 py-2.5 text-left text-sm font-bold"
+                  className="whitespace-nowrap border border-white/20 px-4 py-2.5 text-left text-sm font-bold"
                 >
                   Investigație
                 </th>
                 <th
                   scope="col"
-                  className="whitespace-nowrap px-4 py-2.5 text-center text-sm font-bold"
+                  className="whitespace-nowrap border border-white/20 px-4 py-2.5 text-center text-sm font-bold"
                 >
                   Plată
                 </th>
                 <th
                   scope="col"
-                  className="whitespace-nowrap px-4 py-2.5 text-center text-sm font-bold"
+                  className="whitespace-nowrap border border-white/20 px-4 py-2.5 text-center text-sm font-bold"
                 >
                   Card Fidelitate
                 </th>
                 <th
                   scope="col"
-                  className="whitespace-nowrap px-4 py-2.5 text-center text-sm font-bold"
+                  className="whitespace-nowrap border border-white/20 px-4 py-2.5 text-center text-sm font-bold"
                 >
                   Promo CNAS
                 </th>
@@ -54,18 +54,18 @@ export function PriceSection() {
               {cerebralPrices.map((row) => (
                 <tr
                   key={row.name}
-                  className="border-b border-primary-dark last:border-0 even:bg-[#fafafa]"
+                  className="border-b border-white/20 last:border-0"
                 >
-                  <td className="border border-primary-dark px-4 py-2.5 text-left text-sm font-medium text-primary-dark">
+                  <td className="border border-white/20 px-4 py-2.5 text-left text-sm font-medium">
                     {row.name}
                   </td>
-                  <td className="border border-primary-dark px-4 py-2.5 text-right text-sm tabular-nums text-primary-dark">
+                  <td className="border border-white/20 px-4 py-2.5 text-right text-sm tabular-nums">
                     {fmt(row.plata)}
                   </td>
-                  <td className="border border-primary-dark px-4 py-2.5 text-right text-sm tabular-nums text-primary-dark">
+                  <td className="border border-white/20 px-4 py-2.5 text-right text-sm tabular-nums">
                     {fmt(row.card)}
                   </td>
-                  <td className="border border-primary-dark px-4 py-2.5 text-right text-sm tabular-nums text-primary-dark">
+                  <td className="border border-white/20 px-4 py-2.5 text-right text-sm tabular-nums">
                     {fmt(row.promo)}
                   </td>
                 </tr>
