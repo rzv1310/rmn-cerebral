@@ -347,6 +347,21 @@ function Popover({
   const { x, y, title, clinics } = active;
   const tx = x < 24 ? "-12%" : x > 76 ? "-88%" : "-50%";
   const ty = y > 26 ? "calc(-100% - 18px)" : "18px";
+
+  // On mobile the popover is a centered fixed modal — lock page scroll behind
+  // it so only the clinic list scrolls.
+  useEffect(() => {
+    if (!window.matchMedia("(max-width: 767px)").matches) return;
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = prev;
+    };
+  }, []);
+
+  // Mobile positioning is pure CSS (max-md overrides with `!` beat the inline
+  // pin-anchored styles) so the modal is centered from the very first paint —
+  // a JS isMobile flag would flash the desktop position for one frame.
   return (
     <>
       <button
@@ -354,12 +369,12 @@ function Popover({
         aria-label="Închide"
         tabIndex={-1}
         onClick={onClose}
-        className="absolute inset-0 z-10 cursor-default"
+        className="absolute inset-0 z-10 cursor-default max-md:fixed! max-md:z-[60] max-md:bg-ink/25"
       />
       <div
         role="dialog"
         aria-label={`Centre Affidea ${title}`}
-        className="absolute z-30 flex max-h-[24rem] w-72 flex-col rounded-xl border border-line bg-white text-left shadow-[0_16px_40px_rgba(15,33,55,0.22)]"
+        className="absolute z-30 flex max-h-[24rem] w-72 flex-col rounded-xl border border-line bg-white text-left shadow-[0_16px_40px_rgba(15,33,55,0.22)] max-md:fixed! max-md:left-1/2! max-md:top-1/2! max-md:z-[70] max-md:max-h-[70vh] max-md:w-[calc(100vw-2.5rem)] max-md:max-w-sm max-md:transform-none! max-md:-translate-x-1/2 max-md:-translate-y-1/2"
         style={{
           left: `${x}%`,
           top: `${y}%`,
@@ -400,7 +415,7 @@ function Popover({
         </div>
 
         {clinics.length ? (
-          <ul className="flex-1 divide-y divide-line overflow-y-auto px-4">
+          <ul className="flex-1 divide-y divide-line overflow-y-auto overscroll-contain px-4">
             {clinics.map((c, i) => {
               const status = c.hours ? openStatus(c.hours) : null;
               return (

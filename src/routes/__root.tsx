@@ -116,12 +116,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         href: "https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap",
       },
       {
+        // display=swap keeps text visible while fonts load; React 19 manages
+        // the stylesheet itself (a media/onLoad async hack breaks its
+        // precedence-based hoisting and never fires under React anyway).
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap",
-        media: "print",
-        // Swap to all media once loaded so the stylesheet is non-blocking
-        onLoad: "this.media='all'",
-      } as any,
+      },
       { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
     ],
 
